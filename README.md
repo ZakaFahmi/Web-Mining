@@ -4,5 +4,5 @@ Web mining
 
 rstudio cloud <br>
 google colab <br>
-jupiter book
+jupiter book <br>
 https://mathpix.com/
