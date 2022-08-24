@@ -3,4 +3,6 @@ Web mining
 
 
 rstudio cloud <br>
-google colab 
+google colab <br>
+jupiter book
+
