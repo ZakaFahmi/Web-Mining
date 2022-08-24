@@ -1,2 +1,2 @@
-# Web-Mining
+# WebMining
 Web mining
