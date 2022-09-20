@@ -1,0 +1,814 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>data-crawling-twitter &#8212; My sample book</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Install &amp; Import Library" href="ppw.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">My sample book</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Selamat datang di situs Pencarian & penambangan web saya (zaka fahmi)
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ppw.html">
+   Install &amp; Import Library
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   data-crawling-twitter
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/ZakaFahmi/webmining/master?urlpath=tree/seleksi-fitur-dari-data-twitter.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://colab.research.google.com/github/ZakaFahmi/webmining/blob/master/seleksi-fitur-dari-data-twitter.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Colab"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_colab.png">
+  </span>
+<span class="headerbtn__text-container">Colab</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/ZakaFahmi/webmining"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/seleksi-fitur-dari-data-twitter.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   data-crawling-twitter
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#twint">
+   Twint
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#manfaat-twint">
+   Manfaat Twint
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#proses-ambil-data-twitter">
+   Proses Ambil Data Twitter
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pandas">
+   Pandas
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>data-crawling-twitter</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   data-crawling-twitter
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#twint">
+   Twint
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#manfaat-twint">
+   Manfaat Twint
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#proses-ambil-data-twitter">
+   Proses Ambil Data Twitter
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pandas">
+   Pandas
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="data-crawling-twitter">
+<h1>data-crawling-twitter<a class="headerlink" href="#data-crawling-twitter" title="Permalink to this headline">#</a></h1>
+<p>Crawling adalah semacam pengambilan data dari media sosial kemudian di kumpulkan menjadi satu untuk di evakuasi dan di bentuk agar menjadi sebuah penelitian.</p>
+<p>Prosesnya cukup mudah tergantung kamu ingin mengambil data dari sosial media mana. Misalkan kamu ingin crawling data dari twitter ada dua cara yaitu dengan menggunakan API dan tanpa API.</p>
+<p>Data yang dapat kamu kumpulkan dapat berupa text, audio, video, dan gambar. Kamu dapat memulai dengan melakukan penambangan data pada API yang bersifat open source seperti yang disediakan oleh Twitter.</p>
+<p>Untuk yang tools yang di gunakan untuk crawling data twitter kali ini kita akan menggunakan beberapa. Apa aja itu ? Simak berikut ini.</p>
+<ol class="simple">
+<li><p>Jupyter Notebook</p></li>
+<li><p>Python</p></li>
+</ol>
+<p>Sudah itu saja tools yang di rekomendasikan artikel ini untuk crawling data twitter.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Perintah untuk melakukan koneksi Google colab dengan goole Drive sebagai penyimpanan</span>
+
+<span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
+<span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="ne">KeyboardInterrupt</span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="n">e6ab12735b19</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> 
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
+<span class="ne">----&gt; </span><span class="mi">4</span> <span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
+
+<span class="nn">/usr/local/lib/python3.7/dist-packages/google/colab/drive.py</span> in <span class="ni">mount</span><span class="nt">(mountpoint, force_remount, timeout_ms)</span>
+<span class="g g-Whitespace">    </span><span class="mi">103</span>       <span class="n">force_remount</span><span class="o">=</span><span class="n">force_remount</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">104</span>       <span class="n">timeout_ms</span><span class="o">=</span><span class="n">timeout_ms</span><span class="p">,</span>
+<span class="ne">--&gt; </span><span class="mi">105</span>       <span class="n">ephemeral</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">106</span> 
+<span class="g g-Whitespace">    </span><span class="mi">107</span> 
+
+<span class="nn">/usr/local/lib/python3.7/dist-packages/google/colab/drive.py</span> in <span class="ni">_mount</span><span class="nt">(mountpoint, force_remount, timeout_ms, ephemeral)</span>
+<span class="g g-Whitespace">    </span><span class="mi">118</span>   <span class="k">if</span> <span class="n">ephemeral</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">119</span>     <span class="n">_message</span><span class="o">.</span><span class="n">blocking_request</span><span class="p">(</span>
+<span class="ne">--&gt; </span><span class="mi">120</span>         <span class="s1">&#39;request_auth&#39;</span><span class="p">,</span> <span class="n">request</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;authType&#39;</span><span class="p">:</span> <span class="s1">&#39;dfs_ephemeral&#39;</span><span class="p">},</span> <span class="n">timeout_sec</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">121</span> 
+<span class="g g-Whitespace">    </span><span class="mi">122</span>   <span class="n">mountpoint</span> <span class="o">=</span> <span class="n">_os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">expanduser</span><span class="p">(</span><span class="n">mountpoint</span><span class="p">)</span>
+
+<span class="nn">/usr/local/lib/python3.7/dist-packages/google/colab/_message.py</span> in <span class="ni">blocking_request</span><span class="nt">(request_type, request, timeout_sec, parent)</span>
+<span class="g g-Whitespace">    </span><span class="mi">169</span>   <span class="n">request_id</span> <span class="o">=</span> <span class="n">send_request</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">170</span>       <span class="n">request_type</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="n">parent</span><span class="p">,</span> <span class="n">expect_reply</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">171</span>   <span class="k">return</span> <span class="n">read_reply_from_input</span><span class="p">(</span><span class="n">request_id</span><span class="p">,</span> <span class="n">timeout_sec</span><span class="p">)</span>
+
+<span class="nn">/usr/local/lib/python3.7/dist-packages/google/colab/_message.py</span> in <span class="ni">read_reply_from_input</span><span class="nt">(message_id, timeout_sec)</span>
+<span class="g g-Whitespace">     </span><span class="mi">95</span>     <span class="n">reply</span> <span class="o">=</span> <span class="n">_read_next_input_message</span><span class="p">()</span>
+<span class="g g-Whitespace">     </span><span class="mi">96</span>     <span class="k">if</span> <span class="n">reply</span> <span class="o">==</span> <span class="n">_NOT_READY</span> <span class="ow">or</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">reply</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+<span class="ne">---&gt; </span><span class="mi">97</span>       <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.025</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">98</span>       <span class="k">continue</span>
+<span class="g g-Whitespace">     </span><span class="mi">99</span>     <span class="k">if</span> <span class="p">(</span><span class="n">reply</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;type&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;colab_reply&#39;</span> <span class="ow">and</span>
+
+<span class="ne">KeyboardInterrupt</span>: 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Pindah Path ke /content/drive/MyDrive/webmining/webmining</span>
+
+<span class="o">%</span><span class="k">cd</span> /content/drive/MyDrive/webmining/tugas
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/content/drive/MyDrive/webmining/tugas
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="twint">
+<h1>Twint<a class="headerlink" href="#twint" title="Permalink to this headline">#</a></h1>
+<p>selanjutnya kita menggunakan twint nah pasti banyak yang belom tahu apa itu twint.</p>
+<p>Twint adalah alat pengikis Twitter canggih yang ditulis dengan Python yang memungkinkan untuk mengambil data Tweet dari profil Twitter tanpa menggunakan API Twitter.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="manfaat-twint">
+<h1>Manfaat Twint<a class="headerlink" href="#manfaat-twint" title="Permalink to this headline">#</a></h1>
+<p>Twint kemampuan menarik data Tweet tanpa batas. Semangat pembuatan Twint lahir untuk mengakali terbatas dan mahalnya layanan Twitter API. Keampuhan Twint terletak pada kemampuannya menarik tweet dari berbagai model seperti akun, hastag, periode.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>git clone --depth<span class="o">=</span><span class="m">1</span> https://github.com/twintproject/twint.git
+<span class="o">%</span><span class="k">cd</span> twint
+<span class="o">!</span>pip3 install . -r requirements.txt
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>fatal: destination path &#39;twint&#39; already exists and is not an empty directory.
+/content/drive/MyDrive/webmining/tugas/twint
+Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
+Processing /content/drive/MyDrive/webmining/tugas/twint
+<span class=" -Color -Color-Yellow">  DEPRECATION: A future pip version will change local packages to be built in-place without first copying to a temporary directory. We recommend you use --use-feature=in-tree-build to test your packages with this new behavior before it becomes the default.</span>
+<span class=" -Color -Color-Yellow">   pip 21.3 will remove support for this functionality. You can find discussion regarding this at https://github.com/pypa/pip/issues/7555.</span>
+Requirement already satisfied: aiohttp in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 1)) (3.7.0)
+Requirement already satisfied: aiodns in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 2)) (3.0.0)
+Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 3)) (4.6.3)
+Requirement already satisfied: cchardet in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 4)) (2.1.7)
+Requirement already satisfied: dataclasses in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 5)) (0.6)
+Requirement already satisfied: elasticsearch in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 6)) (8.4.2)
+Requirement already satisfied: pysocks in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 7)) (1.7.1)
+Requirement already satisfied: pandas&gt;=0.23.0 in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 8)) (1.3.5)
+Requirement already satisfied: aiohttp_socks&lt;=0.4.1 in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 9)) (0.4.1)
+Requirement already satisfied: schedule in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 10)) (1.1.0)
+Requirement already satisfied: geopy in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 11)) (1.17.0)
+Requirement already satisfied: fake-useragent in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 12)) (0.1.11)
+Requirement already satisfied: googletransx in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 13)) (2.4.2)
+Requirement already satisfied: numpy&gt;=1.17.3 in /usr/local/lib/python3.7/dist-packages (from pandas&gt;=0.23.0-&gt;-r requirements.txt (line 8)) (1.21.6)
+Requirement already satisfied: python-dateutil&gt;=2.7.3 in /usr/local/lib/python3.7/dist-packages (from pandas&gt;=0.23.0-&gt;-r requirements.txt (line 8)) (2.8.2)
+Requirement already satisfied: pytz&gt;=2017.3 in /usr/local/lib/python3.7/dist-packages (from pandas&gt;=0.23.0-&gt;-r requirements.txt (line 8)) (2022.2.1)
+Requirement already satisfied: attrs&gt;=19.2.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp_socks&lt;=0.4.1-&gt;-r requirements.txt (line 9)) (22.1.0)
+Requirement already satisfied: chardet&lt;4.0,&gt;=2.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;-r requirements.txt (line 1)) (3.0.4)
+Requirement already satisfied: multidict&lt;7.0,&gt;=4.5 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;-r requirements.txt (line 1)) (6.0.2)
+Requirement already satisfied: yarl&lt;2.0,&gt;=1.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;-r requirements.txt (line 1)) (1.8.1)
+Requirement already satisfied: async-timeout&lt;4.0,&gt;=3.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;-r requirements.txt (line 1)) (3.0.1)
+Requirement already satisfied: six&gt;=1.5 in /usr/local/lib/python3.7/dist-packages (from python-dateutil&gt;=2.7.3-&gt;pandas&gt;=0.23.0-&gt;-r requirements.txt (line 8)) (1.15.0)
+Requirement already satisfied: idna&gt;=2.0 in /usr/local/lib/python3.7/dist-packages (from yarl&lt;2.0,&gt;=1.0-&gt;aiohttp-&gt;-r requirements.txt (line 1)) (2.10)
+Requirement already satisfied: typing-extensions&gt;=3.7.4 in /usr/local/lib/python3.7/dist-packages (from yarl&lt;2.0,&gt;=1.0-&gt;aiohttp-&gt;-r requirements.txt (line 1)) (4.1.1)
+Requirement already satisfied: pycares&gt;=4.0.0 in /usr/local/lib/python3.7/dist-packages (from aiodns-&gt;-r requirements.txt (line 2)) (4.2.2)
+Requirement already satisfied: cffi&gt;=1.5.0 in /usr/local/lib/python3.7/dist-packages (from pycares&gt;=4.0.0-&gt;aiodns-&gt;-r requirements.txt (line 2)) (1.15.1)
+Requirement already satisfied: pycparser in /usr/local/lib/python3.7/dist-packages (from cffi&gt;=1.5.0-&gt;pycares&gt;=4.0.0-&gt;aiodns-&gt;-r requirements.txt (line 2)) (2.21)
+Requirement already satisfied: elastic-transport&lt;9,&gt;=8 in /usr/local/lib/python3.7/dist-packages (from elasticsearch-&gt;-r requirements.txt (line 6)) (8.4.0)
+Requirement already satisfied: urllib3&lt;2,&gt;=1.26.2 in /usr/local/lib/python3.7/dist-packages (from elastic-transport&lt;9,&gt;=8-&gt;elasticsearch-&gt;-r requirements.txt (line 6)) (1.26.12)
+Requirement already satisfied: certifi in /usr/local/lib/python3.7/dist-packages (from elastic-transport&lt;9,&gt;=8-&gt;elasticsearch-&gt;-r requirements.txt (line 6)) (2022.6.15)
+Requirement already satisfied: geographiclib&lt;2,&gt;=1.49 in /usr/local/lib/python3.7/dist-packages (from geopy-&gt;-r requirements.txt (line 11)) (1.52)
+Requirement already satisfied: requests in /usr/local/lib/python3.7/dist-packages (from googletransx-&gt;-r requirements.txt (line 13)) (2.28.1)
+Requirement already satisfied: charset-normalizer&lt;3,&gt;=2 in /usr/local/lib/python3.7/dist-packages (from requests-&gt;googletransx-&gt;-r requirements.txt (line 13)) (2.1.1)
+Building wheels for collected packages: twint
+  Building wheel for twint (setup.py) ... ?25l?25hdone
+  Created wheel for twint: filename=twint-2.1.21-py3-none-any.whl size=38871 sha256=39d303e41881b0953030a6ede84da17cdccb5b10a3508256c94675891c546a6a
+  Stored in directory: /tmp/pip-ephem-wheel-cache-m07qz1b5/wheels/d2/bb/7e/a95d6c73fa6b2a2e2ca531061bbefd3915b5ad543b4b7eaa73
+Successfully built twint
+Installing collected packages: twint
+  Attempting uninstall: twint
+    Found existing installation: twint 2.1.21
+    Uninstalling twint-2.1.21:
+      Successfully uninstalled twint-2.1.21
+Successfully installed twint-2.1.21
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip install twint
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
+Requirement already satisfied: twint in /usr/local/lib/python3.7/dist-packages (2.1.21)
+Requirement already satisfied: dataclasses in /usr/local/lib/python3.7/dist-packages (from twint) (0.6)
+Requirement already satisfied: geopy in /usr/local/lib/python3.7/dist-packages (from twint) (1.17.0)
+Requirement already satisfied: cchardet in /usr/local/lib/python3.7/dist-packages (from twint) (2.1.7)
+Requirement already satisfied: schedule in /usr/local/lib/python3.7/dist-packages (from twint) (1.1.0)
+Requirement already satisfied: fake-useragent in /usr/local/lib/python3.7/dist-packages (from twint) (0.1.11)
+Requirement already satisfied: elasticsearch in /usr/local/lib/python3.7/dist-packages (from twint) (8.4.2)
+Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.7/dist-packages (from twint) (4.6.3)
+Requirement already satisfied: aiohttp in /usr/local/lib/python3.7/dist-packages (from twint) (3.7.0)
+Requirement already satisfied: aiodns in /usr/local/lib/python3.7/dist-packages (from twint) (3.0.0)
+Requirement already satisfied: pandas in /usr/local/lib/python3.7/dist-packages (from twint) (1.3.5)
+Requirement already satisfied: aiohttp-socks in /usr/local/lib/python3.7/dist-packages (from twint) (0.4.1)
+Requirement already satisfied: googletransx in /usr/local/lib/python3.7/dist-packages (from twint) (2.4.2)
+Requirement already satisfied: pysocks in /usr/local/lib/python3.7/dist-packages (from twint) (1.7.1)
+Requirement already satisfied: pycares&gt;=4.0.0 in /usr/local/lib/python3.7/dist-packages (from aiodns-&gt;twint) (4.2.2)
+Requirement already satisfied: cffi&gt;=1.5.0 in /usr/local/lib/python3.7/dist-packages (from pycares&gt;=4.0.0-&gt;aiodns-&gt;twint) (1.15.1)
+Requirement already satisfied: pycparser in /usr/local/lib/python3.7/dist-packages (from cffi&gt;=1.5.0-&gt;pycares&gt;=4.0.0-&gt;aiodns-&gt;twint) (2.21)
+Requirement already satisfied: attrs&gt;=17.3.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;twint) (22.1.0)
+Requirement already satisfied: chardet&lt;4.0,&gt;=2.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;twint) (3.0.4)
+Requirement already satisfied: yarl&lt;2.0,&gt;=1.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;twint) (1.8.1)
+Requirement already satisfied: multidict&lt;7.0,&gt;=4.5 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;twint) (6.0.2)
+Requirement already satisfied: async-timeout&lt;4.0,&gt;=3.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;twint) (3.0.1)
+Requirement already satisfied: typing-extensions&gt;=3.7.4 in /usr/local/lib/python3.7/dist-packages (from yarl&lt;2.0,&gt;=1.0-&gt;aiohttp-&gt;twint) (4.1.1)
+Requirement already satisfied: idna&gt;=2.0 in /usr/local/lib/python3.7/dist-packages (from yarl&lt;2.0,&gt;=1.0-&gt;aiohttp-&gt;twint) (2.10)
+Requirement already satisfied: elastic-transport&lt;9,&gt;=8 in /usr/local/lib/python3.7/dist-packages (from elasticsearch-&gt;twint) (8.4.0)
+Requirement already satisfied: urllib3&lt;2,&gt;=1.26.2 in /usr/local/lib/python3.7/dist-packages (from elastic-transport&lt;9,&gt;=8-&gt;elasticsearch-&gt;twint) (1.26.12)
+Requirement already satisfied: certifi in /usr/local/lib/python3.7/dist-packages (from elastic-transport&lt;9,&gt;=8-&gt;elasticsearch-&gt;twint) (2022.6.15)
+Requirement already satisfied: geographiclib&lt;2,&gt;=1.49 in /usr/local/lib/python3.7/dist-packages (from geopy-&gt;twint) (1.52)
+Requirement already satisfied: requests in /usr/local/lib/python3.7/dist-packages (from googletransx-&gt;twint) (2.28.1)
+Requirement already satisfied: python-dateutil&gt;=2.7.3 in /usr/local/lib/python3.7/dist-packages (from pandas-&gt;twint) (2.8.2)
+Requirement already satisfied: pytz&gt;=2017.3 in /usr/local/lib/python3.7/dist-packages (from pandas-&gt;twint) (2022.2.1)
+Requirement already satisfied: numpy&gt;=1.17.3 in /usr/local/lib/python3.7/dist-packages (from pandas-&gt;twint) (1.21.6)
+Requirement already satisfied: six&gt;=1.5 in /usr/local/lib/python3.7/dist-packages (from python-dateutil&gt;=2.7.3-&gt;pandas-&gt;twint) (1.15.0)
+Requirement already satisfied: charset-normalizer&lt;3,&gt;=2 in /usr/local/lib/python3.7/dist-packages (from requests-&gt;googletransx-&gt;twint) (2.1.1)
+</pre></div>
+</div>
+</div>
+</div>
+<p>kalau pada saat import twint mengalami error mungkin bisa tambahkan code berikut ini, kemudian running lah.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip install <span class="nv">aiohttp</span><span class="o">==</span><span class="m">3</span>.7.0
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
+Requirement already satisfied: aiohttp==3.7.0 in /usr/local/lib/python3.7/dist-packages (3.7.0)
+Requirement already satisfied: async-timeout&lt;4.0,&gt;=3.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp==3.7.0) (3.0.1)
+Requirement already satisfied: attrs&gt;=17.3.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp==3.7.0) (22.1.0)
+Requirement already satisfied: chardet&lt;4.0,&gt;=2.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp==3.7.0) (3.0.4)
+Requirement already satisfied: yarl&lt;2.0,&gt;=1.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp==3.7.0) (1.8.1)
+Requirement already satisfied: multidict&lt;7.0,&gt;=4.5 in /usr/local/lib/python3.7/dist-packages (from aiohttp==3.7.0) (6.0.2)
+Requirement already satisfied: typing-extensions&gt;=3.7.4 in /usr/local/lib/python3.7/dist-packages (from yarl&lt;2.0,&gt;=1.0-&gt;aiohttp==3.7.0) (4.1.1)
+Requirement already satisfied: idna&gt;=2.0 in /usr/local/lib/python3.7/dist-packages (from yarl&lt;2.0,&gt;=1.0-&gt;aiohttp==3.7.0) (2.10)
+</pre></div>
+</div>
+</div>
+</div>
+<p>Setelah menginstal twint tentunya belum bisa di jalankan karena kamu perlu menginportnya terlebih dahulu supaya twint bisa digunakan.</p>
+<p>Caranya cukup mudah masukan saja kode di bawah ini.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">twint</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip install nest_asyncio
+<span class="kn">import</span> <span class="nn">nest_asyncio</span>
+<span class="n">nest_asyncio</span><span class="o">.</span><span class="n">apply</span><span class="p">()</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
+Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.7/dist-packages (1.5.5)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="proses-ambil-data-twitter">
+<h1>Proses Ambil Data Twitter<a class="headerlink" href="#proses-ambil-data-twitter" title="Permalink to this headline">#</a></h1>
+<p>Sudah import semuanya ? kini kamu tinggal menentukan data apa yang ingin di ambil. Kita ambil saja salah satu hastag yang sedang viral di twitter yaitu</p>
+<p>Kemudian running kode tersebut maka akan muncul semua data yang ada di twitter khusunya yang berhastag</p>
+<p>Kamu bisa juga mengeksport semua data tersebut ke csv. caranya kamu masukan kode di bawah ini untuk membuat tabelnya terlebih dahulu.</p>
+<p>Kemudian masukan kode di bawah ini untuk mengeksport ke dalam file berekstensi csv.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">c</span> <span class="o">=</span> <span class="n">twint</span><span class="o">.</span><span class="n">Config</span><span class="p">()</span>
+<span class="n">c</span><span class="o">.</span><span class="n">Search</span> <span class="o">=</span> <span class="s1">&#39;#ganjarpranowo&#39;</span>
+<span class="n">c</span><span class="o">.</span><span class="n">Pandas</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">c</span><span class="o">.</span><span class="n">Limit</span> <span class="o">=</span> <span class="mi">60</span>
+<span class="n">c</span><span class="o">.</span><span class="n">Store_csv</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">c</span><span class="o">.</span><span class="n">Custom</span><span class="p">[</span><span class="s2">&quot;tweet&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;tweet&quot;</span><span class="p">]</span>
+<span class="n">c</span><span class="o">.</span><span class="n">Output</span> <span class="o">=</span> <span class="s2">&quot;dataGanjar.csv&quot;</span>
+<span class="n">twint</span><span class="o">.</span><span class="n">run</span><span class="o">.</span><span class="n">Search</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1572348665234333696 2022-09-20 22:15:09 +0000 &lt;inisiatifganjar&gt; Ganjar Pranowo Dorong UMKM Jateng Naik Kelas dengan Buka Bootcamp Gerakan Akar Digital Indonesia  #ganjarpranowo #ganjar #ganjar_pranowo #jawatengah #jawatengahhits #indonesia #calonpresiden #pdiperjuangan #ganjarforpresident2024 #ganjarpranowoforpresiden2024  https://t.co/9Pnzc0NVUo
+1572286495184289793 2022-09-20 18:08:06 +0000 &lt;wahananewsdotco&gt; Rivalitas Puan vs Ganjar Kian Transparan  https://t.co/lTwshi7lGg #PuanVsGanjar #PuanMaharani #GanjarPranowo #Pdip
+1572280880487624710 2022-09-20 17:45:48 +0000 &lt;g24channel&gt; Saling dukung dan saling mendoakan, dua sahabat @airlangga_hrt dan @ganjarpranowo   #Gorkar2024 #airlanggahartarto #GanjarPranowo #sismo #G24Channel  https://t.co/4ZUQtcbbXL
+1572261857163091968 2022-09-20 16:30:12 +0000 &lt;sdg_sumsel1&gt; Alhamdulillah, hari ini SDG Sumsel kembali menggelar agenda rutin di 2 Kab/kota Wilayah Sumatera Selatan. 20 September 2022.  #santridukungganjar #santriuntuknegeri  #ganjar2024 #ganjarpranowo  #ganjarforpresident2024  #ganjarpenerusjokowi  @santridukungganjar @ganjar_pranowo  https://t.co/VDKCkiPhrs
+1572248616684916737 2022-09-20 15:37:35 +0000 &lt;4_gp2024&gt; _____ Selengkapnya kamu dapat saksikan di Youtube Sahabat Ganjar dan terus kepoin kegiatan seru lainnya di  https://t.co/1KTOxBOoqE ! 🫰  #GanjarPranowo #SahabatGanjar #Ganjar #JawaBarat
+1572247810384461826 2022-09-20 15:34:23 +0000 &lt;4_gp2024&gt; Gubernur Jawa Tengah Ganjar Pranowo siap mendukung Eks Napiter, Kira-kira apa pesan darinya? Simak video berikut.  #sahabatganjar #ganjarpranowo #Ganjar  https://t.co/NYW2yXdPHz
+1572247611234717705 2022-09-20 15:33:36 +0000 &lt;4_gp2024&gt; Pemprov Jawa Tengah memberikan bantuan kepada 32 keluarga yang terkena dampak Banjir Sungai Kali Keruh.  Ganjar Pranowo menyampaikan bantuan tersebut diberikan atas laporan terkait puluhan rumah pada bulan Februari 2022 lalu.  #sahabatganjar #ganjarpranowo #Ganjar  https://t.co/UK1QnRu4Tv
+1572247519270436864 2022-09-20 15:33:14 +0000 &lt;makganjarjatim&gt; Mak Ganjar Jatim berbagi dengan pedagang di pasar karang ploso kab. Malang diterima dengan senang hati dan sedikit berbagi cerita tentang sosok Ganjar Pranowo ❤️ #makganjar #makganjarjatim #GanjarPranowo  https://t.co/zrEceeMpHG
+1572247432532230147 2022-09-20 15:32:53 +0000 &lt;4_gp2024&gt; Ganjar yakin dengan adanya Festival tersebut, banyak wisatawan dapat berkunjung ke Kota Lama.  #sahabatganjar #ganjarpranowo #Ganjar
+1572247245076201472 2022-09-20 15:32:08 +0000 &lt;dxower&gt; @GanjaranApp Ternyata emang perjuangan ini susah loh #GanjarPranowo
+1572245802961240064 2022-09-20 15:26:24 +0000 &lt;4_gp2024&gt; Apakah kamu merasa hidupmu berantakan sekarang, atau lebih milih mengatakan &quot;Saya hanya sedang menghadapi tantangan lebih sabar&quot;? 😊  #GanjarPranowo #SahabatGanjar #Ganjar #Milenial #Diksi #Paradigma  https://t.co/BDKe9mPu9R
+1572245415642398721 2022-09-20 15:24:52 +0000 &lt;4_gp2024&gt; Konser bertajuk &quot;Senandung Anak Wayang Reunion&quot;, Sirkus Barock tampil dengan konsep teatrik, dengan berkolaborasi seniman berbagai genre. Seperti pelukis, penari dan sastra.  #SahabatGanjar #GanjarPranowo #Ganjar  https://t.co/hRcFw5QoJW
+1572244861025390592 2022-09-20 15:22:40 +0000 &lt;4_gp2024&gt; Gubernur Jawa Tengah Ganjar Pranowo mulai menyalurkan program Bantuan Sosial bagi Gabungan Kelompok Tani (Gapoktan) untuk pengendalian inflasi di Kabupaten Klaten.  #sahabatganjar #ganjarpranowo #Ganjar  https://t.co/ysUXerYT5O
+1572244563229839363 2022-09-20 15:21:29 +0000 &lt;Lembayungpbr22&gt; KKN ala rezim #pbnu #pdip #NU #koru #koruptor #PDIPerjuangan #iknkemajuanindonesia  #puan #puanmaharani #megawati #pdipki  #GanjarPranowo
+1572241600729985024 2022-09-20 15:09:43 +0000 &lt;4_gp2024&gt; nomor satu di Jawa Tengah beserta para menteri.  Ari mengunggah foto bersama Ganjar, Menteri Perhubungan Budi Karya Sumadi, dan Menteri PUPR Basuki Hadimuljono. Ada pula sejumlah tokoh yang hadir pada acara itu.  #SahabatGanjar #GanjarPranowo #Ganjar  https://t.co/70HoMHkSJ7
+1572240976307191809 2022-09-20 15:07:14 +0000 &lt;4_gp2024&gt; Jamaah Umroh tiba di Bandara Soekarno Hatta. Ini merupakan rangkaian kegiatan kegiatan Pondok Pesantren Alif Baa bersama Sahabat Ganjar untuk pergi ke Tanah Suci.  #SahabatGanjar #GanjarPranowo #Ganjar  https://t.co/sMJYvuNXqC
+1572240899991801856 2022-09-20 15:06:56 +0000 &lt;4_gp2024&gt; Sahabat Ganjar kembali menggelar Jumat Berkah bagi Warga Kota Bekasi!  #GanjarPranowo #SahabatGanjar #Ganjar #JumatBerkah #Bekasi #Doorprize #Joshua  https://t.co/1TpG5xAojq
+1572240818353868800 2022-09-20 15:06:36 +0000 &lt;4_gp2024&gt; Lengkap banget Gerak Senam sewaktu di Tasikmalaya!   Nah 1 lagi adalah.. Gerakan hati ibu-ibu Tasik untuk mencintai pak Ganjar Calon presiden kita nanti di 2024 🇮🇩  #GanjarPranowo #SahabatGanjar #Ganjar #Tasikmalaya #Senam #Bazar #UMKM #Doorprize  https://t.co/X1jiJct47J
+1572240268631625730 2022-09-20 15:04:25 +0000 &lt;sahabatganjar&gt; Ada kalanya, hidup membawa kita pada fase bergumul &amp;amp; “mengerang”, hanya utk bertahan sampai tiba di fase berikutnya. Yang penting, diksi kamu diperbaiki, karena dia mempengaruhi paragdimamu menjalani masa sulit tersebut.  #GanjarPranowo #SahabatGanjar #Ganjar #Milenial #Diksi  https://t.co/hndyYRwi0E
+1572237304558940162 2022-09-20 14:52:38 +0000 &lt;4_gp2024&gt; Gubernur Jawa Tengah Ganjar Pranowo melaunching 38 Desa/Kelurahan Bersinar (Bersih Narkoba) di Kabupaten Klaten.   #sahabatganjar #ganjarpranowo #Ganjar  https://t.co/aUCeiCWBWI
+1572236631725477889 2022-09-20 14:49:58 +0000 &lt;4_gp2024&gt; Sudah saatnya ilmu kamu berkembang, tak hanya di dalam lab tapi dibawa sampai ke kompetisi.  #GanjarPranowo #SahabatGanjar #Ganjar #SAGA #LKS #SMK #TKJ #Iptek  #5.0
+1572236398962573315 2022-09-20 14:49:02 +0000 &lt;4_gp2024&gt; Selain diuji bab Konfigurasi Jaringan, anak SMK LKS Sahabat Ganjar di Sumatera Utara juga games tebak huruf. Kira-kira bisakah mereka?  #GanjarPranowo #SahabatGanjar #Ganjar #SAGA #LKS #SMK #TKJ #Games #TebakHuruf  https://t.co/j9lScov98u
+1572235345055592449 2022-09-20 14:44:51 +0000 &lt;4_gp2024&gt; &quot;Alhamdulillah kegiatan Sahabat Ganjar di DPC Tasikmalaya berjalan dengan lancar. Harapan saya dan teman-teman, semoga Bapak Haji Ganjar Pranowo bisa terpilih menjadi Presiden di 2024 mendatang,&quot; ujar Kamila selaku Perwakilan DPW Jawa Barat.  #SahabatGanjar #GanjarPranowo #Ganjar
+1572235284875739137 2022-09-20 14:44:37 +0000 &lt;4_gp2024&gt; Apa saja ya yang disampaikan Sopiah??? kita simak yuk videonya...  #SahabatGanjar #GanjarPranowo #Ganjar
+1572234983464644613 2022-09-20 14:43:25 +0000 &lt;4_gp2024&gt; Instruktur Senam.  Hmmmm penasaran gak sih??? Kalo penasaran langsung aja kita simak videonya...  #SahabatGanjar #GanjarPranowo #Ganjar
+1572233970305355776 2022-09-20 14:39:23 +0000 &lt;4_gp2024&gt; Yuk Sahabat! Jangan lupa pantengin terus kegiatan Sahabat Ganjar dengan klik link website resmi Sahabat Ganjar di bio!  #GanjarPranowo #SahabatGanjar #Deklarasi #KotaTasikmalaya
+1572233460970061824 2022-09-20 14:37:22 +0000 &lt;sahabatganjar&gt; Elegan sekali Kaos Milenial dari Sahabat Ganjar ini😍  Yakin gamau punya? Kalo mau punya langsung pesen aja di Tokopedia dan Shopee kalian ya...  #SahabatGanjar #GanjarPranowo #Ganjar  https://t.co/1v8kY8uzcm
+1572220329891889155 2022-09-20 13:45:11 +0000 &lt;Lembayungpbr22&gt; #pbnu #pdip #NU #koru #koruptor #PDIPerjuangan #iknkemajuanindonesia  #puan #puanmaharani #megawati #pdipki  #GanjarPranowo
+1572215906608250883 2022-09-20 13:27:37 +0000 &lt;totomarcell_77&gt; #GanjarPranowo
+1572215873406136322 2022-09-20 13:27:29 +0000 &lt;sahabatganjar&gt; Jika Sahabat masih ada yang ingin ditanyakan, bisa menanyakan lebih lanjut melalui admin   0889-7558-8826 &amp;amp;  0812-9253-0354 (Whatsapp)  Ayo bersama Sahabat Ganjar, kita bersiap untuk Era Society 5.0,  #SahabatGanjar #Ganjar #GanjarPranowo #LKSSaGa
+1572215870172307457 2022-09-20 13:27:28 +0000 &lt;sahabatganjar&gt; Mumpung masih lama, ayo buruan daftar !!!!!!  Bagaimana cara mendaftarnya???? kalian bisa mengakses link  https://t.co/SrRCb7yhqg  #SahabatGanjar #Ganjar #GanjarPranowo #LKSSaGa
+1572215863889240064 2022-09-20 13:27:26 +0000 &lt;sahabatganjar&gt; Hallo ikam Siswa/i SMK TKJ di Lappung, persiapken direi sikam,ulah Lomba Kejuruan Siswa pakai jurusan TKJ jenjang SMK hadir di Provinsi Lappung  Lomba ini memiliki tujuan agar SDM di Indonesia memiliki daya saing pada Era Society 5.0.  #SahabatGanjar #Ganjar #GanjarPranowo  https://t.co/R1AdDoMzMD
+1572210353152589830 2022-09-20 13:05:33 +0000 &lt;ocongBoyy&gt; @__RismaWidiono_ #SahabatGanjar #GanjarPranowo #GanjarTheNextJokowi #SahabatGanjar #GanjarPranowo
+1572208964380807168 2022-09-20 13:00:01 +0000 &lt;madazis169&gt; @ChusnulCh__ @ganjarpranowo Lanjtkan pak #GanjarPranowo semangat buat NKRI harga mati.
+1572208864124366850 2022-09-20 12:59:38 +0000 &lt;ciantra_chintra&gt; @Thena_Canya @ganjarpranowo Pilih #GanjarPranowo pastinya  https://t.co/P1nhojy1Ni
+1572208029227159554 2022-09-20 12:56:19 +0000 &lt;madazis169&gt; @03__nakula Mungkin ke depannya bisa di sandingkan dgn pak #GanjarPranowo the best karakter NKRI 🤣🤣🤣
+1572207536203497472 2022-09-20 12:54:21 +0000 &lt;sahabatganjar&gt; Jika kalian butuh informasi tambahan, segera hubungi:  0889-7558-8826 &amp;amp; 0812-9253-0354 (Whatsapp)  #SahabatGanjar #Ganjar #GanjarPranowo #HackathonSaGa
+1572207533087158273 2022-09-20 12:54:20 +0000 &lt;sahabatganjar&gt; Untuk proposal dikirim melalui email dpp@sahabatganjar.id dengan format pengiriman   🗒️ Subject: Hackathon2022_NamaTim_NamaKampus  Note: Format File pengiriman menggunakan doc atau docx  #SahabatGanjar #Ganjar #GanjarPranowo #HackathonSaGa
+1572207526489518084 2022-09-20 12:54:19 +0000 &lt;sahabatganjar&gt; Tidak ada biaya pendaftaran dan kalian tinggal mendaftar melalui link sahabatganjar/hackathon2022.   Dengan Hadiah Macbook Pro dan total 22 Juta rupiah, kegiatan ini pastinya sangat kalian tunggu-tunggu !!!  #SahabatGanjar #Ganjar #GanjarPranowo #HackathonSaGa
+1572207524073578497 2022-09-20 12:54:18 +0000 &lt;sahabatganjar&gt; Haloo Sahabat Milenials !!!!! Lomba Hackathon is Back!!  Kali ini, lomba berlangsung di SUMATERA UTARA !!!! Pada 15 Oktober di Kota Medan.  Pendaftaran dibuka mulai dari: 20 September 2022 sampai 8 Oktober 2022   #SahabatGanjar #Ganjar #GanjarPranowo #HackathonSaGa  https://t.co/BSVtwdEADU
+1572197049151660032 2022-09-20 12:12:41 +0000 &lt;suaraumatnews&gt; Reaksi cepat Gubernur Jawa Tengah  @ganjarpranowo  menegur warganya yang sedang membakar lahan di pinggir jalan tol Bawen-Ungaran,...  https://t.co/BX5PjJi5Ii #GanjarPranowo #reaksicepat #pedulikeselamatan #cegahkecelakaan
+1572196468999753736 2022-09-20 12:10:22 +0000 &lt;sahabatganjar&gt; Siapa dulu panutannya, Pak Ganjar ngajain kita agar melek teknologi. Sahabat Ganjar Tangerang  siap blusukan sampai pelosok desa demi menyampaikan amanah sembako untuk rakyat.  #GanjarPranowo #SahabatGanjar #Ganjar #Tangerang #Aplikasi #Teknologi  https://t.co/GJ9SptwZN7
+1572194781681586177 2022-09-20 12:03:40 +0000 &lt;Aryprasetyo85&gt; Sang Instruktur Senam bernama Leli Sopliawati ini menceritakan kisah hidupnya dari atlit sampai menjadi Instruktur Senam.  Hmmmm penasaran gak sih??? Kalo penasaran langsung aja kita simak videonya...  #SahabatGanjar #GanjarPranowo #Ganjar  https://t.co/e7hIQegtyS
+1572194166133915659 2022-09-20 12:01:13 +0000 &lt;Aryprasetyo85&gt; Yuk Sahabat! Jangan lupa pantengin terus kegiatan Sahabat Ganjar dengan klik link website resmi Sahabat Ganjar di bio!  #GanjarPranowo #SahabatGanjar #Deklarasi #KotaTasikmalaya  https://t.co/YsI4l0gEAS
+1572194113986101249 2022-09-20 12:01:01 +0000 &lt;Aryprasetyo85&gt; Dalam kegiatan di setiap kotanya, #SahabatGanjar selalu mengedepankan aspek kesehatan, Salah satunya adalah kegiatan Senam bersama yang berlangsung di Kota Tasikmalaya ini.   #GanjarPranowo #Ganjar  https://t.co/xrBnIie11f
+1572193781390409729 2022-09-20 11:59:42 +0000 &lt;03__nakula&gt; Berbagai kebaikan dan hal positif terus dilakukan untuk membuka kebaikan lainnya. Terbaru, Sahabat Ganjar mengadakan kegiatan pembagian sembako dan doorprize bersama dengan Komunitas Emak² Pengajian di Kawalu, Tasikmalaya. #GanjarPranowo #SahabatGanjar #Deklarasi #KotaTasikmalaya  https://t.co/vooxPApjGR
+1572193025581027329 2022-09-20 11:56:41 +0000 &lt;sahabatganjar&gt; Dalam kegiatan di setiap kotanya, Sahabat Ganjar selalu mengedepankan aspek kesehatan, Salah satunya adalah kegiatan Senam bersama yang berlangsung di Kota Tasikmalaya ini.  #SahabatGanjar #GanjarPranowo #Ganjar  https://t.co/Jb58nD717Q
+1572188443991744512 2022-09-20 11:38:29 +0000 &lt;fajaronline&gt; Polling ILC: 77 Persen Voters Pilih Anies Baswedan, Ferdinand Hutahaean Bikin Juga, Hasilnya Gubernur DKI Jakarta Unggul Sementara  https://t.co/8jx3TUlTrN #AniesBaswedan #FerdinandHutahaean #GanjarPranowo #GubernurDKIJakarta
+1572185978659573762 2022-09-20 11:28:41 +0000 &lt;03__nakula&gt; Cita² Orang Tua adalah memberikan pendidikan setinggi²nya kepada Anak²nya. Itulah yang disampaikan Happy Sopiah pedagang Es Boba di Tasikmalaya.  Sopiah senang dengan kedatangan Sahabat Ganjar, Es Boba nya jadi laris manis.  Berikut videonya #SahabatGanjar #GanjarPranowo #Ganjar  https://t.co/2hyalUNS8u
+1572182633937014784 2022-09-20 11:15:24 +0000 &lt;OpsiMedia&gt; Lagi-lagi Ganjar Pranowo Tak Diundang dalam Acara PDI Perjuangan di Kota Semarang.#Ganjar #GanjarPranowo #puanmaharani #PDIPerjuangan #opsimediatv   https://t.co/KPHF8Mq4ep
+1572174421728854017 2022-09-20 10:42:46 +0000 &lt;jijindut&gt; Sahabat Ganjar kembali menggelar Jumat Berkah bagi Warga Kota Bekasi!  @SaGa_Bekasi  #GanjarPranowo #SahabatGanjar #Ganjar #JumatBerkah #Bekasi #Doorprize  https://t.co/3wJr6xnTY6
+1572171317922918402 2022-09-20 10:30:26 +0000 &lt;sahabatganjarid&gt; Elegan sekali Kaos Milenial dari Sahabat Ganjar ini  Yakin gamau punya? Kalo mau punya langsung pesen aja di Tokopedia dan Shopee kalian ya...  #SahabatGanjar #GanjarPranowo #Ganjar  https://t.co/XwokbjJzEV
+1572170365652303876 2022-09-20 10:26:39 +0000 &lt;makganjar_ntt&gt; Ganjar Pranowo Peduli Honorer ❤️ #GanjarPranowo #ganjarpresiden2024  https://t.co/oELw2yfpbc
+1572168276956033025 2022-09-20 10:18:21 +0000 &lt;sahabatganjarid&gt; Sahabat Ganjar jalin silaturahmi dengan Komunitas Emak-Emak Pengajian di Kec Kawalu, Tasikmalaya.  #GanjarPranowo #SahabatGanjar #Deklarasi #KotaTasikmalaya  https://t.co/CZ2b9bKVjX
+1572167937427144704 2022-09-20 10:17:00 +0000 &lt;sahabatganjar&gt; Setelah kegiatan selesai, Komunitas Emak-Emak Pengajian juga melakukan doa bersama dan mendeklarasikan dukungan kepada Ganjar Pranowo untuk sukses di ajang tahun 2024 mendatang.   #GanjarPranowo #SahabatGanjar #Deklarasi #KotaTasikmalaya  https://t.co/jDYKEBE4bN
+1572167919664246784 2022-09-20 10:16:56 +0000 &lt;sahabatganjar&gt; Sahabat Ganjar jalin silaturahmi dengan Komunitas Emak-Emak Pengajian dengan mengadakan kegiatan pembagian paket sembako dan doorprize bersama dengan Komunitas Emak-Emak Pengajian di Kecamatan Kawalu, Tasikmalaya.  #GanjarPranowo #SahabatGanjar #Deklarasi #KotaTasikmalaya  https://t.co/6ncuw7t9NJ
+1572165159334084609 2022-09-20 10:05:58 +0000 &lt;sahabatganjarid&gt; Cita-cita Orang Tua adalah memberikan pendidikan setinggi-tingginya kepada Anak-Anaknya. Itulah yang disampaikan Happy Sopiah pedagang Es Boba di Tasikmalaya.  Sopiah benar-benar Happy karena kedatangan Sahabat Ganjar  #SahabatGanjar #GanjarPranowo #Ganjar  https://t.co/1eMhFfScM8
+1572163676651429888 2022-09-20 10:00:04 +0000 &lt;ganjar_pedia&gt; Gubernur Jawa Tengah @ganjarpranowo dan juga Pemprov Jateng sangat peduli terhadap penyandang disabilitas #ganjarpranowo #ganjarpedia #JatengGayeng   *Trending Twitter* Reza Arap Adam Suseno Versi BPJS Adam Levine Behati Gubernur Khofifah  https://t.co/R2X51jUPRq
+1572163330881781760 2022-09-20 09:58:42 +0000 &lt;Aryprasetyo85&gt; Tidak hanya itu, dalam menggalang dukungan Sahabat Ganjar juga menggaet komunitas Senam dan emak-emak pengrajin untuk melakukan deklarasi satukan suara dalam sukseskan Ganjar Pranowo di tahun 2024.  #GanjarPranowo #SahabatGanjar #Ganjar #JawaBarat  https://t.co/o48VddvjAX
+1572161754695892992 2022-09-20 09:52:26 +0000 &lt;sahabatganjarid&gt; SERBA-SERBI JURUSAN KOMUNIKASI  Yuk simak penjelasan serunya langsung bersama mahasiswi komunikasi, Namira!  Tonton selengkapnya hanya di YouTube Sahabat Ganjar yaa!  #Komunikasi #JurusanKomunikasi #JurusanKuliah #Kuliah #College #Podcast #PodcastSABI #Ganjar #GanjarPranowo  https://t.co/rSNoZwucxu
+1572161314147168256 2022-09-20 09:50:41 +0000 &lt;madazis169&gt; Pilihlah #GanjarPranowo putra terbaik Bangsa Indonesia.
+1572161157926105091 2022-09-20 09:50:04 +0000 &lt;jpnncom&gt; Ganjar Pranowo mendapatkan laporan soal BLT BBM yang disunat istri perangkat desa. Peringatan keras dia sampaikan. #ganjarpranowo  https://t.co/GxIPSLkNoK
+1572160856007528455 2022-09-20 09:48:52 +0000 &lt;madazis169&gt; @M45Broo_ Itulah hati&quot; untuk memilih ab karena dia dan org&quot;nya sdh memasuki pengurus masjid yg ada. Rakyat jangan salah pilih pilihlah putra terbaik Indonesia #GanjarPranowo .
+1572160795391455232 2022-09-20 09:48:37 +0000 &lt;Aryprasetyo85&gt; Selain diuji bab Konfigurasi Jaringan, anak SMK LKS Sahabat Ganjar di Sumatera Utara juga games tebak huruf. Kira-kira bisakah mereka?  #GanjarPranowo #SahabatGanjar #Ganjar #SAGA #LKS #SMK #TKJ #Games #TebakHuruf  https://t.co/Nv6Fcp17Fh
+1572160524485554176 2022-09-20 09:47:33 +0000 &lt;sahabatganjarid&gt; Apa Kata Komunitas Pelaku UMKM asal Kota Tasikmalaya, Jawa Barat tentang sosok Pak Ganjar?   Penasaran dengan jawaban mereka? Yuk mari simak video berikut.  #sahabatganjar #ganjarpranowo #Ganjar  https://t.co/W702TQI0fx
+1572160521381769216 2022-09-20 09:47:32 +0000 &lt;Lembayungpbr22&gt; #pbnu #pdip #NU #koru #koruptor #PDIPerjuangan #iknkemajuanindonesia  #puan #puanmaharani #megawati #pdipki  #GanjarPranowo
+1572159900889001985 2022-09-20 09:45:04 +0000 &lt;madazis169&gt; @FerdinandHutah4 @YoutubeILC Pastinya #GanjarPranowo yg insya allah bisa meneruskan Indonesia maju, ayo kibarkan terus NKRI harga mati.
+1572157785487585281 2022-09-20 09:36:39 +0000 &lt;fajaronline&gt; Ganjar Pranowo Ingatkan Warga Tidak Bakar Jerami di Dekat Tol, Warganet: Tolong Petaninya Dikasih Solusi  https://t.co/Wk7yILo197 #GanjarPranowo #petani #TolPemalang
+1572148629883977729 2022-09-20 09:00:17 +0000 &lt;sahabatganjarid&gt; Gubernur Jawa Tengah Ganjar Pranowo siap mendukung Eks Napiter, Kira-kira apa pesan darinya? Simak video berikut.  #sahabatganjar #ganjarpranowo #Ganjar  https://t.co/jcJhzeD9Eq
+1572148561596321793 2022-09-20 09:00:00 +0000 &lt;GanjarKu_&gt; Konser bertajuk “Senandung Anak Wayang Reunion”, Sirkus Barock tampil dengan konsep teatrik, dengan berkolaborasi seniman berbagai genre,seperti pelukis, penari &amp;amp; sastra #ganjarpranowo #GanjarKu #sawungjabo  Papua Reza Arap Adam Levine Behati Adam Suseno YOASOBI  https://t.co/YU32Tt5PfY
+1572148328066093057 2022-09-20 08:59:05 +0000 &lt;sahabatganjar&gt; Konser bertajuk &quot;Senandung Anak Wayang Reunion&quot;, Sirkus Barock tampil dengan konsep teatrik, dengan berkolaborasi seniman berbagai genre. Seperti pelukis, penari dan sastra.  #SahabatGanjar #GanjarPranowo #Ganjar  https://t.co/uGM4vJDudi
+1572148315852251136 2022-09-20 08:59:02 +0000 &lt;sahabatganjar&gt; Malam itu, kelompok musik bergenre rock balada itu membawakan 20 lagu untuk mengobati kangen penggemarnya.  #SahabatGanjar #GanjarPranowo #Ganjar  https://t.co/d0KNu74yB6
+1572148304892530688 2022-09-20 08:58:59 +0000 &lt;sahabatganjar&gt; Tembang &quot;Ada Suara Tanpa Bentuk&quot; menjadi pembuka konser Sawung Jabo bersama Sirkus Barock di Taman Budaya Yogyakarta  #SahabatGanjar #GanjarPranowo #Ganjar  https://t.co/paIaeFRkMp
+1572147040502829056 2022-09-20 08:53:58 +0000 &lt;Dnok_Ayu&gt; Kegiatan kalo didukung o/ masyarakat itu menyenangkan.  Sambutan dr warga Tasikmalaya u/ Sahabat Ganjar dlm mendukung Pak #GanjarPranowo agr mjd Presiden 2024 smakin membangkitkan semangat #SahabatGanjar.  Smoga harapan Sahabat Ganjar &amp;amp; smua pendukung Pak Ganjar terkabul. Amin 🙏  https://t.co/lZtbIEekDg
+1572142622701137920 2022-09-20 08:36:24 +0000 &lt;Aryprasetyo85&gt; Pemprov Jawa Tengah memberikan bantuan kepada 32 keluarga yang terkena dampak Banjir Sungai Kali Keruh.  Ganjar Pranowo menyampaikan bantuan tersebut diberikan atas laporan terkait puluhan rumah pada bulan Februari 2022 lalu.  #sahabatganjar #ganjarpranowo #Ganjar  https://t.co/kfDxGaEOfk
+1572139265282445312 2022-09-20 08:23:04 +0000 &lt;Aryprasetyo85&gt; Gubernur Jawa Tengah Ganjar Pranowo siap mendukung Eks Napiter, Kira-kira apa pesan darinya? Simak video berikut.  #sahabatganjar #ganjarpranowo #Ganjar  https://t.co/9zLnnR0r4m
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="pandas">
+<h1>Pandas<a class="headerlink" href="#pandas" title="Permalink to this headline">#</a></h1>
+<p>Pandas adalah paket Python open source yang paling sering dipakai untuk menganalisis data serta membangun sebuah machine learning. Pandas dibuat berdasarkan satu package lain bernama Numpy</p>
+<p>menurut wekipedia pandas adalah perpustakaan perangkat lunak yang ditulis untuk bahasa pemrograman Python untuk manipulasi dan analisis data. Secara khusus, ia menawarkan struktur data dan operasi untuk memanipulasi tabel numerik dan deret waktu. Ini adalah perangkat lunak gratis yang dirilis di bawah lisensi BSD tiga klausa.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;dataGanjar.xlsx&#39;</span><span class="p">)</span>
+<span class="n">data</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="ppw.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Install &amp; Import Library</p>
+        </div>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By The Jupyter Book Community<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
