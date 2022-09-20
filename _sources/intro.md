@@ -1,11 +1,8 @@
-# Welcome to your Jupyter Book
+# Selamat datang di situs Pencarian & penambangan web saya (zaka fahmi)
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
-
-Check out the content pages bundled with this sample book to see more.
+Situs ini di buat untuk pemblajaran bersama tentang  Pencarian & penambangan web
+Nim  : 190411100027
+Nama : M. Salisianto Fahmi Zaka
 
 ```{tableofcontents}
 ```
