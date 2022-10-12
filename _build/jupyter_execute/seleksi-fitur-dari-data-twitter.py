@@ -37,7 +37,7 @@ get_ipython().run_line_magic('cd', 'twint')
 get_ipython().system('pip3 install . -r requirements.txt')
 
 
-# In[2]:
+# In[ ]:
 
 
 get_ipython().system('pip install twint')
@@ -45,13 +45,13 @@ get_ipython().system('pip install twint')
 
 # kalau pada saat import twint mengalami error mungkin bisa tambahkan code berikut ini, kemudian running lah.
 
-# In[3]:
+# In[ ]:
 
 
 pip install nest-asyncio
 
 
-# In[4]:
+# In[ ]:
 
 
 get_ipython().system('pip install aiohttp==3.7.0')
@@ -61,7 +61,7 @@ get_ipython().system('pip install aiohttp==3.7.0')
 # 
 # Caranya cukup mudah masukan saja kode di bawah ini.
 
-# In[5]:
+# In[ ]:
 
 
 import twint
@@ -71,7 +71,7 @@ import twint
 # 
 # Nest Asyncio Secara opsional, loop spesifik yang perlu ditambal dapat diberikan sebagai argumen untuk diterapkan , jika tidak, loop peristiwa saat ini digunakan. Loop peristiwa dapat ditambal apakah sudah berjalan atau belum. Hanya loop acara dari asyncio yang dapat ditambal; Loop dari proyek lain, seperti uvloop atau quamash, umumnya tidak dapat ditambal.
 
-# In[6]:
+# In[ ]:
 
 
 get_ipython().system('pip install nest_asyncio')
@@ -92,7 +92,7 @@ nest_asyncio.apply()
 
 # Kemudian masukan kode di bawah ini untuk mengeksport ke dalam file berekstensi csv.
 
-# In[7]:
+# In[ ]:
 
 
 c = twint.Config()
@@ -110,7 +110,7 @@ twint.run.Search(c)
 # 
 # menurut wekipedia pandas adalah perpustakaan perangkat lunak yang ditulis untuk bahasa pemrograman Python untuk manipulasi dan analisis data. Secara khusus, ia menawarkan struktur data dan operasi untuk memanipulasi tabel numerik dan deret waktu. Ini adalah perangkat lunak gratis yang dirilis di bawah lisensi BSD tiga klausa.
 
-# In[8]:
+# In[ ]:
 
 
 import pandas as pd
@@ -118,7 +118,7 @@ import pandas as pd
 
 # data pd read pandas digunakan untuk mengecek data apakah data sudah ada
 
-# In[9]:
+# In[ ]:
 
 
 data = pd.read_csv('dataGanjar.csv')
@@ -131,7 +131,7 @@ data
 # # SASTRAWI
 # Sastrawi adalah library Python sederhana yang memungkinkan Anda untuk mereduksi kata-kata infleksi dalam Bahasa Indonesia (Bahasa Indonesia) ke bentuk dasarnya ( stem ).
 
-# In[10]:
+# In[ ]:
 
 
 get_ipython().system('pip install nltk')
@@ -140,7 +140,7 @@ get_ipython().system('pip install Sastrawi')
 
 # ### Re module Python menyediakan seperangkat fungsi yang memungkinkan kita untuk mencari sebuah string untuk match (match).
 
-# In[11]:
+# In[ ]:
 
 
 import pandas as pd
@@ -155,7 +155,7 @@ from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 
 # Selanjutnya membuat Function Remove Stopwords yang fungsinya adalah menghapus kata-kata yang tidak diperlukan dalam proses nantinya,sehingga dapat mempercepat proses VSM
 
-# In[12]:
+# In[ ]:
 
 
 def remove_stopwords(text):
@@ -171,7 +171,7 @@ def remove_stopwords(text):
 
 # Steming merupakan proses mengubah kata dalam bahasa Indonesia ke akar katanya misalkan ‘Mereka meniru-nirukannya’ menjadi ‘mereka tiru’
 
-# In[13]:
+# In[ ]:
 
 
 def stemming(text):
@@ -201,7 +201,7 @@ def stemming(text):
 # 
 # 9.Menghapus String kosong
 
-# In[14]:
+# In[ ]:
 
 
 def preprocessing(text):
@@ -236,13 +236,13 @@ def preprocessing(text):
     return text
 
 
-# In[15]:
+# In[ ]:
 
 
 get_ipython().run_line_magic('cd', '/content/drive/MyDrive/webmining/tugas/contents')
 
 
-# In[16]:
+# In[ ]:
 
 
 #data['tweet'].apply(preprocessing).to_excel('preprocessing.xlsx')
@@ -250,7 +250,7 @@ get_ipython().run_line_magic('cd', '/content/drive/MyDrive/webmining/tugas/conte
 
 # Tokenizing adalah proses pemisahan teks menjadi potongan-potongan yang disebut sebagai token untuk kemudian di analisa. Kata, angka, simbol, tanda baca dan entitas penting lainnya dapat dianggap sebagai token.
 
-# In[17]:
+# In[ ]:
 
 
 from sklearn.feature_extraction.text import TfidfTransformer, TfidfVectorizer, CountVectorizer
@@ -262,7 +262,7 @@ dataTextPre
 
 # Melihat Jumlah Baris dan Kata
 
-# In[18]:
+# In[ ]:
 
 
 matrik_vsm=bag.toarray()
@@ -271,13 +271,13 @@ matrik_vsm.shape
 
 # 
 
-# In[19]:
+# In[ ]:
 
 
 matrik_vsm[0]
 
 
-# In[20]:
+# In[ ]:
 
 
 a=vectorizer.get_feature_names()
@@ -285,7 +285,7 @@ a=vectorizer.get_feature_names()
 
 # Tampilan data VSM dengan labelnya
 
-# In[21]:
+# In[ ]:
 
 
 dataTF =pd.DataFrame(data=matrik_vsm,index=list(range(1, len(matrik_vsm[:,1])+1, )),columns=[a])
@@ -294,7 +294,7 @@ dataTF
 
 # lalu data diatas ditambahkan dengan label (positif,netral dan negatif)
 
-# In[22]:
+# In[ ]:
 
 
 label = pd.read_csv('/content/drive/MyDrive/webmining/tugas/twint/dataGanjar.csv')
@@ -306,13 +306,13 @@ dj
 # # Fungsi UNIQUE
 # Mengembalikan baris unik dalam rentang sumber yang diberikan, dengan membuang duplikat. Baris dikembalikan sesuai urutan saat muncul pertama kali dalam rentang sumber.
 
-# In[23]:
+# In[ ]:
 
 
 dj['tweet'].unique()
 
 
-# In[24]:
+# In[ ]:
 
 
 dj.info()
@@ -335,7 +335,7 @@ dj.info()
 # 
 # 7. Naive Bayes: Pemodelan probabilistik langsung
 
-# In[25]:
+# In[ ]:
 
 
 get_ipython().system('pip install -U scikit-learn')
@@ -352,7 +352,7 @@ get_ipython().system('pip install -U scikit-learn')
 # 
 # sekarang mari kita lanjutkan kode pythonya
 
-# In[26]:
+# In[ ]:
 
 
 from sklearn.model_selection import train_test_split
@@ -363,13 +363,13 @@ X_train,X_test,y_train,y_test=train_test_split(dj.drop(labels=['tweet'], axis=1)
     random_state=0)
 
 
-# In[27]:
+# In[ ]:
 
 
 X_train.info(verbose=True)
 
 
-# In[28]:
+# In[ ]:
 
 
 from sklearn.feature_selection import mutual_info_classif

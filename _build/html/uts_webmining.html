@@ -1,0 +1,5242 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>UTS WEBMING &#8212; M.Salisianto Fahmi Zaka</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Ringkasan-text" href="Ringkasan-text.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">M.Salisianto Fahmi Zaka</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Selamat datang di situs Pencarian & penambangan web saya (zaka fahmi)
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ppw.html">
+   Install &amp; Import Library
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="seleksi-fitur-dari-data-twitter.html">
+   data-crawling-twitter
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Ringkasan-text.html">
+   Ringkasan-text
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   UTS WEBMING
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/ZakaFahmi/webmining/master?urlpath=tree/uts_webmining.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://colab.research.google.com/github/ZakaFahmi/webmining/blob/master/uts_webmining.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Colab"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_colab.png">
+  </span>
+<span class="headerbtn__text-container">Colab</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/ZakaFahmi/webmining"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/uts_webmining.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>UTS WEBMING</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="uts-webming">
+<h1>UTS WEBMING<a class="headerlink" href="#uts-webming" title="Permalink to this headline">#</a></h1>
+<ol class="simple">
+<li><p>Lakukan analisa clustering dengan menggunakan k-mean clustering pada data twitter denga kunci pencarian ” tragedi kanjuruhan”</p></li>
+<li><p>Lakukan peringkasan dokumen dari berita online ( link berita bebas) menggunakan metode pagerank</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>git clone --depth<span class="o">=</span><span class="m">1</span> https://github.com/twintproject/twint.git
+<span class="o">%</span><span class="k">cd</span> twint
+<span class="o">!</span>pip3 install . -r requirements.txt
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>fatal: destination path &#39;twint&#39; already exists and is not an empty directory.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/content/drive/MyDrive/webmining/tugas/twint
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
+Processing /content/drive/MyDrive/webmining/tugas/twint
+<span class=" -Color -Color-Yellow">  DEPRECATION: A future pip version will change local packages to be built in-place without first copying to a temporary directory. We recommend you use --use-feature=in-tree-build to test your packages with this new behavior before it becomes the default.</span>
+<span class=" -Color -Color-Yellow">   pip 21.3 will remove support for this functionality. You can find discussion regarding this at https://github.com/pypa/pip/issues/7555.</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: aiohttp in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 1)) (3.8.3)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting aiodns
+  Downloading aiodns-3.0.0-py3-none-any.whl (5.0 kB)
+Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 3)) (4.6.3)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting cchardet
+  Downloading cchardet-2.1.7-cp37-cp37m-manylinux2010_x86_64.whl (263 kB)
+?25l
+     |█▎                              | 10 kB 20.1 MB/s eta 0:00:01
+     |██▌                             | 20 kB 17.2 MB/s eta 0:00:01
+     |███▊                            | 30 kB 22.5 MB/s eta 0:00:01
+     |█████                           | 40 kB 15.7 MB/s eta 0:00:01
+     |██████▏                         | 51 kB 14.7 MB/s eta 0:00:01
+     |███████▌                        | 61 kB 16.9 MB/s eta 0:00:01
+     |████████▊                       | 71 kB 13.4 MB/s eta 0:00:01
+     |██████████                      | 81 kB 14.7 MB/s eta 0:00:01
+     |███████████▏                    | 92 kB 16.1 MB/s eta 0:00:01
+     |████████████▍                   | 102 kB 15.1 MB/s eta 0:00:01
+     |█████████████▊                  | 112 kB 15.1 MB/s eta 0:00:01
+     |███████████████                 | 122 kB 15.1 MB/s eta 0:00:01
+     |████████████████▏               | 133 kB 15.1 MB/s eta 0:00:01
+     |█████████████████▍              | 143 kB 15.1 MB/s eta 0:00:01
+     |██████████████████▋             | 153 kB 15.1 MB/s eta 0:00:01
+     |███████████████████▉            | 163 kB 15.1 MB/s eta 0:00:01
+     |█████████████████████▏          | 174 kB 15.1 MB/s eta 0:00:01
+     |██████████████████████▍         | 184 kB 15.1 MB/s eta 0:00:01
+     |███████████████████████▋        | 194 kB 15.1 MB/s eta 0:00:01
+     |████████████████████████▉       | 204 kB 15.1 MB/s eta 0:00:01
+     |██████████████████████████      | 215 kB 15.1 MB/s eta 0:00:01
+     |███████████████████████████▍    | 225 kB 15.1 MB/s eta 0:00:01
+     |████████████████████████████▋   | 235 kB 15.1 MB/s eta 0:00:01
+     |█████████████████████████████▉  | 245 kB 15.1 MB/s eta 0:00:01
+     |███████████████████████████████ | 256 kB 15.1 MB/s eta 0:00:01
+     |████████████████████████████████| 263 kB 15.1 MB/s 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>?25hCollecting dataclasses
+  Downloading dataclasses-0.6-py3-none-any.whl (14 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting elasticsearch
+  Downloading elasticsearch-8.4.3-py3-none-any.whl (384 kB)
+?25l
+     |▉                               | 10 kB 17.5 MB/s eta 0:00:01
+     |█▊                              | 20 kB 24.5 MB/s eta 0:00:01
+     |██▋                             | 30 kB 32.3 MB/s eta 0:00:01
+     |███▍                            | 40 kB 38.5 MB/s eta 0:00:01
+     |████▎                           | 51 kB 43.6 MB/s eta 0:00:01
+     |█████▏                          | 61 kB 49.0 MB/s eta 0:00:01
+     |██████                          | 71 kB 52.7 MB/s eta 0:00:01
+     |██████▉                         | 81 kB 56.1 MB/s eta 0:00:01
+     |███████▊                        | 92 kB 58.6 MB/s eta 0:00:01
+     |████████▌                       | 102 kB 60.4 MB/s eta 0:00:01
+     |█████████▍                      | 112 kB 60.4 MB/s eta 0:00:01
+     |██████████▎                     | 122 kB 60.4 MB/s eta 0:00:01
+     |███████████                     | 133 kB 60.4 MB/s eta 0:00:01
+     |████████████                    | 143 kB 60.4 MB/s eta 0:00:01
+     |████████████▉                   | 153 kB 60.4 MB/s eta 0:00:01
+     |█████████████▋                  | 163 kB 60.4 MB/s eta 0:00:01
+     |██████████████▌                 | 174 kB 60.4 MB/s eta 0:00:01
+     |███████████████▍                | 184 kB 60.4 MB/s eta 0:00:01
+     |████████████████▏               | 194 kB 60.4 MB/s eta 0:00:01
+     |█████████████████               | 204 kB 60.4 MB/s eta 0:00:01
+     |██████████████████              | 215 kB 60.4 MB/s eta 0:00:01
+     |██████████████████▊             | 225 kB 60.4 MB/s eta 0:00:01
+     |███████████████████▋            | 235 kB 60.4 MB/s eta 0:00:01
+     |████████████████████▌           | 245 kB 60.4 MB/s eta 0:00:01
+     |█████████████████████▎          | 256 kB 60.4 MB/s eta 0:00:01
+     |██████████████████████▏         | 266 kB 60.4 MB/s eta 0:00:01
+     |███████████████████████         | 276 kB 60.4 MB/s eta 0:00:01
+     |███████████████████████▉        | 286 kB 60.4 MB/s eta 0:00:01
+     |████████████████████████▊       | 296 kB 60.4 MB/s eta 0:00:01
+     |█████████████████████████▋      | 307 kB 60.4 MB/s eta 0:00:01
+     |██████████████████████████▍     | 317 kB 60.4 MB/s eta 0:00:01
+     |███████████████████████████▎    | 327 kB 60.4 MB/s eta 0:00:01
+     |████████████████████████████▏   | 337 kB 60.4 MB/s eta 0:00:01
+     |█████████████████████████████   | 348 kB 60.4 MB/s eta 0:00:01
+     |█████████████████████████████▉  | 358 kB 60.4 MB/s eta 0:00:01
+     |██████████████████████████████▊ | 368 kB 60.4 MB/s eta 0:00:01
+     |███████████████████████████████▌| 378 kB 60.4 MB/s eta 0:00:01
+     |████████████████████████████████| 384 kB 60.4 MB/s 
+?25hRequirement already satisfied: pysocks in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 7)) (1.7.1)
+Requirement already satisfied: pandas&gt;=0.23.0 in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 8)) (1.3.5)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting aiohttp_socks&lt;=0.4.1
+  Downloading aiohttp_socks-0.4.1-py3-none-any.whl (17 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting schedule
+  Downloading schedule-1.1.0-py2.py3-none-any.whl (10 kB)
+Requirement already satisfied: geopy in /usr/local/lib/python3.7/dist-packages (from -r requirements.txt (line 11)) (1.17.0)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting fake-useragent
+  Downloading fake-useragent-0.1.11.tar.gz (13 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting googletransx
+  Downloading googletransx-2.4.2.tar.gz (13 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: numpy&gt;=1.17.3 in /usr/local/lib/python3.7/dist-packages (from pandas&gt;=0.23.0-&gt;-r requirements.txt (line 8)) (1.21.6)
+Requirement already satisfied: pytz&gt;=2017.3 in /usr/local/lib/python3.7/dist-packages (from pandas&gt;=0.23.0-&gt;-r requirements.txt (line 8)) (2022.4)
+Requirement already satisfied: python-dateutil&gt;=2.7.3 in /usr/local/lib/python3.7/dist-packages (from pandas&gt;=0.23.0-&gt;-r requirements.txt (line 8)) (2.8.2)
+Requirement already satisfied: attrs&gt;=19.2.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp_socks&lt;=0.4.1-&gt;-r requirements.txt (line 9)) (21.4.0)
+Requirement already satisfied: multidict&lt;7.0,&gt;=4.5 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;-r requirements.txt (line 1)) (6.0.2)
+Requirement already satisfied: asynctest==0.13.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;-r requirements.txt (line 1)) (0.13.0)
+Requirement already satisfied: frozenlist&gt;=1.1.1 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;-r requirements.txt (line 1)) (1.3.1)
+Requirement already satisfied: typing-extensions&gt;=3.7.4 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;-r requirements.txt (line 1)) (4.1.1)
+Requirement already satisfied: async-timeout&lt;5.0,&gt;=4.0.0a3 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;-r requirements.txt (line 1)) (4.0.2)
+Requirement already satisfied: charset-normalizer&lt;3.0,&gt;=2.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;-r requirements.txt (line 1)) (2.1.1)
+Requirement already satisfied: yarl&lt;2.0,&gt;=1.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;-r requirements.txt (line 1)) (1.8.1)
+Requirement already satisfied: aiosignal&gt;=1.1.2 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;-r requirements.txt (line 1)) (1.2.0)
+Requirement already satisfied: six&gt;=1.5 in /usr/local/lib/python3.7/dist-packages (from python-dateutil&gt;=2.7.3-&gt;pandas&gt;=0.23.0-&gt;-r requirements.txt (line 8)) (1.15.0)
+Requirement already satisfied: idna&gt;=2.0 in /usr/local/lib/python3.7/dist-packages (from yarl&lt;2.0,&gt;=1.0-&gt;aiohttp-&gt;-r requirements.txt (line 1)) (2.10)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting pycares&gt;=4.0.0
+  Downloading pycares-4.2.2-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (288 kB)
+?25l
+     |█▏                              | 10 kB 25.8 MB/s eta 0:00:01
+     |██▎                             | 20 kB 32.6 MB/s eta 0:00:01
+     |███▍                            | 30 kB 39.5 MB/s eta 0:00:01
+     |████▌                           | 40 kB 44.3 MB/s eta 0:00:01
+     |█████▊                          | 51 kB 47.2 MB/s eta 0:00:01
+     |██████▉                         | 61 kB 51.1 MB/s eta 0:00:01
+     |████████                        | 71 kB 52.3 MB/s eta 0:00:01
+     |█████████                       | 81 kB 52.5 MB/s eta 0:00:01
+     |██████████▏                     | 92 kB 54.5 MB/s eta 0:00:01
+     |███████████▍                    | 102 kB 55.0 MB/s eta 0:00:01
+     |████████████▌                   | 112 kB 55.0 MB/s eta 0:00:01
+     |█████████████▋                  | 122 kB 55.0 MB/s eta 0:00:01
+     |██████████████▊                 | 133 kB 55.0 MB/s eta 0:00:01
+     |███████████████▉                | 143 kB 55.0 MB/s eta 0:00:01
+     |█████████████████               | 153 kB 55.0 MB/s eta 0:00:01
+     |██████████████████▏             | 163 kB 55.0 MB/s eta 0:00:01
+     |███████████████████▎            | 174 kB 55.0 MB/s eta 0:00:01
+     |████████████████████▍           | 184 kB 55.0 MB/s eta 0:00:01
+     |█████████████████████▋          | 194 kB 55.0 MB/s eta 0:00:01
+     |██████████████████████▊         | 204 kB 55.0 MB/s eta 0:00:01
+     |███████████████████████▉        | 215 kB 55.0 MB/s eta 0:00:01
+     |█████████████████████████       | 225 kB 55.0 MB/s eta 0:00:01
+     |██████████████████████████      | 235 kB 55.0 MB/s eta 0:00:01
+     |███████████████████████████▎    | 245 kB 55.0 MB/s eta 0:00:01
+     |████████████████████████████▍   | 256 kB 55.0 MB/s eta 0:00:01
+     |█████████████████████████████▌  | 266 kB 55.0 MB/s eta 0:00:01
+     |██████████████████████████████▋ | 276 kB 55.0 MB/s eta 0:00:01
+     |███████████████████████████████▊| 286 kB 55.0 MB/s eta 0:00:01
+     |████████████████████████████████| 288 kB 55.0 MB/s 
+?25hRequirement already satisfied: cffi&gt;=1.5.0 in /usr/local/lib/python3.7/dist-packages (from pycares&gt;=4.0.0-&gt;aiodns-&gt;-r requirements.txt (line 2)) (1.15.1)
+Requirement already satisfied: pycparser in /usr/local/lib/python3.7/dist-packages (from cffi&gt;=1.5.0-&gt;pycares&gt;=4.0.0-&gt;aiodns-&gt;-r requirements.txt (line 2)) (2.21)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting elastic-transport&lt;9,&gt;=8
+  Downloading elastic_transport-8.4.0-py3-none-any.whl (59 kB)
+?25l
+     |█████▌                          | 10 kB 25.7 MB/s eta 0:00:01
+     |███████████                     | 20 kB 33.1 MB/s eta 0:00:01
+     |████████████████▌               | 30 kB 40.3 MB/s eta 0:00:01
+     |██████████████████████          | 40 kB 45.6 MB/s eta 0:00:01
+     |███████████████████████████▌    | 51 kB 47.9 MB/s eta 0:00:01
+     |████████████████████████████████| 59 kB 6.9 MB/s 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>?25hCollecting urllib3&lt;2,&gt;=1.26.2
+  Downloading urllib3-1.26.12-py2.py3-none-any.whl (140 kB)
+?25l
+     |██▍                             | 10 kB 27.8 MB/s eta 0:00:01
+     |████▊                           | 20 kB 34.2 MB/s eta 0:00:01
+     |███████                         | 30 kB 41.4 MB/s eta 0:00:01
+     |█████████▍                      | 40 kB 46.2 MB/s eta 0:00:01
+     |███████████▊                    | 51 kB 49.8 MB/s eta 0:00:01
+     |██████████████                  | 61 kB 53.9 MB/s eta 0:00:01
+     |████████████████▍               | 71 kB 56.0 MB/s eta 0:00:01
+     |██████████████████▊             | 81 kB 57.9 MB/s eta 0:00:01
+     |█████████████████████           | 92 kB 59.3 MB/s eta 0:00:01
+     |███████████████████████▍        | 102 kB 60.6 MB/s eta 0:00:01
+     |█████████████████████████▊      | 112 kB 60.6 MB/s eta 0:00:01
+     |████████████████████████████    | 122 kB 60.6 MB/s eta 0:00:01
+     |██████████████████████████████▍ | 133 kB 60.6 MB/s eta 0:00:01
+     |████████████████████████████████| 140 kB 60.6 MB/s 
+?25hRequirement already satisfied: certifi in /usr/local/lib/python3.7/dist-packages (from elastic-transport&lt;9,&gt;=8-&gt;elasticsearch-&gt;-r requirements.txt (line 6)) (2022.9.24)
+Requirement already satisfied: geographiclib&lt;2,&gt;=1.49 in /usr/local/lib/python3.7/dist-packages (from geopy-&gt;-r requirements.txt (line 11)) (1.52)
+Requirement already satisfied: requests in /usr/local/lib/python3.7/dist-packages (from googletransx-&gt;-r requirements.txt (line 13)) (2.23.0)
+Requirement already satisfied: chardet&lt;4,&gt;=3.0.2 in /usr/local/lib/python3.7/dist-packages (from requests-&gt;googletransx-&gt;-r requirements.txt (line 13)) (3.0.4)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting requests
+  Downloading requests-2.28.1-py3-none-any.whl (62 kB)
+?25l
+     |█████▏                          | 10 kB 29.4 MB/s eta 0:00:01
+     |██████████▍                     | 20 kB 36.0 MB/s eta 0:00:01
+     |███████████████▋                | 30 kB 41.5 MB/s eta 0:00:01
+     |████████████████████▉           | 40 kB 46.1 MB/s eta 0:00:01
+     |██████████████████████████      | 51 kB 49.1 MB/s eta 0:00:01
+     |███████████████████████████████▎| 61 kB 53.2 MB/s eta 0:00:01
+     |████████████████████████████████| 62 kB 1.6 MB/s 
+?25hBuilding wheels for collected packages: twint, fake-useragent, googletransx
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Building wheel for twint (setup.py) ... ?25l?25hdone
+  Created wheel for twint: filename=twint-2.1.21-py3-none-any.whl size=38871 sha256=5392f30127f03aa5abfabaaf4bb383ae3f4998fc9ed33b00e6618a0678cfe45b
+  Stored in directory: /tmp/pip-ephem-wheel-cache-gwle8tn0/wheels/d2/bb/7e/a95d6c73fa6b2a2e2ca531061bbefd3915b5ad543b4b7eaa73
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Building wheel for fake-useragent (setup.py) ... ?25l?25hdone
+  Created wheel for fake-useragent: filename=fake_useragent-0.1.11-py3-none-any.whl size=13502 sha256=ba83fa899dd114c5fef05211e66ded7a51b33d15158b193780459e4e7d892dea
+  Stored in directory: /root/.cache/pip/wheels/ed/f7/62/50ab6c9a0b5567267ab76a9daa9d06315704209b2c5d032031
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Building wheel for googletransx (setup.py) ... ?25l?25hdone
+  Created wheel for googletransx: filename=googletransx-2.4.2-py3-none-any.whl size=15968 sha256=7733bf766c4f8658dcd5aa74b942ae62b50a976ed2441f4379c426f1cb917db8
+  Stored in directory: /root/.cache/pip/wheels/66/d5/b1/31104b338f7fd45aa8f7d22587765db06773b13df48a89735f
+Successfully built twint fake-useragent googletransx
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Red">ERROR: Operation cancelled by user</span>
+Traceback (most recent call last):
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_vendor/pkg_resources/__init__.py&quot;, line 3021, in _dep_map
+    return self.__dep_map
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_vendor/pkg_resources/__init__.py&quot;, line 2815, in __getattr__
+    raise AttributeError(attr)
+AttributeError: _DistInfoDistribution__dep_map
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_internal/cli/base_command.py&quot;, line 180, in _main
+    status = self.run(options, args)
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_internal/cli/req_command.py&quot;, line 199, in wrapper
+    return func(self, options, args)
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_internal/commands/install.py&quot;, line 385, in run
+    conflicts = self._determine_conflicts(to_install)
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_internal/commands/install.py&quot;, line 515, in _determine_conflicts
+    return check_install_conflicts(to_install)
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_internal/operations/check.py&quot;, line 103, in check_install_conflicts
+    package_set, _ = create_package_set_from_installed()
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_internal/operations/check.py&quot;, line 45, in create_package_set_from_installed
+    package_set[name] = PackageDetails(dist.version, dist.requires())
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_vendor/pkg_resources/__init__.py&quot;, line 2736, in requires
+    dm = self._dep_map
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_vendor/pkg_resources/__init__.py&quot;, line 3023, in _dep_map
+    self.__dep_map = self._compute_dependencies()
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_vendor/pkg_resources/__init__.py&quot;, line 3033, in _compute_dependencies
+    reqs.extend(parse_requirements(req))
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_vendor/pkg_resources/__init__.py&quot;, line 3094, in parse_requirements
+    yield Requirement(line)
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_vendor/pkg_resources/__init__.py&quot;, line 3101, in __init__
+    super(Requirement, self).__init__(requirement_string)
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_vendor/packaging/requirements.py&quot;, line 113, in __init__
+    req = REQUIREMENT.parseString(requirement_string)
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_vendor/pyparsing.py&quot;, line 1943, in parseString
+    loc, tokens = self._parse(instring, 0)
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_vendor/pyparsing.py&quot;, line 1683, in _parseNoCache
+    loc, tokens = self.parseImpl(instring, preloc, doActions)
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_vendor/pyparsing.py&quot;, line 4069, in parseImpl
+    loc, exprtokens = e._parse(instring, loc, doActions)
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_vendor/pyparsing.py&quot;, line 1683, in _parseNoCache
+    loc, tokens = self.parseImpl(instring, preloc, doActions)
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_vendor/pyparsing.py&quot;, line 4254, in parseImpl
+    ret = e._parse(instring, loc, doActions)
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_vendor/pyparsing.py&quot;, line 1683, in _parseNoCache
+    loc, tokens = self.parseImpl(instring, preloc, doActions)
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_vendor/pyparsing.py&quot;, line 4069, in parseImpl
+    loc, exprtokens = e._parse(instring, loc, doActions)
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_vendor/pyparsing.py&quot;, line 1683, in _parseNoCache
+    loc, tokens = self.parseImpl(instring, preloc, doActions)
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_vendor/pyparsing.py&quot;, line 4849, in parseImpl
+    loc, tokens = self.expr._parse(instring, loc, doActions, callPreParse=False)
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_vendor/pyparsing.py&quot;, line 1683, in _parseNoCache
+    loc, tokens = self.parseImpl(instring, preloc, doActions)
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_vendor/pyparsing.py&quot;, line 4069, in parseImpl
+    loc, exprtokens = e._parse(instring, loc, doActions)
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_vendor/pyparsing.py&quot;, line 1683, in _parseNoCache
+    loc, tokens = self.parseImpl(instring, preloc, doActions)
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_vendor/pyparsing.py&quot;, line 4069, in parseImpl
+    loc, exprtokens = e._parse(instring, loc, doActions)
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_vendor/pyparsing.py&quot;, line 1683, in _parseNoCache
+    loc, tokens = self.parseImpl(instring, preloc, doActions)
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_vendor/pyparsing.py&quot;, line 4462, in parseImpl
+    return self.expr._parse(instring, loc, doActions, callPreParse=False)
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_vendor/pyparsing.py&quot;, line 1683, in _parseNoCache
+    loc, tokens = self.parseImpl(instring, preloc, doActions)
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_vendor/pyparsing.py&quot;, line 4052, in parseImpl
+    loc, resultlist = self.exprs[0]._parse(instring, loc, doActions, callPreParse=False)
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_vendor/pyparsing.py&quot;, line 1683, in _parseNoCache
+    loc, tokens = self.parseImpl(instring, preloc, doActions)
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_vendor/pyparsing.py&quot;, line 4254, in parseImpl
+    ret = e._parse(instring, loc, doActions)
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_vendor/pyparsing.py&quot;, line 1683, in _parseNoCache
+    loc, tokens = self.parseImpl(instring, preloc, doActions)
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_vendor/pyparsing.py&quot;, line 4462, in parseImpl
+    return self.expr._parse(instring, loc, doActions, callPreParse=False)
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_vendor/pyparsing.py&quot;, line 1683, in _parseNoCache
+    loc, tokens = self.parseImpl(instring, preloc, doActions)
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_vendor/pyparsing.py&quot;, line 4052, in parseImpl
+    loc, resultlist = self.exprs[0]._parse(instring, loc, doActions, callPreParse=False)
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_vendor/pyparsing.py&quot;, line 1683, in _parseNoCache
+    loc, tokens = self.parseImpl(instring, preloc, doActions)
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_vendor/pyparsing.py&quot;, line 4254, in parseImpl
+    ret = e._parse(instring, loc, doActions)
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_vendor/pyparsing.py&quot;, line 1689, in _parseNoCache
+    tokens = self.postParse(instring, loc, tokens)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &quot;/usr/local/bin/pip3&quot;, line 8, in &lt;module&gt;
+    sys.exit(main())
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_internal/cli/main.py&quot;, line 71, in main
+    return command.main(cmd_args)
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_internal/cli/base_command.py&quot;, line 104, in main
+    return self._main(args)
+  File &quot;/usr/local/lib/python3.7/dist-packages/pip/_internal/cli/base_command.py&quot;, line 212, in _main
+    logger.critical(&quot;Operation cancelled by user&quot;)
+  File &quot;/usr/lib/python3.7/logging/__init__.py&quot;, line 1425, in critical
+    self._log(CRITICAL, msg, args, **kwargs)
+  File &quot;/usr/lib/python3.7/logging/__init__.py&quot;, line 1514, in _log
+    self.handle(record)
+  File &quot;/usr/lib/python3.7/logging/__init__.py&quot;, line 1524, in handle
+    self.callHandlers(record)
+  File &quot;/usr/lib/python3.7/logging/__init__.py&quot;, line 1586, in callHandlers
+    hdlr.handle(record)
+  File &quot;/usr/lib/python3.7/logging/__init__.py&quot;, line 894, in handle
+    self.emit(record)
+  File &quot;/usr/lib/python3.7/logging/handlers.py&quot;, line 71, in emit
+    logging.FileHandler.emit(self, record)
+  File &quot;/usr/lib/python3.7/logging/__init__.py&quot;, line 1127, in emit
+    StreamHandler.emit(self, record)
+  File &quot;/usr/lib/python3.7/logging/__init__.py&quot;, line 1029, in emit
+    self.flush()
+  File &quot;/usr/lib/python3.7/logging/__init__.py&quot;, line 1009, in flush
+    self.stream.flush()
+KeyboardInterrupt
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip install twint
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
+Requirement already satisfied: twint in /usr/local/lib/python3.7/dist-packages (2.1.21)
+Requirement already satisfied: pandas in /usr/local/lib/python3.7/dist-packages (from twint) (1.3.5)
+Requirement already satisfied: aiohttp in /usr/local/lib/python3.7/dist-packages (from twint) (3.8.3)
+Requirement already satisfied: elasticsearch in /usr/local/lib/python3.7/dist-packages (from twint) (8.4.3)
+Requirement already satisfied: dataclasses in /usr/local/lib/python3.7/dist-packages (from twint) (0.6)
+Requirement already satisfied: pysocks in /usr/local/lib/python3.7/dist-packages (from twint) (1.7.1)
+Requirement already satisfied: schedule in /usr/local/lib/python3.7/dist-packages (from twint) (1.1.0)
+Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.7/dist-packages (from twint) (4.6.3)
+Requirement already satisfied: googletransx in /usr/local/lib/python3.7/dist-packages (from twint) (2.4.2)
+Requirement already satisfied: geopy in /usr/local/lib/python3.7/dist-packages (from twint) (1.17.0)
+Requirement already satisfied: cchardet in /usr/local/lib/python3.7/dist-packages (from twint) (2.1.7)
+Requirement already satisfied: aiohttp-socks in /usr/local/lib/python3.7/dist-packages (from twint) (0.4.1)
+Requirement already satisfied: aiodns in /usr/local/lib/python3.7/dist-packages (from twint) (3.0.0)
+Requirement already satisfied: fake-useragent in /usr/local/lib/python3.7/dist-packages (from twint) (0.1.11)
+Requirement already satisfied: pycares&gt;=4.0.0 in /usr/local/lib/python3.7/dist-packages (from aiodns-&gt;twint) (4.2.2)
+Requirement already satisfied: cffi&gt;=1.5.0 in /usr/local/lib/python3.7/dist-packages (from pycares&gt;=4.0.0-&gt;aiodns-&gt;twint) (1.15.1)
+Requirement already satisfied: pycparser in /usr/local/lib/python3.7/dist-packages (from cffi&gt;=1.5.0-&gt;pycares&gt;=4.0.0-&gt;aiodns-&gt;twint) (2.21)
+Requirement already satisfied: yarl&lt;2.0,&gt;=1.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;twint) (1.8.1)
+Requirement already satisfied: async-timeout&lt;5.0,&gt;=4.0.0a3 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;twint) (4.0.2)
+Requirement already satisfied: aiosignal&gt;=1.1.2 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;twint) (1.2.0)
+Requirement already satisfied: frozenlist&gt;=1.1.1 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;twint) (1.3.1)
+Requirement already satisfied: typing-extensions&gt;=3.7.4 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;twint) (4.1.1)
+Requirement already satisfied: multidict&lt;7.0,&gt;=4.5 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;twint) (6.0.2)
+Requirement already satisfied: charset-normalizer&lt;3.0,&gt;=2.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;twint) (2.1.1)
+Requirement already satisfied: attrs&gt;=17.3.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;twint) (22.1.0)
+Requirement already satisfied: asynctest==0.13.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp-&gt;twint) (0.13.0)
+Requirement already satisfied: idna&gt;=2.0 in /usr/local/lib/python3.7/dist-packages (from yarl&lt;2.0,&gt;=1.0-&gt;aiohttp-&gt;twint) (2.10)
+Requirement already satisfied: elastic-transport&lt;9,&gt;=8 in /usr/local/lib/python3.7/dist-packages (from elasticsearch-&gt;twint) (8.4.0)
+Requirement already satisfied: certifi in /usr/local/lib/python3.7/dist-packages (from elastic-transport&lt;9,&gt;=8-&gt;elasticsearch-&gt;twint) (2022.9.24)
+Requirement already satisfied: urllib3&lt;2,&gt;=1.26.2 in /usr/local/lib/python3.7/dist-packages (from elastic-transport&lt;9,&gt;=8-&gt;elasticsearch-&gt;twint) (1.26.12)
+Requirement already satisfied: geographiclib&lt;2,&gt;=1.49 in /usr/local/lib/python3.7/dist-packages (from geopy-&gt;twint) (1.52)
+Requirement already satisfied: requests in /usr/local/lib/python3.7/dist-packages (from googletransx-&gt;twint) (2.28.1)
+Requirement already satisfied: pytz&gt;=2017.3 in /usr/local/lib/python3.7/dist-packages (from pandas-&gt;twint) (2022.4)
+Requirement already satisfied: numpy&gt;=1.17.3 in /usr/local/lib/python3.7/dist-packages (from pandas-&gt;twint) (1.21.6)
+Requirement already satisfied: python-dateutil&gt;=2.7.3 in /usr/local/lib/python3.7/dist-packages (from pandas-&gt;twint) (2.8.2)
+Requirement already satisfied: six&gt;=1.5 in /usr/local/lib/python3.7/dist-packages (from python-dateutil&gt;=2.7.3-&gt;pandas-&gt;twint) (1.15.0)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip install nest-asyncio
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
+Collecting nest-asyncio
+  Downloading nest_asyncio-1.5.6-py3-none-any.whl (5.2 kB)
+Installing collected packages: nest-asyncio
+Successfully installed nest-asyncio-1.5.6
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip install <span class="nv">aiohttp</span><span class="o">==</span><span class="m">3</span>.7.0
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
+Collecting aiohttp==3.7.0
+  Downloading aiohttp-3.7.0-cp37-cp37m-manylinux2014_x86_64.whl (1.3 MB)
+     |████████████████████████████████| 1.3 MB 35.2 MB/s 
+?25hCollecting async-timeout&lt;4.0,&gt;=3.0
+  Downloading async_timeout-3.0.1-py3-none-any.whl (8.2 kB)
+Requirement already satisfied: multidict&lt;7.0,&gt;=4.5 in /usr/local/lib/python3.7/dist-packages (from aiohttp==3.7.0) (6.0.2)
+Requirement already satisfied: chardet&lt;4.0,&gt;=2.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp==3.7.0) (3.0.4)
+Requirement already satisfied: yarl&lt;2.0,&gt;=1.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp==3.7.0) (1.8.1)
+Requirement already satisfied: attrs&gt;=17.3.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp==3.7.0) (22.1.0)
+Requirement already satisfied: typing-extensions&gt;=3.7.4 in /usr/local/lib/python3.7/dist-packages (from yarl&lt;2.0,&gt;=1.0-&gt;aiohttp==3.7.0) (4.1.1)
+Requirement already satisfied: idna&gt;=2.0 in /usr/local/lib/python3.7/dist-packages (from yarl&lt;2.0,&gt;=1.0-&gt;aiohttp==3.7.0) (2.10)
+Installing collected packages: async-timeout, aiohttp
+  Attempting uninstall: async-timeout
+    Found existing installation: async-timeout 4.0.2
+    Uninstalling async-timeout-4.0.2:
+      Successfully uninstalled async-timeout-4.0.2
+  Attempting uninstall: aiohttp
+    Found existing installation: aiohttp 3.8.3
+    Uninstalling aiohttp-3.8.3:
+      Successfully uninstalled aiohttp-3.8.3
+Successfully installed aiohttp-3.7.0 async-timeout-3.0.1
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">twint</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip install nest_asyncio
+<span class="kn">import</span> <span class="nn">nest_asyncio</span>
+<span class="n">nest_asyncio</span><span class="o">.</span><span class="n">apply</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
+Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.7/dist-packages (1.5.6)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">c</span> <span class="o">=</span> <span class="n">twint</span><span class="o">.</span><span class="n">Config</span><span class="p">()</span>
+<span class="n">c</span><span class="o">.</span><span class="n">Search</span> <span class="o">=</span> <span class="s1">&#39;tragedi kanjuruhan&#39;</span>
+<span class="n">c</span><span class="o">.</span><span class="n">Pandas</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">c</span><span class="o">.</span><span class="n">Limit</span> <span class="o">=</span> <span class="mi">60</span>
+<span class="n">c</span><span class="o">.</span><span class="n">Store_csv</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">c</span><span class="o">.</span><span class="n">Custom</span><span class="p">[</span><span class="s2">&quot;tweet&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;tweet&quot;</span><span class="p">]</span>
+<span class="n">c</span><span class="o">.</span><span class="n">Output</span> <span class="o">=</span> <span class="s2">&quot;dataKanjuruhan.csv&quot;</span>
+<span class="n">twint</span><span class="o">.</span><span class="n">run</span><span class="o">.</span><span class="n">Search</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1580003659358015489 2022-10-12 01:13:22 +0000 &lt;mulyadisulaema4&gt; @detikcom Loncat sana..loncat sini...apah g malu..apah g ada yg mau bertanggung jawab atas tragedi kanjuruhan..
+1580003585450192896 2022-10-12 01:13:04 +0000 &lt;sepakbolajuara&gt; Komisi X DPR RI akan Bentuk Pansus Terkait Tragedi Kanjuruhan, Malang  https://t.co/8F59cQB4Yy  https://t.co/9hJ66E218m
+1580003490524409856 2022-10-12 01:12:41 +0000 &lt;Bintankkuleo&gt; Mengenang sepekan tragedi Kanjuruhan dari Sumenep   https://t.co/hcTH9RBYvO
+1580003233468411904 2022-10-12 01:11:40 +0000 &lt;okezonenews&gt; Pemerintah Pastikan Pengobatan Korban Tragedi Kanjuruhan 100% Gratis #LengkapCepatBeritanya #BeritaTerkini #Berita #News #BeritaNasional .  https://t.co/jph0oYjcg4
+1580003094678495232 2022-10-12 01:11:07 +0000 &lt;tauberitamedia&gt; Markas PSM Makassar terancam tak dapat menggunakan GBH jika PSSI perketat standar Stadion sesuai saran FIFA imbas dari Tragedi Kanjuruhan.  https://t.co/j0ScVsOBHq
+1580003093164408832 2022-10-12 01:11:07 +0000 &lt;tauberitamedia&gt; Kini jumlah korban meninggal dalam Tragedi Kanjuruhan menjadi 132 orang, Komnas HAM membeberkan temuannya soal penyebab utama. -    https://t.co/dahCx1qPhE
+1580003057374355456 2022-10-12 01:10:58 +0000 &lt;FaisalA55496673&gt; Alvin Lim Curiga Tragedi Kanjuruhan Disengaja demi Balas Jasa ke Ferdy Sambo: Gak Sangka Korban Banyak  https://t.co/OvKXIspw4Y
+1580003033291067392 2022-10-12 01:10:52 +0000 &lt;CNNIndonesia&gt; Dua Poin Gelap Tragedi Kanjuruhan yang Disorot TGIPF  https://t.co/tD0MK8gvsg
+1580003003595051008 2022-10-12 01:10:45 +0000 &lt;adityanovrian_&gt; Tiga hari bertemu korban tragedi Kanjuruhan. Sama seperti saya, mereka heran mengapa aparat keamanan tega menembakkan gas air mata ke arah tribun. Di sisi lain pintu gate 13 dikunci rapat dan menjadi “kuburan”. Kini korban trauma. Enam tersangka tak cukup.   Usut sampai Tuntas!  https://t.co/73b03EdqnL
+1580002964638355456 2022-10-12 01:10:36 +0000 &lt;hamidahzahra&gt; Ada 132 nyawa melayang, apa dianggap angin lalu?.  https://t.co/Ux3wVgaPcx  Dua dari 6 tersangka Tragedi Kanjuruhan telah menjalani pemeriksaan selama 12 jam di Mapolda Jatim. Penyidik memutuskan tidak menahan AH dan SS.
+1580002870178418688 2022-10-12 01:10:13 +0000 &lt;priboemijakarta&gt; @pejuangdolars all yg terlibat tragedi kanjuruhan pada cuci tangan tidak aneh saling lempar tanggung jawab
+1580002639881932801 2022-10-12 01:09:19 +0000 &lt;Red_GlobalNews&gt; Tragedi Kanjuruhan: Bertambah Satu Orang, Jadi Total 132 Korban Jiwa  https://t.co/D6Z1ISAAsu
+1580002486156337153 2022-10-12 01:08:42 +0000 &lt;Khojan7&gt; @VIVAcoid Sudahlah pak @ListyoSigitP si ade armando krangkeng saja,memperkeruh suasana.  Rakyat cari kerja udah susah malah timbul tragedi kanjuruhan,orang pengangguran gampang emosi,jangan gara2 1 provokator indonesia jd chaos. Gara2 1 orang picu masa ngamuk,polisi kalang kabut lagi.
+1580002469916311553 2022-10-12 01:08:38 +0000 &lt;VIVAcoid&gt; Hari Ini Dirut LIB dan 3 Polisi Tersangka Tragedi Kanjuruhan Diperiksa  https://t.co/UEpmdhMBeH  https://t.co/7n9ubN5VLI
+1580002445723213824 2022-10-12 01:08:32 +0000 &lt;robbysunata&gt; Rekonstruksi tragedi Kanjuruhan nanti 40rb anggota polri dan bhayangkari di masukkan dalam stadion, pintunya dikunci, lalu ditembakkan gas air mata sesuai jumlah yg ada di video2, saya rasa rekonstruksi akan berjalan aman dan tidak mematikan.
+1580002027006230528 2022-10-12 01:06:52 +0000 &lt;NanaNena88&gt; Shambo happy kali ye kasus nya ketutup sama tragedi kanjuruhan!!
+1580001490345005056 2022-10-12 01:04:44 +0000 &lt;geloraco&gt; Bela Habis Anak Kaisar Sambo, Tragedi Kanjuruhan 33 Anak Tewas! Kak Seto Kemana?  https://t.co/tpFzDuegSl
+1580001060323745792 2022-10-12 01:03:02 +0000 &lt;bb_sports_id&gt; Diperiksa Lagi di Tragedi Kanjuruhan, Panpel Arema FC Abdul Haris: Kita Taat Hukum  https://t.co/SzpOUH3AWn baca juga berita dari media lainnya di Indonesia di  https://t.co/GkwQxScnBB   #malang #tersangka #arema #jawatimur #tragedikanjuruhan #vivabola #aremafc
+1580001021572415489 2022-10-12 01:02:53 +0000 &lt;gunawansewang&gt; @Jokowi @mohmahfudmd   132 Nyawa saudara kita Meninggal dalam tragedi Stadion KANJURUHAN Sdh ada tersangka kita lihat nanti @KejaksaanRI  dan @MahkamahAgung bagaimana mereka menuntut dan memvonis apa lebih rendah dari Pelanggaran Prokes. Kalo itu terjadi Negara ini Negara MAFIA!
+1580001007706275840 2022-10-12 01:02:49 +0000 &lt;IndosiarTV&gt; TGIPF Tragedi Kanjuruhan Panggil Sejumlah Pihak untuk Klarifikasi | Fokus Sejumlah pihak dipanggil TGIPF tragedi Kanjuruhan untuk memberikan klarifikasi di Kantor Kemenko Polhukam Jakarta pada ... @IndosiarTV  https://t.co/hzfb0Ggqvt
+1580000953511514112 2022-10-12 01:02:36 +0000 &lt;FaisalA55496673&gt; Rocky Gerung Heran Jokowi Salahkan Pintu dan Tangga di Tragedi Kanjuruhan: Kan Kepanikan Datangnya dari Gas Air Mata..  https://t.co/414FNRvzZ6
+1580000911744585728 2022-10-12 01:02:27 +0000 &lt;HestiBambang&gt; Akar masalah Tragedi Kanjuruhan ialah Kebutuhan Hidup Layak yg blm tercukupi, shg org mdh marah &amp;amp; beringas. Pemerintah &amp;amp; DPR blm mampu tetapkan UMN setara KHL/PTKP Rp 4,5 jt/bln, padahal dahsyat dampaknya. PPh melejit puluhan jt WP, APBN kuat dukung Subsidi, Rakyat lbh &quot;Sareh&quot;.
+1580000834611396608 2022-10-12 01:02:08 +0000 &lt;messiah1901&gt; @TirtoID Menurut polisi tragedi kanjuruhan adalah takdir dari Tuhan
+1580000786246877184 2022-10-12 01:01:57 +0000 &lt;mapaybandungcom&gt; Investigasi Tragedi Kanjuruhan Selesai Lebih Cepat, TGIPF Akan Laporkan ke Jokowi Hari Jumat  https://t.co/DWqcOXsNCM
+1580000421904453632 2022-10-12 01:00:30 +0000 &lt;FaisalA55496673&gt; BGM KLAU POLISI DAN KLGNYA DIBANTAI BEGI NI?APA MEREKA MAU TER IMA?.                               Polisi Sebut Penggunaan Gas Air Mata di Tragedi Kanjuruhan Sudah Sesuai Prosedur, Rocky Gerung: Bunuh, Investigasi, Ngarang  https://t.co/ASLiMwfP3R
+1580000328203661312 2022-10-12 01:00:07 +0000 &lt;floresterkini&gt; Tim FIFA ke Indonesia, Bahas Tragedi Kanjuruhan dan Sanksi untuk Indonesia?  https://t.co/aWHirs5xGM
+1580000319450202112 2022-10-12 01:00:05 +0000 &lt;Genpi_Co&gt; Kejadian pilu Tragedi Kanjuruhan telah menyita perhatian dunia. Muncul kekhawatiran peristiwa tersebut berpengaruh pada status tuan rumah Piala Dunia U-20 2023. #PialaDuniaU-20  https://t.co/RBpdvZMlMR
+1580000303092535298 2022-10-12 01:00:01 +0000 &lt;holopiscom&gt; Menko Polhukam @mohmahfudmd menyatakan bahwa kerja TGIPF hampir rampung.  Mahfud bahkan mengatakan, TGIPF telah selesai menarik keterangan dari berbagai pihak dan akan segera menyerahkan laporan ke Presiden Jokowi pada Jumat depan. #TragediKanjuruhan   https://t.co/GRwVcCJ1AX
+1580000274520805377 2022-10-12 00:59:55 +0000 &lt;dilalerrrin&gt;  https://t.co/geXwjVZ9wR  *Ini dia sosok yang bertanggungjawab atas Tragedi Kanjuruhan. Kali Pertama muncul di depan awak media setelah menjadi tersangka. Apa yang dikatakannya? Baca cerita selengkapnya di sini, kemudian LIKE &amp;amp; SHARE. Terima kasih*🙏🏻🙏🏻🙏🏻🙏🏻🇮🇩
+1580000225330024449 2022-10-12 00:59:43 +0000 &lt;gwhaybro&gt; Korban Tragedi Bertambah satu seorang wanita muda…   https://t.co/u5xQ0HzaK0  #tunangan #KanjuruhanDisaster  #TragediKanjuruhan  #KanjuruhanBerdukaCita  #aremania  #aremaniaberduka  #KanjuruhanStadium
+1580000070329516033 2022-10-12 00:59:06 +0000 &lt;floresterkini&gt; Tragedi Kanjuruhan: Pemerintah Indonesia Waspadai Sanksi FIFA, Memori 2015 Bakal Terulang?  https://t.co/tTZNPchOBL
+1579999823343849472 2022-10-12 00:58:07 +0000 &lt;detikcom&gt; Anggota Komisi III DPR RI Fraksi PPP Arsul Sani menilai tragedi Kanjuruhan bukan penyebab Irjen Nico dimutasi.  https://t.co/FgRCbFbxIW
+1579999786618728448 2022-10-12 00:57:58 +0000 &lt;floresterkini&gt; Imbas Tragedi Kanjuruhan, Piala Dunia U20 Tahun 2023 Batal Digelar di Indonesia?  https://t.co/wbkJjHONRf
+1579999585933598720 2022-10-12 00:57:10 +0000 &lt;heraldindo&gt; Ternyata penonton di stadion Kanjuruhan pada hari nahas itu, melebihi kuota. Panitia pelaksana (Panpel) pertandingan Arema FC vs Persebaya blak-blakan terkait itu. #Kanjuruhan #TragediKanjuruhan  https://t.co/JBhpCNjQEw
+1579999553670946818 2022-10-12 00:57:03 +0000 &lt;tauberitamedia&gt; Anggota Komisi III DPR RI Fraksi PPP Arsul Sani menilai tragedi Kanjuruhan bukan penyebab Irjen Nico dimutasi.  https://t.co/yYEhqIzOOb
+1579999431206002689 2022-10-12 00:56:34 +0000 &lt;VIVAbola&gt; Diperiksa Lagi di Tragedi Kanjuruhan, Panpel Arema FC Abdul Haris: Kita Taat Hukum  https://t.co/pp8o1WGVYf
+1579999330504626176 2022-10-12 00:56:10 +0000 &lt;farrel27&gt; Keberhasilan Menteri BUMN @erickthohir yang berperan besar menyelamatkan sepakbola Indinesia pasca tragedi Kanjuruhan mendapat apresiasi dari berbagai kalangan, tidak terkecuali dari para kelompok suporter. #BangkitBersamaET  https://t.co/w1mfzh4Ej8
+1579999101168586754 2022-10-12 00:55:15 +0000 &lt;koma_id&gt; Laporan TGIPF Tragedi Kanjuruhan Sudah Siap di Meja Presiden Jumat Besok  https://t.co/xdcalwY28w
+1579998905936117760 2022-10-12 00:54:28 +0000 &lt;el_meller&gt; @Robbi_07 @Irwandwinugroho @detikcom Berarti LIB terlalu rakus sehingga tidak memperdulikan kepentingan klub dan keselamatan suporter. Apalagi dana yg diteruskan klub nilainya juga kecil. Tapi, gobloknya klub juga manut2 saja. Lihat, sekarang berapa gelintir klub yg bersuara tegas pasca tragedi kanjuruhan?
+1579998777922179072 2022-10-12 00:53:58 +0000 &lt;TirtoID&gt; Pernyataan Polri soal gas air mata bukanlah penyebab utama kematian ratusan orang dalam tragedi Kanjuruhan menuai kritik. Kepolisian dinilai tengah menolak konsep kausalitas dalam tragedi Kanjuruhan.   https://t.co/nt22LQPL8E
+1579998711060475904 2022-10-12 00:53:42 +0000 &lt;wiiwiie11&gt; @siapkawalpolri Kapolri @ListyoSigitP langsung sat set dlm menangani tragedi Kanjuruhan kemrin. Smoga Polri bisa menyelesaikan kasus ini dengan adil dan cepat
+1579998652973678593 2022-10-12 00:53:28 +0000 &lt;detikcom&gt; Aremania akhirnya melaporkan Ade Armano usai ujarannya bahwa Aremania Sok Jago dan bersikap seperti preman dalam tragedi Kanjuruhan.  via @detik_jatim  https://t.co/FrqcgjYHBM
+1579998352867229697 2022-10-12 00:52:16 +0000 &lt;kompascom&gt; Naswa, korban selamat tragedi Kanjuruhan mengaku masih sulit menggerakan tangan dan kakinya. Matanya pun masih merah terkena gas air mata.  https://t.co/WAOkWDDaHn
+1579998199708024832 2022-10-12 00:51:40 +0000 &lt;lalisaa_fans&gt; Masih Dalam Berduka BLINK INDONESIA melakukan penggalangan dana untuk korban dan keluarga korban Tragedi Kanjuruhan Malang. Donasi dapat disampaikan melalui link berikut.   https://t.co/XzzP0THYyU  Terima kasih atas kebaikan teman-teman semua. Duka ini, duka kita bersama🥀  https://t.co/Ap7MlQmuBR
+1579998138873835524 2022-10-12 00:51:25 +0000 &lt;WidyanaHilda&gt; AKBP Putu Ungkap Penyebab Kematian Helen, Korban Meninggal ke-132 di Tragedi Kanjuruhan  https://t.co/CtNdzWWMUV  https://t.co/zXvgKt4Zoy
+1579997596319305728 2022-10-12 00:49:16 +0000 &lt;roudytoop&gt; Polri menegaskan gas air mata, termasuk yang digunakan anggotanya dalam tragedi Kanjuruhan, tidak mematikan. Polri menjelaskan pendapat itu dikeluarkan oleh pakar-pakar racun dan gas air mata.  https://t.co/LfkMZCf8NX.  https://t.co/fCdEccXYCi
+1579997543840509952 2022-10-12 00:49:04 +0000 &lt;MafiaWasit&gt; Disaat kita sedang fokus #USUTTUNTAS Tragedi Kanjuruhan, bahkan Pak Jokowi saja sampai ikut turun tangan menyelesaikan sistem bobrok persepakbolaan Indonesia! Lu malah bahas UCL?  NURANI LU GA ADA BABAR BLAS..   TAK DOAKAN KOWE ANYANG-ANYANGEN SEMINGGU!  https://t.co/WD20hZXpLI
+1579997523531399168 2022-10-12 00:48:59 +0000 &lt;PortalSDAdotcom&gt; Polisi Tak Menahan Tersangka Tragedi Kanjuruhan Malang  https://t.co/I3Nf7QImVa
+1579997284292788224 2022-10-12 00:48:02 +0000 &lt;RMOLJatim_id&gt; Soal Gas Air Mata Kadaluarsa Tragedi Kanjuruhan, Mahfud MD: Sedang Diperiksa di Laboratorium: Polri telah mengakui kalau gas air mata yang dipakai saat mengamankan laga Arema Vs Persebaya di Stadion Kanjuruhan, Malang telah kadaluarsa.  baca selengkapnya…  https://t.co/M2JF7QReQG
+1579997200444436482 2022-10-12 00:47:42 +0000 &lt;geloraco&gt; Panpel Arema FC Terang-terangan Sebut Nama Ketua PSSI untuk Diseret Jadi Tersangka Tragedi Kanjuruhan  https://t.co/7dwumIMA7X
+1579997068390674432 2022-10-12 00:47:10 +0000 &lt;magelangbike&gt; @FeryNdut1 Pagi tadi baca @LaporMonggo ada bbrp laporan ttg vandalisme, yg terakhir ttg rambu &amp;amp; halte ditempeli pamlet ... Sungguh disayangkan, solidaritas tragedi kanjuruhan tp nempel di rambu LL, bisa timbul bencana (Laka LL) jika rambu tertutup/terhalang dr pandangan.
+1579996990036795398 2022-10-12 00:46:52 +0000 &lt;poncemarince&gt; Tau ga..kasus sambo hanya kalah oleh berita  KDRT Lesti Billard dan tragedi kanjuruhan. Manakah yang di setting oleh isilop?
+1579996906058813441 2022-10-12 00:46:31 +0000 &lt;detik_jatim&gt; 3 Polisi Tersangka Tragedi Kanjuruhan Diperiksa Siang Ini di Polda Jatim  https://t.co/fO03aA0Emy
+1579996863146737664 2022-10-12 00:46:21 +0000 &lt;detikcom&gt; Tiga polisi tersangka tragedi Kanjuruhan diperiksa di Polda Jatim siang ini. Sebelumnya mereka meminta pemeriksaan ditunda untuk menyiapkan penasihat hukum.  https://t.co/GabO0FsJUN
+1579996364540215296 2022-10-12 00:44:22 +0000 &lt;saeed81012275&gt; Effect Tragedi Kanjuruhan   Effect tragedi kanjuruhan  akan berpengaruh untuk suara pemilih lari ke anies di jatim bila casenya merugikan korban,kata kawan saya😀✌
+1579996340968247296 2022-10-12 00:44:17 +0000 &lt;ArekMalangFC&gt; Kasus Sambo setelah Tragedi Kanjuruhan sampai mana ya? #UsutTuntas
+1579996282294534145 2022-10-12 00:44:03 +0000 &lt;tauberitamedia&gt; Komnas HAM akan menyampaikan hasil investigasinya atas tragedi Kanjuruhan kepada publik, hari ini Rabu (12/10/2022) siang. -    https://t.co/O6eFLMAcVg
+1579996280977514496 2022-10-12 00:44:02 +0000 &lt;tauberitamedia&gt; PSM Makassar menjadi tim yang tetap intens menggelar latihan meski Liga 1 dihentikan sementara imbas Tragedi Kanjuruhan.  https://t.co/qiXGqdliUo
+1579996279265894403 2022-10-12 00:44:02 +0000 &lt;tauberitamedia&gt; Tiga polisi tersangka tragedi Kanjuruhan diperiksa di Polda Jatim siang ini. Sebelumnya mereka meminta pemeriksaan ditunda untuk menyiapkan penasihat hukum.  https://t.co/UCVktO2WPx
+1579995944405282819 2022-10-12 00:42:42 +0000 &lt;most1058&gt; Korban meninggal dunia dalam tragedi Kanjuruhan bertambah satu orang, sehingga totalnya menjadi 132 orang. Menurut salah satu dokter RSSA, dr. Arie Zainul Fatoni, korban wanita bernama Helen Prisela ini meninggal dunia karena mengalami gagal napas akut. #MostUpdate1058
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;dataKanjuruhan.csv&#39;</span><span class="p">)</span>
+<span class="n">data</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-ccc4f60b-fa40-4f6c-ae77-e13ae2e5c8fd">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>tweet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>@detikcom Loncat sana..loncat sini...apah g ma...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Komisi X DPR RI akan Bentuk Pansus Terkait Tra...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Mengenang sepekan tragedi Kanjuruhan dari Sume...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Pemerintah Pastikan Pengobatan Korban Tragedi ...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Markas PSM Makassar terancam tak dapat menggun...</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Kini jumlah korban meninggal dalam Tragedi Kan...</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Alvin Lim Curiga Tragedi Kanjuruhan Disengaja ...</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Dua Poin Gelap Tragedi Kanjuruhan yang Disorot...</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Tiga hari bertemu korban tragedi Kanjuruhan. S...</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Ada 132 nyawa melayang, apa dianggap angin lal...</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>@pejuangdolars all yg terlibat tragedi kanjuru...</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Tragedi Kanjuruhan: Bertambah Satu Orang, Jadi...</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>@VIVAcoid Sudahlah pak @ListyoSigitP si ade ar...</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Hari Ini Dirut LIB dan 3 Polisi Tersangka Trag...</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>Rekonstruksi tragedi Kanjuruhan nanti 40rb ang...</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>Shambo happy kali ye kasus nya ketutup sama tr...</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>Bela Habis Anak Kaisar Sambo, Tragedi Kanjuruh...</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>Diperiksa Lagi di Tragedi Kanjuruhan, Panpel A...</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>@Jokowi @mohmahfudmd   132 Nyawa saudara kita ...</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>TGIPF Tragedi Kanjuruhan Panggil Sejumlah Piha...</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>Rocky Gerung Heran Jokowi Salahkan Pintu dan T...</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>Akar masalah Tragedi Kanjuruhan ialah Kebutuha...</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>@TirtoID Menurut polisi tragedi kanjuruhan ada...</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>Investigasi Tragedi Kanjuruhan Selesai Lebih C...</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>BGM KLAU POLISI DAN KLGNYA DIBANTAI BEGI NI?AP...</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>Tim FIFA ke Indonesia, Bahas Tragedi Kanjuruha...</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>Kejadian pilu Tragedi Kanjuruhan telah menyita...</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>Menko Polhukam @mohmahfudmd menyatakan bahwa k...</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>https://t.co/geXwjVZ9wR  *Ini dia sosok yang ...</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>Korban Tragedi Bertambah satu seorang wanita m...</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>Tragedi Kanjuruhan: Pemerintah Indonesia Waspa...</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>Anggota Komisi III DPR RI Fraksi PPP Arsul San...</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>Imbas Tragedi Kanjuruhan, Piala Dunia U20 Tahu...</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>Ternyata penonton di stadion Kanjuruhan pada h...</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>Anggota Komisi III DPR RI Fraksi PPP Arsul San...</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>Diperiksa Lagi di Tragedi Kanjuruhan, Panpel A...</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>Keberhasilan Menteri BUMN @erickthohir yang be...</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>Laporan TGIPF Tragedi Kanjuruhan Sudah Siap di...</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>@Robbi_07 @Irwandwinugroho @detikcom Berarti L...</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>Pernyataan Polri soal gas air mata bukanlah pe...</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>@siapkawalpolri Kapolri @ListyoSigitP langsung...</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>Aremania akhirnya melaporkan Ade Armano usai u...</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>Naswa, korban selamat tragedi Kanjuruhan menga...</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>Masih Dalam Berduka BLINK INDONESIA melakukan ...</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>AKBP Putu Ungkap Penyebab Kematian Helen, Korb...</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>Polri menegaskan gas air mata, termasuk yang d...</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>Disaat kita sedang fokus #USUTTUNTAS Tragedi K...</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>Polisi Tak Menahan Tersangka Tragedi Kanjuruha...</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>Soal Gas Air Mata Kadaluarsa Tragedi Kanjuruha...</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>Panpel Arema FC Terang-terangan Sebut Nama Ket...</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>@FeryNdut1 Pagi tadi baca @LaporMonggo ada bbr...</td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>Tau ga..kasus sambo hanya kalah oleh berita  K...</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>3 Polisi Tersangka Tragedi Kanjuruhan Diperiks...</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>Tiga polisi tersangka tragedi Kanjuruhan diper...</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>Effect Tragedi Kanjuruhan   Effect tragedi kan...</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>Kasus Sambo setelah Tragedi Kanjuruhan sampai ...</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>Komnas HAM akan menyampaikan hasil investigasi...</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>PSM Makassar menjadi tim yang tetap intens men...</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>Tiga polisi tersangka tragedi Kanjuruhan diper...</td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>Korban meninggal dunia dalam tragedi Kanjuruha...</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-ccc4f60b-fa40-4f6c-ae77-e13ae2e5c8fd')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-ccc4f60b-fa40-4f6c-ae77-e13ae2e5c8fd button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-ccc4f60b-fa40-4f6c-ae77-e13ae2e5c8fd');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">TfidfTransformer</span><span class="p">,</span> <span class="n">TfidfVectorizer</span><span class="p">,</span> <span class="n">CountVectorizer</span>
+<span class="n">dataTextPre</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;dataKanjuruhan.csv&#39;</span><span class="p">)</span>
+<span class="n">vectorizer</span> <span class="o">=</span> <span class="n">CountVectorizer</span><span class="p">(</span><span class="n">min_df</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">bag</span> <span class="o">=</span> <span class="n">vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">dataTextPre</span><span class="p">[</span><span class="s1">&#39;tweet&#39;</span><span class="p">])</span>
+<span class="n">dataTextPre</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-ffb87a9f-6711-41c3-a446-11a800ccf5d5">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>tweet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>@detikcom Loncat sana..loncat sini...apah g ma...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Komisi X DPR RI akan Bentuk Pansus Terkait Tra...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Mengenang sepekan tragedi Kanjuruhan dari Sume...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Pemerintah Pastikan Pengobatan Korban Tragedi ...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Markas PSM Makassar terancam tak dapat menggun...</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Kini jumlah korban meninggal dalam Tragedi Kan...</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Alvin Lim Curiga Tragedi Kanjuruhan Disengaja ...</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Dua Poin Gelap Tragedi Kanjuruhan yang Disorot...</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Tiga hari bertemu korban tragedi Kanjuruhan. S...</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Ada 132 nyawa melayang, apa dianggap angin lal...</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>@pejuangdolars all yg terlibat tragedi kanjuru...</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Tragedi Kanjuruhan: Bertambah Satu Orang, Jadi...</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>@VIVAcoid Sudahlah pak @ListyoSigitP si ade ar...</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Hari Ini Dirut LIB dan 3 Polisi Tersangka Trag...</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>Rekonstruksi tragedi Kanjuruhan nanti 40rb ang...</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>Shambo happy kali ye kasus nya ketutup sama tr...</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>Bela Habis Anak Kaisar Sambo, Tragedi Kanjuruh...</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>Diperiksa Lagi di Tragedi Kanjuruhan, Panpel A...</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>@Jokowi @mohmahfudmd   132 Nyawa saudara kita ...</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>TGIPF Tragedi Kanjuruhan Panggil Sejumlah Piha...</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>Rocky Gerung Heran Jokowi Salahkan Pintu dan T...</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>Akar masalah Tragedi Kanjuruhan ialah Kebutuha...</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>@TirtoID Menurut polisi tragedi kanjuruhan ada...</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>Investigasi Tragedi Kanjuruhan Selesai Lebih C...</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>BGM KLAU POLISI DAN KLGNYA DIBANTAI BEGI NI?AP...</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>Tim FIFA ke Indonesia, Bahas Tragedi Kanjuruha...</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>Kejadian pilu Tragedi Kanjuruhan telah menyita...</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>Menko Polhukam @mohmahfudmd menyatakan bahwa k...</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>https://t.co/geXwjVZ9wR  *Ini dia sosok yang ...</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>Korban Tragedi Bertambah satu seorang wanita m...</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>Tragedi Kanjuruhan: Pemerintah Indonesia Waspa...</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>Anggota Komisi III DPR RI Fraksi PPP Arsul San...</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>Imbas Tragedi Kanjuruhan, Piala Dunia U20 Tahu...</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>Ternyata penonton di stadion Kanjuruhan pada h...</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>Anggota Komisi III DPR RI Fraksi PPP Arsul San...</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>Diperiksa Lagi di Tragedi Kanjuruhan, Panpel A...</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>Keberhasilan Menteri BUMN @erickthohir yang be...</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>Laporan TGIPF Tragedi Kanjuruhan Sudah Siap di...</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>@Robbi_07 @Irwandwinugroho @detikcom Berarti L...</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>Pernyataan Polri soal gas air mata bukanlah pe...</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>@siapkawalpolri Kapolri @ListyoSigitP langsung...</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>Aremania akhirnya melaporkan Ade Armano usai u...</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>Naswa, korban selamat tragedi Kanjuruhan menga...</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>Masih Dalam Berduka BLINK INDONESIA melakukan ...</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>AKBP Putu Ungkap Penyebab Kematian Helen, Korb...</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>Polri menegaskan gas air mata, termasuk yang d...</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>Disaat kita sedang fokus #USUTTUNTAS Tragedi K...</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>Polisi Tak Menahan Tersangka Tragedi Kanjuruha...</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>Soal Gas Air Mata Kadaluarsa Tragedi Kanjuruha...</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>Panpel Arema FC Terang-terangan Sebut Nama Ket...</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>@FeryNdut1 Pagi tadi baca @LaporMonggo ada bbr...</td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>Tau ga..kasus sambo hanya kalah oleh berita  K...</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>3 Polisi Tersangka Tragedi Kanjuruhan Diperiks...</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>Tiga polisi tersangka tragedi Kanjuruhan diper...</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>Effect Tragedi Kanjuruhan   Effect tragedi kan...</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>Kasus Sambo setelah Tragedi Kanjuruhan sampai ...</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>Komnas HAM akan menyampaikan hasil investigasi...</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>PSM Makassar menjadi tim yang tetap intens men...</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>Tiga polisi tersangka tragedi Kanjuruhan diper...</td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>Korban meninggal dunia dalam tragedi Kanjuruha...</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-ffb87a9f-6711-41c3-a446-11a800ccf5d5')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-ffb87a9f-6711-41c3-a446-11a800ccf5d5 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-ffb87a9f-6711-41c3-a446-11a800ccf5d5');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">matrik_vsm</span><span class="o">=</span><span class="n">bag</span><span class="o">.</span><span class="n">toarray</span><span class="p">()</span>
+<span class="n">matrik_vsm</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(60, 719)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">matrik_vsm</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0])
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span><span class="o">=</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">get_feature_names</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/deprecation.py:87: FutureWarning: Function get_feature_names is deprecated; get_feature_names is deprecated in 1.0 and will be removed in 1.2. Please use get_feature_names_out instead.
+  warnings.warn(msg, category=FutureWarning)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.cluster</span> <span class="kn">import</span> <span class="n">KMeans</span>
+<span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">TruncatedSVD</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataTF</span> <span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">matrik_vsm</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">matrik_vsm</span><span class="p">[:,</span><span class="mi">1</span><span class="p">])</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="p">)),</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="n">a</span><span class="p">])</span>
+<span class="n">dataTF</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-ba570caa-3890-4864-8952-1ddbf706799b">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead tr th {
+        text-align: left;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th>10</th>
+      <th>100</th>
+      <th>12</th>
+      <th>13</th>
+      <th>132</th>
+      <th>20</th>
+      <th>2015</th>
+      <th>2022</th>
+      <th>2023</th>
+      <th>33</th>
+      <th>...</th>
+      <th>wp</th>
+      <th>xdcalwy28w</th>
+      <th>xzzp0thyyu</th>
+      <th>ya</th>
+      <th>yang</th>
+      <th>ye</th>
+      <th>yg</th>
+      <th>yyehqizoob</th>
+      <th>zainul</th>
+      <th>zxvgkt4zoy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>60</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+<p>60 rows × 719 columns</p>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-ba570caa-3890-4864-8952-1ddbf706799b')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-ba570caa-3890-4864-8952-1ddbf706799b button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-ba570caa-3890-4864-8952-1ddbf706799b');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">label</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;dataKanjuruhan.csv&#39;</span><span class="p">)</span>
+<span class="n">dj</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">dataTF</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(),</span> <span class="n">label</span><span class="p">[</span><span class="s2">&quot;tweet&quot;</span><span class="p">]],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">dj</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-6ea3e2bf-5717-490f-bb51-6c2d3d478b69">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>(index,)</th>
+      <th>(10,)</th>
+      <th>(100,)</th>
+      <th>(12,)</th>
+      <th>(13,)</th>
+      <th>(132,)</th>
+      <th>(20,)</th>
+      <th>(2015,)</th>
+      <th>(2022,)</th>
+      <th>(2023,)</th>
+      <th>...</th>
+      <th>(xdcalwy28w,)</th>
+      <th>(xzzp0thyyu,)</th>
+      <th>(ya,)</th>
+      <th>(yang,)</th>
+      <th>(ye,)</th>
+      <th>(yg,)</th>
+      <th>(yyehqizoob,)</th>
+      <th>(zainul,)</th>
+      <th>(zxvgkt4zoy,)</th>
+      <th>tweet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>@detikcom Loncat sana..loncat sini...apah g ma...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Komisi X DPR RI akan Bentuk Pansus Terkait Tra...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Mengenang sepekan tragedi Kanjuruhan dari Sume...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Pemerintah Pastikan Pengobatan Korban Tragedi ...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Markas PSM Makassar terancam tak dapat menggun...</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Kini jumlah korban meninggal dalam Tragedi Kan...</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>7</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Alvin Lim Curiga Tragedi Kanjuruhan Disengaja ...</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>8</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Dua Poin Gelap Tragedi Kanjuruhan yang Disorot...</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>9</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Tiga hari bertemu korban tragedi Kanjuruhan. S...</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>10</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Ada 132 nyawa melayang, apa dianggap angin lal...</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>11</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>@pejuangdolars all yg terlibat tragedi kanjuru...</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>12</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Tragedi Kanjuruhan: Bertambah Satu Orang, Jadi...</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>13</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>@VIVAcoid Sudahlah pak @ListyoSigitP si ade ar...</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>14</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Hari Ini Dirut LIB dan 3 Polisi Tersangka Trag...</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>15</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Rekonstruksi tragedi Kanjuruhan nanti 40rb ang...</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>16</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Shambo happy kali ye kasus nya ketutup sama tr...</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>17</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Bela Habis Anak Kaisar Sambo, Tragedi Kanjuruh...</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>18</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Diperiksa Lagi di Tragedi Kanjuruhan, Panpel A...</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>19</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>@Jokowi @mohmahfudmd   132 Nyawa saudara kita ...</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>20</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>TGIPF Tragedi Kanjuruhan Panggil Sejumlah Piha...</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>21</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Rocky Gerung Heran Jokowi Salahkan Pintu dan T...</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>22</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Akar masalah Tragedi Kanjuruhan ialah Kebutuha...</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>23</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>@TirtoID Menurut polisi tragedi kanjuruhan ada...</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>24</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Investigasi Tragedi Kanjuruhan Selesai Lebih C...</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>25</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>BGM KLAU POLISI DAN KLGNYA DIBANTAI BEGI NI?AP...</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>26</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Tim FIFA ke Indonesia, Bahas Tragedi Kanjuruha...</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>27</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Kejadian pilu Tragedi Kanjuruhan telah menyita...</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>28</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Menko Polhukam @mohmahfudmd menyatakan bahwa k...</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>29</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>https://t.co/geXwjVZ9wR  *Ini dia sosok yang ...</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>30</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Korban Tragedi Bertambah satu seorang wanita m...</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>31</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Tragedi Kanjuruhan: Pemerintah Indonesia Waspa...</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>32</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Anggota Komisi III DPR RI Fraksi PPP Arsul San...</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>33</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Imbas Tragedi Kanjuruhan, Piala Dunia U20 Tahu...</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>34</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Ternyata penonton di stadion Kanjuruhan pada h...</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>35</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Anggota Komisi III DPR RI Fraksi PPP Arsul San...</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>36</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Diperiksa Lagi di Tragedi Kanjuruhan, Panpel A...</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>37</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Keberhasilan Menteri BUMN @erickthohir yang be...</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Laporan TGIPF Tragedi Kanjuruhan Sudah Siap di...</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>39</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>@Robbi_07 @Irwandwinugroho @detikcom Berarti L...</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>40</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Pernyataan Polri soal gas air mata bukanlah pe...</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>41</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>@siapkawalpolri Kapolri @ListyoSigitP langsung...</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>42</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Aremania akhirnya melaporkan Ade Armano usai u...</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>43</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Naswa, korban selamat tragedi Kanjuruhan menga...</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>44</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Masih Dalam Berduka BLINK INDONESIA melakukan ...</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>45</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>AKBP Putu Ungkap Penyebab Kematian Helen, Korb...</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>46</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Polri menegaskan gas air mata, termasuk yang d...</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>47</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Disaat kita sedang fokus #USUTTUNTAS Tragedi K...</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>48</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Polisi Tak Menahan Tersangka Tragedi Kanjuruha...</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>49</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Soal Gas Air Mata Kadaluarsa Tragedi Kanjuruha...</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>50</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Panpel Arema FC Terang-terangan Sebut Nama Ket...</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>51</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>@FeryNdut1 Pagi tadi baca @LaporMonggo ada bbr...</td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>52</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Tau ga..kasus sambo hanya kalah oleh berita  K...</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>53</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3 Polisi Tersangka Tragedi Kanjuruhan Diperiks...</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>54</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Tiga polisi tersangka tragedi Kanjuruhan diper...</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>55</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Effect Tragedi Kanjuruhan   Effect tragedi kan...</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>56</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Kasus Sambo setelah Tragedi Kanjuruhan sampai ...</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>57</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Komnas HAM akan menyampaikan hasil investigasi...</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>58</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>PSM Makassar menjadi tim yang tetap intens men...</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>59</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Tiga polisi tersangka tragedi Kanjuruhan diper...</td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>60</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>Korban meninggal dunia dalam tragedi Kanjuruha...</td>
+    </tr>
+  </tbody>
+</table>
+<p>60 rows × 721 columns</p>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-6ea3e2bf-5717-490f-bb51-6c2d3d478b69')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-6ea3e2bf-5717-490f-bb51-6c2d3d478b69 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-6ea3e2bf-5717-490f-bb51-6c2d3d478b69');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dj</span><span class="p">[</span><span class="s1">&#39;tweet&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([&#39;@detikcom Loncat sana..loncat sini...apah g malu..apah g ada yg mau bertanggung jawab atas tragedi kanjuruhan..&#39;,
+       &#39;Komisi X DPR RI akan Bentuk Pansus Terkait Tragedi Kanjuruhan, Malang  https://t.co/8F59cQB4Yy  https://t.co/9hJ66E218m&#39;,
+       &#39;Mengenang sepekan tragedi Kanjuruhan dari Sumenep   https://t.co/hcTH9RBYvO&#39;,
+       &#39;Pemerintah Pastikan Pengobatan Korban Tragedi Kanjuruhan 100% Gratis #LengkapCepatBeritanya #BeritaTerkini #Berita #News #BeritaNasional .  https://t.co/jph0oYjcg4&#39;,
+       &#39;Markas PSM Makassar terancam tak dapat menggunakan GBH jika PSSI perketat standar Stadion sesuai saran FIFA imbas dari Tragedi Kanjuruhan.  https://t.co/j0ScVsOBHq&#39;,
+       &#39;Kini jumlah korban meninggal dalam Tragedi Kanjuruhan menjadi 132 orang, Komnas HAM membeberkan temuannya soal penyebab utama. -    https://t.co/dahCx1qPhE&#39;,
+       &#39;Alvin Lim Curiga Tragedi Kanjuruhan Disengaja demi Balas Jasa ke Ferdy Sambo: Gak Sangka Korban Banyak  https://t.co/OvKXIspw4Y&#39;,
+       &#39;Dua Poin Gelap Tragedi Kanjuruhan yang Disorot TGIPF  https://t.co/tD0MK8gvsg&#39;,
+       &#39;Tiga hari bertemu korban tragedi Kanjuruhan. Sama seperti saya, mereka heran mengapa aparat keamanan tega menembakkan gas air mata ke arah tribun. Di sisi lain pintu gate 13 dikunci rapat dan menjadi “kuburan”. Kini korban trauma. Enam tersangka tak cukup.   Usut sampai Tuntas!  https://t.co/73b03EdqnL&#39;,
+       &#39;Ada 132 nyawa melayang, apa dianggap angin lalu?.  https://t.co/Ux3wVgaPcx  Dua dari 6 tersangka Tragedi Kanjuruhan telah menjalani pemeriksaan selama 12 jam di Mapolda Jatim. Penyidik memutuskan tidak menahan AH dan SS.&#39;,
+       &#39;@pejuangdolars all yg terlibat tragedi kanjuruhan pada cuci tangan tidak aneh saling lempar tanggung jawab&#39;,
+       &#39;Tragedi Kanjuruhan: Bertambah Satu Orang, Jadi Total 132 Korban\xa0Jiwa  https://t.co/D6Z1ISAAsu&#39;,
+       &#39;@VIVAcoid Sudahlah pak @ListyoSigitP si ade armando krangkeng saja,memperkeruh suasana.  Rakyat cari kerja udah susah malah timbul tragedi kanjuruhan,orang pengangguran gampang emosi,jangan gara2 1 provokator indonesia jd chaos. Gara2 1 orang picu masa ngamuk,polisi kalang kabut lagi.&#39;,
+       &#39;Hari Ini Dirut LIB dan 3 Polisi Tersangka Tragedi Kanjuruhan Diperiksa  https://t.co/UEpmdhMBeH  https://t.co/7n9ubN5VLI&#39;,
+       &#39;Rekonstruksi tragedi Kanjuruhan nanti 40rb anggota polri dan bhayangkari di masukkan dalam stadion, pintunya dikunci, lalu ditembakkan gas air mata sesuai jumlah yg ada di video2, saya rasa rekonstruksi akan berjalan aman dan tidak mematikan.&#39;,
+       &#39;Shambo happy kali ye kasus nya ketutup sama tragedi kanjuruhan!!&#39;,
+       &#39;Bela Habis Anak Kaisar Sambo, Tragedi Kanjuruhan 33 Anak Tewas! Kak Seto Kemana?  https://t.co/tpFzDuegSl&#39;,
+       &#39;Diperiksa Lagi di Tragedi Kanjuruhan, Panpel Arema FC Abdul Haris: Kita Taat Hukum  https://t.co/SzpOUH3AWn baca juga berita dari media lainnya di Indonesia di  https://t.co/GkwQxScnBB   #malang #tersangka #arema #jawatimur #tragedikanjuruhan #vivabola #aremafc&#39;,
+       &#39;@Jokowi @mohmahfudmd   132 Nyawa saudara kita Meninggal dalam tragedi Stadion KANJURUHAN Sdh ada tersangka kita lihat nanti @KejaksaanRI  dan @MahkamahAgung bagaimana mereka menuntut dan memvonis apa lebih rendah dari Pelanggaran Prokes. Kalo itu terjadi Negara ini Negara MAFIA!&#39;,
+       &#39;TGIPF Tragedi Kanjuruhan Panggil Sejumlah Pihak untuk Klarifikasi | Fokus Sejumlah pihak dipanggil TGIPF tragedi Kanjuruhan untuk memberikan klarifikasi di Kantor Kemenko Polhukam Jakarta pada ... @IndosiarTV  https://t.co/hzfb0Ggqvt&#39;,
+       &#39;Rocky Gerung Heran Jokowi Salahkan Pintu dan Tangga di Tragedi Kanjuruhan: Kan Kepanikan Datangnya dari Gas Air Mata..  https://t.co/414FNRvzZ6&#39;,
+       &#39;Akar masalah Tragedi Kanjuruhan ialah Kebutuhan Hidup Layak yg blm tercukupi, shg org mdh marah &amp;amp; beringas. Pemerintah &amp;amp; DPR blm mampu tetapkan UMN setara KHL/PTKP Rp 4,5 jt/bln, padahal dahsyat dampaknya. PPh melejit puluhan jt WP, APBN kuat dukung Subsidi, Rakyat lbh &quot;Sareh&quot;.&#39;,
+       &#39;@TirtoID Menurut polisi tragedi kanjuruhan adalah takdir dari Tuhan&#39;,
+       &#39;Investigasi Tragedi Kanjuruhan Selesai Lebih Cepat, TGIPF Akan Laporkan ke Jokowi Hari Jumat  https://t.co/DWqcOXsNCM&#39;,
+       &#39;BGM KLAU POLISI DAN KLGNYA DIBANTAI BEGI NI?APA MEREKA MAU TER IMA?.                               Polisi Sebut Penggunaan Gas Air Mata di Tragedi Kanjuruhan Sudah Sesuai Prosedur, Rocky Gerung: Bunuh, Investigasi, Ngarang  https://t.co/ASLiMwfP3R&#39;,
+       &#39;Tim FIFA ke Indonesia, Bahas Tragedi Kanjuruhan dan Sanksi untuk Indonesia?  https://t.co/aWHirs5xGM&#39;,
+       &#39;Kejadian pilu Tragedi Kanjuruhan telah menyita perhatian dunia. Muncul kekhawatiran peristiwa tersebut berpengaruh pada status tuan rumah Piala Dunia U-20 2023. #PialaDuniaU-20  https://t.co/RBpdvZMlMR&#39;,
+       &#39;Menko Polhukam @mohmahfudmd menyatakan bahwa kerja TGIPF hampir rampung.  Mahfud bahkan mengatakan, TGIPF telah selesai menarik keterangan dari berbagai pihak dan akan segera menyerahkan laporan ke Presiden Jokowi pada Jumat depan. #TragediKanjuruhan   https://t.co/GRwVcCJ1AX&#39;,
+       &#39; https://t.co/geXwjVZ9wR  *Ini dia sosok yang bertanggungjawab atas Tragedi Kanjuruhan. Kali Pertama muncul di depan awak media setelah menjadi tersangka. Apa yang dikatakannya? Baca cerita selengkapnya di sini, kemudian LIKE &amp;amp; SHARE. Terima kasih*🙏🏻🙏🏻🙏🏻🙏🏻🇮🇩&#39;,
+       &#39;Korban Tragedi Bertambah satu seorang wanita muda…   https://t.co/u5xQ0HzaK0  #tunangan #KanjuruhanDisaster  #TragediKanjuruhan  #KanjuruhanBerdukaCita  #aremania  #aremaniaberduka  #KanjuruhanStadium&#39;,
+       &#39;Tragedi Kanjuruhan: Pemerintah Indonesia Waspadai Sanksi FIFA, Memori 2015 Bakal Terulang?  https://t.co/tTZNPchOBL&#39;,
+       &#39;Anggota Komisi III DPR RI Fraksi PPP Arsul Sani menilai tragedi Kanjuruhan bukan penyebab Irjen Nico dimutasi.  https://t.co/FgRCbFbxIW&#39;,
+       &#39;Imbas Tragedi Kanjuruhan, Piala Dunia U20 Tahun 2023 Batal Digelar di Indonesia?  https://t.co/wbkJjHONRf&#39;,
+       &#39;Ternyata penonton di stadion Kanjuruhan pada hari nahas itu, melebihi kuota. Panitia pelaksana (Panpel) pertandingan Arema FC vs Persebaya blak-blakan terkait itu. #Kanjuruhan #TragediKanjuruhan  https://t.co/JBhpCNjQEw&#39;,
+       &#39;Anggota Komisi III DPR RI Fraksi PPP Arsul Sani menilai tragedi Kanjuruhan bukan penyebab Irjen Nico dimutasi.  https://t.co/yYEhqIzOOb&#39;,
+       &#39;Diperiksa Lagi di Tragedi Kanjuruhan, Panpel Arema FC Abdul Haris: Kita Taat Hukum  https://t.co/pp8o1WGVYf&#39;,
+       &#39;Keberhasilan Menteri BUMN @erickthohir yang berperan besar menyelamatkan sepakbola Indinesia pasca tragedi Kanjuruhan mendapat apresiasi dari berbagai kalangan, tidak terkecuali dari para kelompok suporter. #BangkitBersamaET  https://t.co/w1mfzh4Ej8&#39;,
+       &#39;Laporan TGIPF Tragedi Kanjuruhan Sudah Siap di Meja Presiden Jumat\xa0Besok  https://t.co/xdcalwY28w&#39;,
+       &#39;@Robbi_07 @Irwandwinugroho @detikcom Berarti LIB terlalu rakus sehingga tidak memperdulikan kepentingan klub dan keselamatan suporter. Apalagi dana yg diteruskan klub nilainya juga kecil. Tapi, gobloknya klub juga manut2 saja. Lihat, sekarang berapa gelintir klub yg bersuara tegas pasca tragedi kanjuruhan?&#39;,
+       &#39;Pernyataan Polri soal gas air mata bukanlah penyebab utama kematian ratusan orang dalam tragedi Kanjuruhan menuai kritik. Kepolisian dinilai tengah menolak konsep kausalitas dalam tragedi Kanjuruhan.   https://t.co/nt22LQPL8E&#39;,
+       &#39;@siapkawalpolri Kapolri @ListyoSigitP langsung sat set dlm menangani tragedi Kanjuruhan kemrin. Smoga Polri bisa menyelesaikan kasus ini dengan adil dan cepat&#39;,
+       &#39;Aremania akhirnya melaporkan Ade Armano usai ujarannya bahwa Aremania Sok Jago dan bersikap seperti preman dalam tragedi Kanjuruhan.  via @detik_jatim  https://t.co/FrqcgjYHBM&#39;,
+       &#39;Naswa, korban selamat tragedi Kanjuruhan mengaku masih sulit menggerakan tangan dan kakinya. Matanya pun masih merah terkena gas air mata.  https://t.co/WAOkWDDaHn&#39;,
+       &#39;Masih Dalam Berduka BLINK INDONESIA melakukan penggalangan dana untuk korban dan keluarga korban Tragedi Kanjuruhan Malang. Donasi dapat disampaikan melalui link berikut.   https://t.co/XzzP0THYyU  Terima kasih atas kebaikan teman-teman semua. Duka ini, duka kita bersama🥀  https://t.co/Ap7MlQmuBR&#39;,
+       &#39;AKBP Putu Ungkap Penyebab Kematian Helen, Korban Meninggal ke-132 di Tragedi Kanjuruhan  https://t.co/CtNdzWWMUV  https://t.co/zXvgKt4Zoy&#39;,
+       &#39;Polri menegaskan gas air mata, termasuk yang digunakan anggotanya dalam tragedi Kanjuruhan, tidak mematikan. Polri menjelaskan pendapat itu dikeluarkan oleh pakar-pakar racun dan gas air mata.  https://t.co/LfkMZCf8NX.  https://t.co/fCdEccXYCi&#39;,
+       &#39;Disaat kita sedang fokus #USUTTUNTAS Tragedi Kanjuruhan, bahkan Pak Jokowi saja sampai ikut turun tangan menyelesaikan sistem bobrok persepakbolaan Indonesia! Lu malah bahas UCL?  NURANI LU GA ADA BABAR BLAS..   TAK DOAKAN KOWE ANYANG-ANYANGEN SEMINGGU!  https://t.co/WD20hZXpLI&#39;,
+       &#39;Polisi Tak Menahan Tersangka Tragedi Kanjuruhan\xa0Malang  https://t.co/I3Nf7QImVa&#39;,
+       &#39;Soal Gas Air Mata Kadaluarsa Tragedi Kanjuruhan, Mahfud MD: Sedang Diperiksa di Laboratorium: Polri telah mengakui kalau gas air mata yang dipakai saat mengamankan laga Arema Vs Persebaya di Stadion Kanjuruhan, Malang telah kadaluarsa.  baca selengkapnya…  https://t.co/M2JF7QReQG&#39;,
+       &#39;Panpel Arema FC Terang-terangan Sebut Nama Ketua PSSI untuk Diseret Jadi Tersangka Tragedi Kanjuruhan  https://t.co/7dwumIMA7X&#39;,
+       &#39;@FeryNdut1 Pagi tadi baca @LaporMonggo ada bbrp laporan ttg vandalisme, yg terakhir ttg rambu &amp;amp; halte ditempeli pamlet ... Sungguh disayangkan, solidaritas tragedi kanjuruhan tp nempel di rambu LL, bisa timbul bencana (Laka LL) jika rambu tertutup/terhalang dr pandangan.&#39;,
+       &#39;Tau ga..kasus sambo hanya kalah oleh berita  KDRT Lesti Billard dan tragedi kanjuruhan. Manakah yang di setting oleh isilop?&#39;,
+       &#39;3 Polisi Tersangka Tragedi Kanjuruhan Diperiksa Siang Ini di Polda Jatim  https://t.co/fO03aA0Emy&#39;,
+       &#39;Tiga polisi tersangka tragedi Kanjuruhan diperiksa di Polda Jatim siang ini. Sebelumnya mereka meminta pemeriksaan ditunda untuk menyiapkan penasihat hukum.  https://t.co/GabO0FsJUN&#39;,
+       &#39;Effect Tragedi Kanjuruhan   Effect tragedi kanjuruhan  akan berpengaruh untuk suara pemilih lari ke anies di jatim bila casenya merugikan korban,kata kawan saya😀✌&#39;,
+       &#39;Kasus Sambo setelah Tragedi Kanjuruhan sampai mana ya? #UsutTuntas&#39;,
+       &#39;Komnas HAM akan menyampaikan hasil investigasinya atas tragedi Kanjuruhan kepada publik, hari ini Rabu (12/10/2022) siang. -    https://t.co/O6eFLMAcVg&#39;,
+       &#39;PSM Makassar menjadi tim yang tetap intens menggelar latihan meski Liga 1 dihentikan sementara imbas Tragedi Kanjuruhan.  https://t.co/qiXGqdliUo&#39;,
+       &#39;Tiga polisi tersangka tragedi Kanjuruhan diperiksa di Polda Jatim siang ini. Sebelumnya mereka meminta pemeriksaan ditunda untuk menyiapkan penasihat hukum.  https://t.co/UCVktO2WPx&#39;,
+       &#39;Korban meninggal dunia dalam tragedi Kanjuruhan bertambah satu orang, sehingga totalnya menjadi 132 orang. Menurut salah satu dokter RSSA, dr. Arie Zainul Fatoni, korban wanita bernama Helen Prisela ini meninggal dunia karena mengalami gagal napas akut. #MostUpdate1058&#39;],
+      dtype=object)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip install -U scikit-learn
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
+Requirement already satisfied: scikit-learn in /usr/local/lib/python3.7/dist-packages (1.0.2)
+Requirement already satisfied: scipy&gt;=1.1.0 in /usr/local/lib/python3.7/dist-packages (from scikit-learn) (1.7.3)
+Requirement already satisfied: joblib&gt;=0.11 in /usr/local/lib/python3.7/dist-packages (from scikit-learn) (1.2.0)
+Requirement already satisfied: numpy&gt;=1.14.6 in /usr/local/lib/python3.7/dist-packages (from scikit-learn) (1.21.6)
+Requirement already satisfied: threadpoolctl&gt;=2.0.0 in /usr/local/lib/python3.7/dist-packages (from scikit-learn) (3.1.0)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="c1">#membagi kumpulan data menjadi data pelatihan dan data pengujian.</span>
+<span class="n">X_train</span><span class="p">,</span><span class="n">X_test</span><span class="p">,</span><span class="n">y_train</span><span class="p">,</span><span class="n">y_test</span><span class="o">=</span><span class="n">train_test_split</span><span class="p">(</span><span class="n">dj</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">labels</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;tweet&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
+    <span class="n">dj</span><span class="p">[</span><span class="s1">&#39;tweet&#39;</span><span class="p">],</span>
+    <span class="n">test_size</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span>
+    <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#import plt</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="c1">#import metrics</span>
+<span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">metrics</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># from sklearn.neighbors import KNeighborsClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">GaussianNB</span>
+<span class="c1"># from sklearn.pipeline import make_pipeline</span>
+<span class="c1"># from sklearn.preprocessing import StandardScaler</span>
+<span class="n">gauss</span> <span class="o">=</span> <span class="n">GaussianNB</span><span class="p">()</span>
+<span class="n">gauss</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/sklearn/utils/validation.py:1692: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;tuple&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>GaussianNB()
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip install nltk
+<span class="o">!</span>pip install Sastrawi
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
+Requirement already satisfied: nltk in /usr/local/lib/python3.7/dist-packages (3.7)
+Requirement already satisfied: click in /usr/local/lib/python3.7/dist-packages (from nltk) (7.1.2)
+Requirement already satisfied: tqdm in /usr/local/lib/python3.7/dist-packages (from nltk) (4.64.1)
+Requirement already satisfied: regex&gt;=2021.8.3 in /usr/local/lib/python3.7/dist-packages (from nltk) (2022.6.2)
+Requirement already satisfied: joblib in /usr/local/lib/python3.7/dist-packages (from nltk) (1.2.0)
+Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
+Collecting Sastrawi
+  Downloading Sastrawi-1.0.1-py2.py3-none-any.whl (209 kB)
+     |████████████████████████████████| 209 kB 40.9 MB/s 
+?25hInstalling collected packages: Sastrawi
+Successfully installed Sastrawi-1.0.1
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="kn">import</span> <span class="nn">nltk</span>
+<span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;punkt&#39;</span><span class="p">)</span>
+<span class="kn">import</span> <span class="nn">string</span>
+<span class="kn">from</span> <span class="nn">Sastrawi.Stemmer.StemmerFactory</span> <span class="kn">import</span> <span class="n">StemmerFactory</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Unzipping tokenizers/punkt.zip.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">remove_stopwords</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;/content/drive/MyDrive/webmining/tugas/contents/stopwords.txt&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">stopwords</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+        <span class="n">stopwords</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">stopwords</span><span class="p">]</span>
+    
+    <span class="n">text</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">word_tokenize</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="p">[</span><span class="n">word</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">text</span> <span class="k">if</span> <span class="n">word</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">stopwords</span><span class="p">]</span>
+                     
+    <span class="k">return</span> <span class="n">text</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">stemming</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="n">factory</span> <span class="o">=</span> <span class="n">StemmerFactory</span><span class="p">()</span>
+    <span class="n">stemmer</span> <span class="o">=</span> <span class="n">factory</span><span class="o">.</span><span class="n">create_stemmer</span><span class="p">()</span>
+    
+    <span class="n">result</span> <span class="o">=</span> <span class="p">[</span><span class="n">stemmer</span><span class="o">.</span><span class="n">stem</span><span class="p">(</span><span class="n">word</span><span class="p">)</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">text</span><span class="p">]</span>
+    
+    <span class="k">return</span> <span class="n">result</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">preprocessing</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="c1">#case folding</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+
+    <span class="c1">#remove non ASCII (emoticon, chinese word, .etc)</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">t&#39;</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">n&#39;</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">u&#39;</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">&#39;</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">f&#39;</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">r&#39;</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+
+    <span class="c1"># remove non ASCII (emoticon, chinese word, .etc)</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">,</span> <span class="s1">&#39;replace&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">)</span>
+
+    <span class="c1"># remove mention, link, hashtag</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;([@#][A-Za-z0-9]+)|(\w+:\/\/\S+)&quot;</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+
+    <span class="c1">#replace weird characters</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;“&#39;</span><span class="p">,</span> <span class="s1">&#39;&quot;&#39;</span><span class="p">)</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;”&#39;</span><span class="p">,</span> <span class="s1">&#39;&quot;&#39;</span><span class="p">)</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">)</span>
+
+    <span class="c1">#tokenization and remove stopwords</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">remove_stopwords</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+
+    <span class="c1">#remove punctuation    </span>
+    <span class="n">text</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">s</span> <span class="k">if</span> <span class="n">c</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">punctuation</span><span class="p">)</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">text</span><span class="p">]</span>  
+
+    <span class="c1">#stemming</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">stemming</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+
+    <span class="c1">#remove empty string</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">text</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">text</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">cd</span> /content/drive/MyDrive/webmining/tugas/contents
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[Errno 2] No such file or directory: &#39;/content/drive/MyDrive/webmining/tugas/contents&#39;
+/content/twint
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#data[&#39;tweet&#39;].apply(preprocessing).to_excel(&#39;preprocessing.xlsx&#39;)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">TfidfTransformer</span><span class="p">,</span> <span class="n">TfidfVectorizer</span><span class="p">,</span> <span class="n">CountVectorizer</span>
+<span class="n">dataTextPre</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/content/drive/MyDrive/webmining/tugas/contents/preprocessingTK.csv&#39;</span><span class="p">)</span>
+<span class="n">vectorizer</span> <span class="o">=</span> <span class="n">CountVectorizer</span><span class="p">(</span><span class="n">min_df</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">bag</span> <span class="o">=</span> <span class="n">vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">dataTextPre</span><span class="p">[</span><span class="s1">&#39;tweet&#39;</span><span class="p">])</span>
+<span class="n">dataTextPre</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">65</span><span class="o">-</span><span class="mi">0</span><span class="n">a0d63b275dd</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">TfidfTransformer</span><span class="p">,</span> <span class="n">TfidfVectorizer</span><span class="p">,</span> <span class="n">CountVectorizer</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">dataTextPre</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/content/drive/MyDrive/webmining/tugas/contents/preprocessingTK.csv&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">vectorizer</span> <span class="o">=</span> <span class="n">CountVectorizer</span><span class="p">(</span><span class="n">min_df</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">bag</span> <span class="o">=</span> <span class="n">vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">dataTextPre</span><span class="p">[</span><span class="s1">&#39;tweet&#39;</span><span class="p">])</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">dataTextPre</span>
+
+<span class="nn">/usr/local/lib/python3.7/dist-packages/pandas/util/_decorators.py</span> in <span class="ni">wrapper</span><span class="nt">(*args, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">309</span>                     <span class="n">stacklevel</span><span class="o">=</span><span class="n">stacklevel</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">310</span>                 <span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">311</span>             <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">312</span> 
+<span class="g g-Whitespace">    </span><span class="mi">313</span>         <span class="k">return</span> <span class="n">wrapper</span>
+
+<span class="nn">/usr/local/lib/python3.7/dist-packages/pandas/io/parsers/readers.py</span> in <span class="ni">read_csv</span><span class="nt">(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, squeeze, prefix, mangle_dupe_cols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, error_bad_lines, warn_bad_lines, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options)</span>
+<span class="g g-Whitespace">    </span><span class="mi">584</span>     <span class="n">kwds</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">kwds_defaults</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">585</span> 
+<span class="ne">--&gt; </span><span class="mi">586</span>     <span class="k">return</span> <span class="n">_read</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="n">kwds</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">587</span> 
+<span class="g g-Whitespace">    </span><span class="mi">588</span> 
+
+<span class="nn">/usr/local/lib/python3.7/dist-packages/pandas/io/parsers/readers.py</span> in <span class="ni">_read</span><span class="nt">(filepath_or_buffer, kwds)</span>
+<span class="g g-Whitespace">    </span><span class="mi">480</span> 
+<span class="g g-Whitespace">    </span><span class="mi">481</span>     <span class="c1"># Create the parser.</span>
+<span class="ne">--&gt; </span><span class="mi">482</span>     <span class="n">parser</span> <span class="o">=</span> <span class="n">TextFileReader</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">483</span> 
+<span class="g g-Whitespace">    </span><span class="mi">484</span>     <span class="k">if</span> <span class="n">chunksize</span> <span class="ow">or</span> <span class="n">iterator</span><span class="p">:</span>
+
+<span class="nn">/usr/local/lib/python3.7/dist-packages/pandas/io/parsers/readers.py</span> in <span class="ni">__init__</span><span class="nt">(self, f, engine, **kwds)</span>
+<span class="g g-Whitespace">    </span><span class="mi">809</span>             <span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">kwds</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span>
+<span class="g g-Whitespace">    </span><span class="mi">810</span> 
+<span class="ne">--&gt; </span><span class="mi">811</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_engine</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_engine</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">engine</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">812</span> 
+<span class="g g-Whitespace">    </span><span class="mi">813</span>     <span class="k">def</span> <span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+
+<span class="nn">/usr/local/lib/python3.7/dist-packages/pandas/io/parsers/readers.py</span> in <span class="ni">_make_engine</span><span class="nt">(self, engine)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1038</span>             <span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1039</span>         <span class="c1"># error: Too many arguments for &quot;ParserBase&quot;</span>
+<span class="ne">-&gt; </span><span class="mi">1040</span>         <span class="k">return</span> <span class="n">mapping</span><span class="p">[</span><span class="n">engine</span><span class="p">](</span><span class="bp">self</span><span class="o">.</span><span class="n">f</span><span class="p">,</span> <span class="o">**</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="p">)</span>  <span class="c1"># type: ignore[call-arg]</span>
+<span class="g g-Whitespace">   </span><span class="mi">1041</span> 
+<span class="g g-Whitespace">   </span><span class="mi">1042</span>     <span class="k">def</span> <span class="nf">_failover_to_python</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+
+<span class="nn">/usr/local/lib/python3.7/dist-packages/pandas/io/parsers/c_parser_wrapper.py</span> in <span class="ni">__init__</span><span class="nt">(self, src, **kwds)</span>
+<span class="g g-Whitespace">     </span><span class="mi">49</span> 
+<span class="g g-Whitespace">     </span><span class="mi">50</span>         <span class="c1"># open handles</span>
+<span class="ne">---&gt; </span><span class="mi">51</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_open_handles</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">kwds</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">52</span>         <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+<span class="g g-Whitespace">     </span><span class="mi">53</span> 
+
+<span class="nn">/usr/local/lib/python3.7/dist-packages/pandas/io/parsers/base_parser.py</span> in <span class="ni">_open_handles</span><span class="nt">(self, src, kwds)</span>
+<span class="g g-Whitespace">    </span><span class="mi">227</span>             <span class="n">memory_map</span><span class="o">=</span><span class="n">kwds</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;memory_map&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+<span class="g g-Whitespace">    </span><span class="mi">228</span>             <span class="n">storage_options</span><span class="o">=</span><span class="n">kwds</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;storage_options&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="ne">--&gt; </span><span class="mi">229</span>             <span class="n">errors</span><span class="o">=</span><span class="n">kwds</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;encoding_errors&quot;</span><span class="p">,</span> <span class="s2">&quot;strict&quot;</span><span class="p">),</span>
+<span class="g g-Whitespace">    </span><span class="mi">230</span>         <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">231</span> 
+
+<span class="nn">/usr/local/lib/python3.7/dist-packages/pandas/io/common.py</span> in <span class="ni">get_handle</span><span class="nt">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
+<span class="g g-Whitespace">    </span><span class="mi">705</span>                 <span class="n">encoding</span><span class="o">=</span><span class="n">ioargs</span><span class="o">.</span><span class="n">encoding</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">706</span>                 <span class="n">errors</span><span class="o">=</span><span class="n">errors</span><span class="p">,</span>
+<span class="ne">--&gt; </span><span class="mi">707</span>                 <span class="n">newline</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">708</span>             <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">709</span>         <span class="k">else</span><span class="p">:</span>
+
+<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;/content/drive/MyDrive/webmining/tugas/contents/preprocessingTK.csv&#39;
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="Ringkasan-text.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Ringkasan-text</p>
+        </div>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By M.Salisianto Fahmi Zaka<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
