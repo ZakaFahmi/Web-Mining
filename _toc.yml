@@ -8,3 +8,6 @@ chapters:
 - file: seleksi-fitur-dari-data-twitter
 - file: Ringkasan-text
 - file: uts_webmining
+- file: ensembleLearning2
+- file: Ensemble_Learning/Ensemble_Learning.md
+- file: Klasifikasi_Clustering

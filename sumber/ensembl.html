@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>9c37ec33a68f486684aa2ed2ec94cc7c</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="cell markdown" id="skFa6pvZA5dL">
+<p>#<strong>ensembleLearning</strong></p>
+</div>
+<div class="cell markdown" id="V1J6wAs6W4KX">
+<p>Ensemble Learning Ensemble Learning adalah proses di mana beberapa model, seperti pengklasifikasi atau ahli, secara strategis dihasilkan dan digabungkan untuk memecahkan kecerdasan komputasi tertentu. Ensemble Learning utamanya digunakan untuk meningkatkan (klasifikasi, prediksi, perkiraan fungsi, dll.) kinerja model, atau mengurangi kemungkinan pemilihan model yang buruk.</p>
+<p><strong>pertama Install library yang di butuhkan</strong></p>
+</div>
+<div class="cell code" id="wgneoaBBAyWz">
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">%%</span>capture</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>pip install snscrape</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>pip install pandas</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>pip install Sastrawi</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>pip install scikit<span class="op">-</span>learn</span></code></pre></div>
+</div>
+<section id="menulis-script-konfigurasi-snscrape" class="cell markdown" id="R9iax4v0BgHP">
+<h2><strong>Menulis Script Konfigurasi Snscrape</strong></h2>
+</section>
+<div class="cell code" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="5s6WgzwJCh0W" data-outputId="9f048678-86a1-471d-913e-1897e2e8e2d5">
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> snscrape.modules.twitter <span class="im">as</span> sntwitter</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># from google.colab import data_table</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># data_table.enable_dataframe_formatter()</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>search_query <span class="op">=</span> <span class="st">&quot;dedi mulyadi&quot;</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>jumlah_tweets <span class="op">=</span> <span class="dv">100</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>tweets <span class="op">=</span> []</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> tweet <span class="kw">in</span> sntwitter.TwitterSearchScraper(search_query).get_items():</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">len</span>(tweets) <span class="op">==</span> jumlah_tweets:</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>        <span class="cf">break</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>        tweets.append([tweet.date, tweet.username, tweet.content, <span class="st">&#39;None&#39;</span>])</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(tweets, columns<span class="op">=</span>[<span class="st">&#39;Date&#39;</span>, <span class="st">&#39;User&#39;</span>, <span class="st">&#39;Tweet&#39;</span>, <span class="st">&#39;Label&#39;</span>])</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>                        Date             User  \
+0  2022-11-22 17:15:20+00:00       Ngoprekwae   
+1  2022-11-22 16:56:45+00:00  DediMul10751687   
+2  2022-11-22 14:24:20+00:00     info_daratan   
+3  2022-11-22 14:19:32+00:00     PoinSembilan   
+4  2022-11-22 13:46:00+00:00   Suara_sumedang   
+..                       ...              ...   
+95 2022-11-20 02:51:59+00:00   BadaiPastiJeda   
+96 2022-11-20 02:50:52+00:00   BadaiPastiJeda   
+97 2022-11-20 02:50:21+00:00   BadaiPastiJeda   
+98 2022-11-20 02:33:52+00:00   BadaiPastiJeda   
+99 2022-11-20 02:31:05+00:00   BadaiPastiJeda   
+
+                                                Tweet Label  
+0   Namanya Juga Anak Kecil, Kang Dedi Mulyadi Her...  None  
+1                                    @Cicireal09 Haki  None  
+2   Dedi Mulyadi tiba-tiba berbelok arah menuju Ru...  None  
+3   Pasca Tanah Leluhur Diguncang Gempa, Dedi Muly...  None  
+4   Jurus Mabuk Kang Dedi Mulyadi Bikin Gadis Cant...  None  
+..                                                ...   ...  
+95                         @ggulaliimaniezz Ngiringan  None  
+96                     @budibongg Pingin top up games  None  
+97  @nuansabening28 @Enricho19862683 @SekarJayanti...  None  
+98           @Widyarenee Bismiilah dpt restu ibu mega  None  
+99  @nuansabening28 @Enricho19862683 @SekarJayanti...  None  
+
+[100 rows x 4 columns]
+</code></pre>
+</div>
+</div>
+<section id="melakukan-pengecekan-berkas-hasil-scrape-lama" class="cell markdown" id="sfGCbA3eDHSx">
+<h3>Melakukan Pengecekan Berkas Hasil Scrape Lama</h3>
+<p>Karena setelah melakukan scraping data tweet kita perlu memberikan label secara manual, maka untuk menghindari berkas lama tertimpa oleh berkas baru, disini kita akan melakukan pengecekan berkas hasil scrape lama, apakah ada pada direktori atau tidak. Jika berkas hasil scrape lama tidak ditemukan pada direktori, maka hasil scrape sebelumnya (yang ada pada Pandas Dataframe) akan diespor menjadi berkas csv.</p>
+</section>
+<div class="cell code" id="xLPsMLaGDNjv">
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="op">%%</span>capture</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>output_stream <span class="op">=</span> os.popen(<span class="st">&#39;tweets_labeled.csv&#39;</span>)</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>res <span class="op">=</span> output_stream.read()</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> res <span class="op">==</span> <span class="st">&#39;&#39;</span>:</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  df.to_csv(<span class="st">&#39;tweets_labeled.csv&#39;</span>)</span></code></pre></div>
+</div>
+<section id="import-hasil" class="cell markdown" id="TSN77U82EIKZ">
+<h2><strong>Import Hasil</strong></h2>
+</section>
+<div class="cell code" data-colab="{&quot;height&quot;:424,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="aW2zhF2gH09A" data-outputId="db639adf-8b39-485a-82a3-cbc1e6fa647f">
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co"># pd.options.mode.chained_assignment = None</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co"># pd.options.display.max_colwidth = None</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># pd.options.display.max_columns = None</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co"># pd.options.display.max_rows = None</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">&#39;tweets_labeled.csv&#39;</span>, usecols<span class="op">=</span>[<span class="st">&#39;User&#39;</span>, <span class="st">&#39;Tweet&#39;</span>, <span class="st">&#39;Label&#39;</span>])</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>df</span></code></pre></div>
+<div class="output execute_result" data-execution_count="4">
+
+  <div id="df-97c4fc28-b9fe-4350-bdf9-ae7213ac8cee">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>User</th>
+      <th>Tweet</th>
+      <th>Label</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Ngoprekwae</td>
+      <td>Namanya Juga Anak Kecil, Kang Dedi Mulyadi Her...</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>DediMul10751687</td>
+      <td>@Cicireal09 Haki</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>info_daratan</td>
+      <td>Dedi Mulyadi tiba-tiba berbelok arah menuju Ru...</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>PoinSembilan</td>
+      <td>Pasca Tanah Leluhur Diguncang Gempa, Dedi Muly...</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Suara_sumedang</td>
+      <td>Jurus Mabuk Kang Dedi Mulyadi Bikin Gadis Cant...</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>95</th>
+      <td>BadaiPastiJeda</td>
+      <td>@ggulaliimaniezz Ngiringan</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>96</th>
+      <td>BadaiPastiJeda</td>
+      <td>@budibongg Pingin top up games</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>97</th>
+      <td>BadaiPastiJeda</td>
+      <td>@nuansabening28 @Enricho19862683 @SekarJayanti...</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>98</th>
+      <td>BadaiPastiJeda</td>
+      <td>@Widyarenee Bismiilah dpt restu ibu mega</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>99</th>
+      <td>BadaiPastiJeda</td>
+      <td>@nuansabening28 @Enricho19862683 @SekarJayanti...</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table>
+<p>100 rows × 3 columns</p>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-97c4fc28-b9fe-4350-bdf9-ae7213ac8cee')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-97c4fc28-b9fe-4350-bdf9-ae7213ac8cee button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-97c4fc28-b9fe-4350-bdf9-ae7213ac8cee');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<section id="preprocessing-data-tweets" class="cell markdown" id="ej_1CmiaIEG9">
+<h2><strong>Preprocessing Data Tweets</strong></h2>
+</section>
+<div class="cell code" data-colab="{&quot;height&quot;:35,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="tPkf4DzAIE8E" data-outputId="06145e42-08b1-4fef-d582-94dc8c837f65">
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> string</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co">#Mengapus link dan mention</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Tweet&#39;</span>] <span class="op">=</span> df[<span class="st">&#39;Tweet&#39;</span>].replace(<span class="vs">r&#39;\s+&#39;</span>,<span class="st">&#39; &#39;</span>, regex<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>indx <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> df[<span class="st">&#39;Tweet&#39;</span>]:</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  temp <span class="op">=</span> df[<span class="st">&#39;Tweet&#39;</span>][indx].split()</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> j <span class="kw">in</span> temp:</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="st">&#39;http&#39;</span> <span class="kw">in</span> j:</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>      df[<span class="st">&#39;Tweet&#39;</span>] <span class="op">=</span> df[<span class="st">&#39;Tweet&#39;</span>].replace(<span class="vs">r&#39;</span><span class="sc">%s</span><span class="vs">&#39;</span><span class="op">%</span>j,<span class="st">&quot; &quot;</span>, regex<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="st">&#39;@&#39;</span> <span class="kw">in</span> j:</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>      df[<span class="st">&#39;Tweet&#39;</span>] <span class="op">=</span> df[<span class="st">&#39;Tweet&#39;</span>].replace(<span class="vs">r&#39;</span><span class="sc">%s</span><span class="vs">&#39;</span><span class="op">%</span>j,<span class="st">&quot; &quot;</span>, regex<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>  indx<span class="op">+=</span><span class="dv">1</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a><span class="co">#mengubah menjadi huruf kecil</span></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Tweet&#39;</span>] <span class="op">=</span> df[<span class="st">&#39;Tweet&#39;</span>].<span class="bu">str</span>.lower()</span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a><span class="co">#menghapus tanda baca</span></span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> char <span class="kw">in</span> string.punctuation:</span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">&#39;Tweet&#39;</span>] <span class="op">=</span> df[<span class="st">&#39;Tweet&#39;</span>].replace(<span class="vs">r&#39;[\</span><span class="sc">%s</span><span class="vs">]&#39;</span><span class="op">%</span>char,<span class="st">&quot; &quot;</span>, regex<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a><span class="co">#menghapus angka</span></span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Tweet&#39;</span>] <span class="op">=</span> df[<span class="st">&#39;Tweet&#39;</span>].replace(<span class="vs">r&#39;\d+&#39;</span>,<span class="st">&#39; &#39;</span>, regex<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a><span class="co">#menghapus karakter kosong</span></span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Tweet&#39;</span>] <span class="op">=</span> df[<span class="st">&#39;Tweet&#39;</span>].replace(<span class="vs">r&#39;\s+&#39;</span>,<span class="st">&#39; &#39;</span>, regex<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Tweet&#39;</span>][<span class="dv">2</span>]</span>
+<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a></span></code></pre></div>
+<div class="output execute_result" data-execution_count="5">
+<div class="sourceCode" id="cb7"><pre class="sourceCode json"><code class="sourceCode json"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">&quot;type&quot;</span><span class="fu">:</span><span class="st">&quot;string&quot;</span><span class="fu">}</span></span></code></pre></div>
+</div>
+</div>
+<section id="stopwords-removal" class="cell markdown" id="lszzibU9IW8X">
+<h3>Stopwords Removal</h3>
+</section>
+<div class="cell code" data-colab="{&quot;height&quot;:35,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="i5juLf4RIX0m" data-outputId="5c8cbc70-54a0-45e2-a87b-5aeb20e72cb7">
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> urllib.request, json </span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> urllib.request.urlopen(<span class="st">&quot;https://raw.githubusercontent.com/smilesense/stopwords-id/master/stopwords-id.json&quot;</span>) <span class="im">as</span> list_stopwords:</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    data_stopword <span class="op">=</span> json.load(list_stopwords)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> data_stopword:</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">&#39;Tweet&#39;</span>] <span class="op">=</span> df[<span class="st">&#39;Tweet&#39;</span>].replace(<span class="vs">r&#39;\b</span><span class="sc">%s</span><span class="vs">\b&#39;</span><span class="op">%</span>i, <span class="st">&#39;&#39;</span>, regex<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Tweet&#39;</span>] <span class="op">=</span> df[<span class="st">&#39;Tweet&#39;</span>].replace(<span class="vs">r&#39;\s+&#39;</span>,<span class="st">&#39; &#39;</span>, regex<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Tweet&#39;</span>][<span class="dv">2</span>]</span></code></pre></div>
+<div class="output execute_result" data-execution_count="6">
+<div class="sourceCode" id="cb9"><pre class="sourceCode json"><code class="sourceCode json"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">&quot;type&quot;</span><span class="fu">:</span><span class="st">&quot;string&quot;</span><span class="fu">}</span></span></code></pre></div>
+</div>
+</div>
+<section id="stemming" class="cell markdown" id="4f2l0Z7-Izwv">
+<h3>Stemming</h3>
+</section>
+<div class="cell code" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="j1Fuv1OjI1Dc" data-outputId="b74d6661-a9ee-4679-b0f9-61c1debdb5b8">
+<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># import StemmerFactory class</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> Sastrawi.Stemmer.StemmerFactory <span class="im">import</span> StemmerFactory</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="co"># create stemmer</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>factory <span class="op">=</span> StemmerFactory()</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>stemmer <span class="op">=</span> factory.create_stemmer()</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="co"># stemming process</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="cf">try</span>:</span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>  ind <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> sentence <span class="kw">in</span> df[<span class="st">&#39;Tweet&#39;</span>]:</span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>      df[<span class="st">&#39;Tweet&#39;</span>][ind] <span class="op">=</span> stemmer.stem(<span class="bu">str</span>(sentence))</span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>      ind<span class="op">+=</span><span class="dv">1</span></span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>  <span class="cf">raise</span> <span class="pp">KeyboardInterrupt</span></span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a><span class="cf">except</span> <span class="pp">KeyboardInterrupt</span>:</span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(df[<span class="st">&#39;Tweet&#39;</span>][<span class="dv">2</span>])</span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span> :</span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(df[<span class="st">&#39;Tweet&#39;</span>][<span class="dv">2</span>])</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>dedi mulyadi belok arah rumah sakit hasan sadikin bandung golkarsolid
+</code></pre>
+</div>
+</div>
+<section id="tokenisasi" class="cell markdown" id="ZkiBZeZUJEiq">
+<h3>Tokenisasi</h3>
+</section>
+<div class="cell code" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="54_8T9AZJIBF" data-outputId="4e1b20cc-ba55-4812-dc4e-9d524c9eeb6b">
+<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>indeks <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>df2 <span class="op">=</span> df.copy()</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> tweet <span class="kw">in</span> df2[<span class="st">&#39;Tweet&#39;</span>]:</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>    df2[<span class="st">&#39;Tweet&#39;</span>][indeks] <span class="op">=</span> <span class="bu">str</span>(tweet).split()</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>    indeks<span class="op">+=</span><span class="dv">1</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>df2[<span class="st">&#39;Tweet&#39;</span>][<span class="dv">2</span>]</span></code></pre></div>
+<div class="output execute_result" data-execution_count="8">
+<pre><code>[&#39;dedi&#39;,
+ &#39;mulyadi&#39;,
+ &#39;belok&#39;,
+ &#39;arah&#39;,
+ &#39;rumah&#39;,
+ &#39;sakit&#39;,
+ &#39;hasan&#39;,
+ &#39;sadikin&#39;,
+ &#39;bandung&#39;,
+ &#39;golkarsolid&#39;]</code></pre>
+</div>
+</div>
+<section id="hasil-preprocessing" class="cell markdown" id="tx_1X9zNJN5G">
+<h3>Hasil Preprocessing</h3>
+</section>
+<div class="cell code" data-colab="{&quot;height&quot;:424,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="K7TJBgFFJRa7" data-outputId="6e77ef5a-ab24-4d31-9c59-d31f4bb2ea04">
+<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>df2</span></code></pre></div>
+<div class="output execute_result" data-execution_count="9">
+
+  <div id="df-dd36acad-09c5-47f4-a5ee-cc9b667bd1d6">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>User</th>
+      <th>Tweet</th>
+      <th>Label</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Ngoprekwae</td>
+      <td>[nama, anak, kang, dedi, mulyadi, heran, ni, h...</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>DediMul10751687</td>
+      <td>[hak]</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>info_daratan</td>
+      <td>[dedi, mulyadi, belok, arah, rumah, sakit, has...</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>PoinSembilan</td>
+      <td>[pasca, tanah, leluhur, guncang, gempa, dedi, ...</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Suara_sumedang</td>
+      <td>[jurus, mabuk, kang, dedi, mulyadi, bikin, gad...</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>95</th>
+      <td>BadaiPastiJeda</td>
+      <td>[ngiringan]</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>96</th>
+      <td>BadaiPastiJeda</td>
+      <td>[pingin, top, up, games]</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>97</th>
+      <td>BadaiPastiJeda</td>
+      <td>[umur]</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>98</th>
+      <td>BadaiPastiJeda</td>
+      <td>[bismiilah, dpt, restu, mega]</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>99</th>
+      <td>BadaiPastiJeda</td>
+      <td>[selamat]</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table>
+<p>100 rows × 3 columns</p>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-dd36acad-09c5-47f4-a5ee-cc9b667bd1d6')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-dd36acad-09c5-47f4-a5ee-cc9b667bd1d6 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-dd36acad-09c5-47f4-a5ee-cc9b667bd1d6');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<section id="term-frequency-tf" class="cell markdown" id="sDsXb5sLJblH">
+<h2><strong>Term Frequency (TF)</strong></h2>
+</section>
+<section id="term-frequency-keseluruhan" class="cell markdown" id="Qc5YBv3fJcYk">
+<h3>Term Frequency Keseluruhan</h3>
+</section>
+<div class="cell code" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="vqH3UnFNJf4Y" data-outputId="45e6403f-355b-4215-ad26-43fda19b672f">
+<div class="sourceCode" id="cb15"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>listkata <span class="op">=</span> []</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> tweet <span class="kw">in</span> df[<span class="st">&#39;Tweet&#39;</span>]:</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>    listkata <span class="op">=</span> listkata <span class="op">+</span> <span class="bu">str</span>(tweet).split()</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>listkata_nodup <span class="op">=</span> <span class="bu">list</span>(<span class="bu">dict</span>.fromkeys(listkata))</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>hasil_hitung <span class="op">=</span> {}</span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> test1 <span class="kw">in</span> listkata_nodup:</span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>    jumlah <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> test2 <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(listkata)):</span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> test1 <span class="op">==</span> listkata[test2]:</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>            jumlah<span class="op">+=</span><span class="dv">1</span></span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>    hasil_hitung.update({<span class="st">&#39;</span><span class="sc">%s</span><span class="st">&#39;</span><span class="op">%</span>test1 : jumlah})</span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>hasil_hitung <span class="op">=</span> <span class="bu">dict</span>(<span class="bu">sorted</span>(hasil_hitung.items(), key<span class="op">=</span><span class="kw">lambda</span> item: item[<span class="dv">1</span>], reverse<span class="op">=</span><span class="va">True</span>))</span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(hasil_hitung)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>{&#39;dedi&#39;: 84, &#39;mulyadi&#39;: 84, &#39;anne&#39;: 34, &#39;ratna&#39;: 27, &#39;mustika&#39;: 22, &#39;rumah&#39;: 19, &#39;golkarsolid&#39;: 14, &#39;belok&#39;: 13, &#39;arah&#39;: 13, &#39;sakit&#39;: 13, &#39;hasan&#39;: 13, &#39;sadikin&#39;: 13, &#39;bandung&#39;: 13, &#39;kang&#39;: 12, &#39;gempa&#39;: 11, &#39;purwakarta&#39;: 10, &#39;ranjang&#39;: 8, &#39;puasa&#39;: 8, &#39;cianjur&#39;: 7, &#39;istri&#39;: 6, &#39;cerai&#39;: 6, &#39;nafkah&#39;: 6, &#39;bingung&#39;: 6, &#39;sebentar&#39;: 6, &#39;duda&#39;: 6, &#39;malam&#39;: 6, &#39;minggu&#39;: 6, &#39;wanita&#39;: 6, &#39;kirim&#39;: 6, &#39;maps&#39;: 6, &#39;singgung&#39;: 5, &#39;bathin&#39;: 5, &#39;desi&#39;: 5, &#39;ratnasari&#39;: 5, &#39;hyang&#39;: 4, &#39;korban&#39;: 4, &#39;banget&#39;: 4, &#39;pimpin&#39;: 4, &#39;bupati&#39;: 4, &#39;aneh&#39;: 4, &#39;beda&#39;: 4, &#39;ambu&#39;: 4, &#39;pencil&#39;: 3, &#39;bikin&#39;: 3, &#39;cantik&#39;: 3, &#39;bantu&#39;: 3, &#39;duka&#39;: 3, &#39;warga&#39;: 3, &#39;miras&#39;: 3, &#39;dpr&#39;: 3, &#39;baru&#39;: 3, &#39;tolak&#39;: 3, &#39;alpukat&#39;: 3, &#39;bawa&#39;: 3, &#39;gugat&#39;: 3, &#39;temu&#39;: 3, &#39;guru&#39;: 3, &#39;gubernur&#39;: 3, &#39;yg&#39;: 3, &#39;anak&#39;: 2, &#39;heran&#39;: 2, &#39;ni&#39;: 2, &#39;bagi&#39;: 2, &#39;susur&#39;: 2, &#39;doel&#39;: 2, &#39;sumbang&#39;: 2, &#39;sule&#39;: 2, &#39;kunjung&#39;: 2, &#39;garut&#39;: 2, &#39;kamis&#39;: 2, &#39;november&#39;: 2, &#39;agenda&#39;: 2, &#39;makan&#39;: 2, &#39;kiai&#39;: 2, &#39;tawar&#39;: 2, &#39;nambah&#39;: 2, &#39;ngakak&#39;: 2, &#39;aja&#39;: 2, &#39;sempoyongan&#39;: 2, &#39;ngurus&#39;: 2, &#39;rujuk&#39;: 2, &#39;lokasi&#39;: 2, &#39;dampak&#39;: 2, &#39;subang&#39;: 2, &#39;takut&#39;: 2, &#39;anggota&#39;: 2, &#39;ri&#39;: 2, &#39;kabupaten&#39;: 2, &#39;dalam&#39;: 2, &#39;moga&#39;: 2, &#39;tabah&#39;: 2, &#39;pedas&#39;: 2, &#39;sindir&#39;: 2, &#39;ngurusin&#39;: 2, &#39;dapur&#39;: 2, &#39;pisah&#39;: 2, &#39;ribu&#39;: 2, &#39;janda&#39;: 2, &#39;tarik&#39;: 2, &#39;singgah&#39;: 2, &#39;bahagia&#39;: 2, &#39;jokowi&#39;: 2, &#39;cebong&#39;: 2, &#39;fifaworlgcupqatar&#39;: 2, &#39;worldcup&#39;: 2, &#39;aniespresiden&#39;: 2, &#39;nikah&#39;: 2, &#39;restu&#39;: 2, &#39;nilai&#39;: 2, &#39;saran&#39;: 2, &#39;ngaji&#39;: 2, &#39;izin&#39;: 2, &#39;suami&#39;: 2, &#39;aku&#39;: 2, &#39;colok&#39;: 2, &#39;gaya&#39;: 2, &#39;picu&#39;: 2, &#39;dualisme&#39;: 2, &#39;tubuh&#39;: 2, &#39;pemda&#39;: 2, &#39;gara&#39;: 2, &#39;pingin&#39;: 2, &#39;hayya&#39;: 2, &#39;nyi&#39;: 2, &#39;what&#39;: 2, &#39;butuh&#39;: 2, &#39;bilang&#39;: 2, &#39;cinta&#39;: 2, &#39;love&#39;: 2, &#39;languange&#39;: 2, &#39;sosok&#39;: 2, &#39;muda&#39;: 2, &#39;ahmad&#39;: 2, &#39;tba&#39;: 2, &#39;bondong&#39;: 2, &#39;nama&#39;: 1, &#39;diri&#39;: 1, &#39;pelit&#39;: 1, &#39;dik&#39;: 1, &#39;hak&#39;: 1, &#39;pasca&#39;: 1, &#39;tanah&#39;: 1, &#39;leluhur&#39;: 1, &#39;guncang&#39;: 1, &#39;kampung&#39;: 1, &#39;jurus&#39;: 1, &#39;mabuk&#39;: 1, &#39;gadis&#39;: 1, &#39;ngibrit&#39;: 1, &#39;gerak&#39;: 1, &#39;tancap&#39;: 1, &#39;gas&#39;: 1, &#39;evakuasi&#39;: 1, &#39;timbun&#39;: 1, &#39;angkat&#39;: 1, &#39;mabok&#39;: 1, &#39;pusing&#39;: 1, &#39;gu&#39;: 1, &#39;ngarep&#39;: 1, &#39;nyanyi&#39;: 1, &#39;lagu&#39;: 1, &#39;sedih&#39;: 1, &#39;penuh&#39;: 1, &#39;hayat&#39;: 1, &#39;pantas&#39;: 1, &#39;damping&#39;: 1, &#39;ajak&#39;: 1, &#39;daerah&#39;: 1, &#39;santri&#39;: 1, &#39;jual&#39;: 1, &#39;desa&#39;: 1, &#39;pesan&#39;: 1, &#39;sengat&#39;: 1, &#39;aparat&#39;: 1, &#39;jebak&#39;: 1, &#39;runtuh&#39;: 1, &#39;akses&#39;: 1, &#39;sulit&#39;: 1, &#39;motor&#39;: 1, &#39;tidur&#39;: 1, &#39;jalan&#39;: 1, &#39;susul&#39;: 1, &#39;telusur&#39;: 1, &#39;titik&#39;: 1, &#39;bumi&#39;: 1, &#39;dedimulyadi&#39;: 1, &#39;anggotadprri&#39;: 1, &#39;bencanaalam&#39;: 1, &#39;tawakal&#39;: 1, &#39;borong&#39;: 1, &#39;puluh&#39;: 1, &#39;botol&#39;: 1, &#39;branded&#39;: 1, &#39;habis&#39;: 1, &#39;juta&#39;: 1, &#39;rupiah&#39;: 1, &#39;tinjau&#39;: 1, &#39;dicianjur&#39;: 1, &#39;main&#39;: 1, &#39;yu&#39;: 1, &#39;lengket&#39;: 1, &#39;sukma&#39;: 1, &#39;dinas&#39;: 1, &#39;daya&#39;: 1, &#39;dobrak&#39;: 1, &#39;tahu&#39;: 1, &#39;kirain&#39;: 1, &#39;gw&#39;: 1, &#39;doang&#39;: 1, &#39;error&#39;: 1, &#39;jumbo&#39;: 1, &#39;kalibening&#39;: 1, &#39;komoditas&#39;: 1, &#39;unggul&#39;: 1, &#39;jaga&#39;: 1, &#39;kualitas&#39;: 1, &#39;orisinalitas&#39;: 1, &#39;airlanggahartarto&#39;: 1, &#39;airlanggapemersatu&#39;: 1, &#39;airlanggauntukindonesia&#39;: 1, &#39;partaigolkar&#39;: 1, &#39;golkarpedia&#39;: 1, &#39;airlanggapresiden&#39;: 1, &#39;doa&#39;: 1, &#39;kejut&#39;: 1, &#39;laku&#39;: 1, &#39;hubung&#39;: 1, &#39;badan&#39;: 1, &#39;de&#39;: 1, &#39;kritik&#39;: 1, &#39;cadas&#39;: 1, &#39;kerja&#39;: 1, &#39;buruk&#39;: 1, &#39;rasa&#39;: 1, &#39;goyang&#39;: 1, &#39;kenceng&#39;: 1, &#39;bekas&#39;: 1, &#39;morgan&#39;: 1, &#39;freeman&#39;: 1, &#39;bmkg&#39;: 1, &#39;allah&#39;: 1, &#39;earthquake&#39;: 1, &#39;jabat&#39;: 1, &#39;bi&#39;: 1, &#39;rebranding&#39;: 1, &#39;kota&#39;: 1, &#39;senantiasa&#39;: 1, &#39;kuat&#39;: 1, &#39;hadap&#39;: 1, &#39;musibah&#39;: 1, &#39;mari&#39;: 1, &#39;bisa&#39;: 1, &#39;periksa&#39;: 1, &#39;sehat&#39;: 1, &#39;psikis&#39;: 1, &#39;video&#39;: 1, &#39;ambuanne&#39;: 1, &#39;ungkap&#39;: 1, &#39;batin&#39;: 1, &#39;duh&#39;: 1, &#39;salah&#39;: 1, &#39;umroh&#39;: 1, &#39;syariat&#39;: 1, &#39;islam&#39;: 1, &#39;terima&#39;: 1, &#39;kasih&#39;: 1, &#39;perempuan&#39;: 1, &#39;indah&#39;: 1, &#39;hidup&#39;: 1, &#39;belanda&#39;: 1, &#39;vs&#39;: 1, &#39;inggris&#39;: 1, &#39;berita&#39;: 1, &#39;bongkar&#39;: 1, &#39;sisi&#39;: 1, &#39;gaul&#39;: 1, &#39;prestasi&#39;: 1, &#39;sama&#39;: 1, &#39;rekor&#39;: 1, &#39;maju&#39;: 1, &#39;equador&#39;: 1, &#39;malaysia&#39;: 1, &#39;argentina&#39;: 1, &#39;ciamis&#39;: 1, &#39;serbia&#39;: 1, &#39;sri&#39;: 1, &#39;asih&#39;: 1, &#39;wangi&#39;: 1, &#39;bandunginlove&#39;: 1, &#39;lihat&#39;: 1, &#39;pasu&#39;: 1, &#39;langsung&#39;: 1, &#39;lari&#39;: 1, &#39;girang&#39;: 1, &#39;bungsu&#39;: 1, &#39;rindu&#39;: 1, &#39;kuak&#39;: 1, &#39;ngaku&#39;: 1, &#39;gerebek&#39;: 1, &#39;prostitusi&#39;: 1, &#39;cilodong&#39;: 1, &#39;ramai&#39;: 1, &#39;pawang&#39;: 1, &#39;dki&#39;: 1, &#39;dikuasain&#39;: 1, &#39;suara&#39;: 1, &#39;dna&#39;: 1, &#39;pilpres&#39;: 1, &#39;mudah&#39;: 1, &#39;bsa&#39;: 1, &#39;masuk&#39;: 1, &#39;mgkn&#39;: 1, &#39;sprti&#39;: 1, &#39;ahy&#39;: 1, &#39;ghibran&#39;: 1, &#39;sahroni&#39;: 1, &#39;raffi&#39;: 1, &#39;politik&#39;: 1, &#39;bnyak&#39;: 1, &#39;dukung&#39;: 1, &#39;megang&#39;: 1, &#39;strategis&#39;: 1, &#39;tangkap&#39;: 1, &#39;kamera&#39;: 1, &#39;bareng&#39;: 1, &#39;cewek&#39;: 1, &#39;pirang&#39;: 1, &#39;haru&#39;: 1, &#39;sayang&#39;: 1, &#39;terimakasih&#39;: 1, &#39;embu&#39;: 1, &#39;salut&#39;: 1, &#39;hansip&#39;: 1, &#39;hormat&#39;: 1, &#39;cium&#39;: 1, &#39;tangan&#39;: 1, &#39;marah&#39;: 1, &#39;ledak&#39;: 1, &#39;neng&#39;: 1, &#39;psk&#39;: 1, &#39;rakyat&#39;: 1, &#39;gak&#39;: 1, &#39;urus&#39;: 1, &#39;resmi&#39;: 1, &#39;pepet&#39;: 1, &#39;jannda&#39;: 1, &#39;beramb&#39;: 1, &#39;p&#39;: 1, &#39;tampil&#39;: 1, &#39;mesra&#39;: 1, &#39;kompak&#39;: 1, &#39;tertawa&#39;: 1, &#39;isyarat&#39;: 1, &#39;hitam&#39;: 1, &#39;mengkudu&#39;: 1, &#39;slm&#39;: 1, &#39;knal&#39;: 1, &#39;ganggu&#39;: 1, &#39;spiritual&#39;: 1, &#39;ngotot&#39;: 1, &#39;sederhana&#39;: 1, &#39;netizen&#39;: 1, &#39;kdm&#39;: 1, &#39;colek&#39;: 1, &#39;plat&#39;: 1, &#39;nyq&#39;: 1, &#39;kalah&#39;: 1, &#39;ikhlas&#39;: 1, &#39;tulus&#39;: 1, &#39;banding&#39;: 1, &#39;ungkit&#39;: 1, &#39;rt&#39;: 1, &#39;pergi&#39;: 1, &#39;umrah&#39;: 1, &#39;sang&#39;: 1, &#39;kecewa&#39;: 1, &#39;ngiringan&#39;: 1, &#39;top&#39;: 1, &#39;up&#39;: 1, &#39;games&#39;: 1, &#39;umur&#39;: 1, &#39;bismiilah&#39;: 1, &#39;dpt&#39;: 1, &#39;mega&#39;: 1, &#39;selamat&#39;: 1}
+</code></pre>
+</div>
+</div>
+<section id="term-frequency-tiap-tweet" class="cell markdown" id="ZkAiXxdOJqNU">
+<h3>Term Frequency Tiap Tweet</h3>
+</section>
+<div class="cell code" data-colab="{&quot;height&quot;:1000,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="IepY23tDJq8x" data-outputId="4f49a2f7-dfaf-4c6f-f276-6d05aa80bd74">
+<div class="sourceCode" id="cb17"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> terms(dataframe):</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># pd.options.mode.chained_assignment = None</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># pd.options.display.max_colwidth = None</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># pd.options.display.max_columns = None</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># pd.options.display.max_rows = None</span></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>  df3 <span class="op">=</span> dataframe.copy()</span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>  a <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> inter <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(df3[<span class="st">&#39;Tweet&#39;</span>])):</span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>      <span class="cf">for</span> fitur <span class="kw">in</span> hasil_hitung:</span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>          df3[<span class="st">&#39;</span><span class="sc">%s</span><span class="st">&#39;</span><span class="op">%</span>(fitur)] <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a>          a<span class="op">+=</span><span class="dv">1</span></span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> inter <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(df3[<span class="st">&#39;Tweet&#39;</span>])):</span>
+<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> fitur <span class="kw">in</span> hasil_hitung:</span>
+<span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a>        cek <span class="op">=</span> df3[<span class="st">&#39;Tweet&#39;</span>][inter]</span>
+<span id="cb17-17"><a href="#cb17-17" aria-hidden="true" tabindex="-1"></a>        jumlah <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb17-18"><a href="#cb17-18" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> iter2 <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(cek)):</span>
+<span id="cb17-19"><a href="#cb17-19" aria-hidden="true" tabindex="-1"></a>          <span class="cf">if</span> fitur <span class="op">==</span> cek[iter2]:</span>
+<span id="cb17-20"><a href="#cb17-20" aria-hidden="true" tabindex="-1"></a>            jumlah<span class="op">+=</span><span class="dv">1</span></span>
+<span id="cb17-21"><a href="#cb17-21" aria-hidden="true" tabindex="-1"></a>        df3[<span class="st">&#39;</span><span class="sc">%s</span><span class="st">&#39;</span><span class="op">%</span>fitur][inter] <span class="op">=</span> jumlah</span>
+<span id="cb17-22"><a href="#cb17-22" aria-hidden="true" tabindex="-1"></a>        a<span class="op">+=</span><span class="dv">1</span></span>
+<span id="cb17-23"><a href="#cb17-23" aria-hidden="true" tabindex="-1"></a>  df3.to_csv(<span class="vs">r&#39;my_data.csv&#39;</span>, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb17-24"><a href="#cb17-24" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> df3</span>
+<span id="cb17-25"><a href="#cb17-25" aria-hidden="true" tabindex="-1"></a>terms(df2)</span>
+<span id="cb17-26"><a href="#cb17-26" aria-hidden="true" tabindex="-1"></a></span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>/usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py:11: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead.  To get a de-fragmented frame, use `newframe = frame.copy()`
+  # This is added back by InteractiveShellApp.init_path()
+/usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py:21: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="11">
+
+  <div id="df-f95392e6-b4eb-4a9e-acb2-943b87c7915f">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>User</th>
+      <th>Tweet</th>
+      <th>Label</th>
+      <th>dedi</th>
+      <th>mulyadi</th>
+      <th>anne</th>
+      <th>ratna</th>
+      <th>mustika</th>
+      <th>rumah</th>
+      <th>golkarsolid</th>
+      <th>...</th>
+      <th>kecewa</th>
+      <th>ngiringan</th>
+      <th>top</th>
+      <th>up</th>
+      <th>games</th>
+      <th>umur</th>
+      <th>bismiilah</th>
+      <th>dpt</th>
+      <th>mega</th>
+      <th>selamat</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Ngoprekwae</td>
+      <td>[nama, anak, kang, dedi, mulyadi, heran, ni, h...</td>
+      <td>None</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>DediMul10751687</td>
+      <td>[hak]</td>
+      <td>None</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>info_daratan</td>
+      <td>[dedi, mulyadi, belok, arah, rumah, sakit, has...</td>
+      <td>None</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>PoinSembilan</td>
+      <td>[pasca, tanah, leluhur, guncang, gempa, dedi, ...</td>
+      <td>None</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Suara_sumedang</td>
+      <td>[jurus, mabuk, kang, dedi, mulyadi, bikin, gad...</td>
+      <td>None</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>95</th>
+      <td>BadaiPastiJeda</td>
+      <td>[ngiringan]</td>
+      <td>None</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>96</th>
+      <td>BadaiPastiJeda</td>
+      <td>[pingin, top, up, games]</td>
+      <td>None</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>97</th>
+      <td>BadaiPastiJeda</td>
+      <td>[umur]</td>
+      <td>None</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>98</th>
+      <td>BadaiPastiJeda</td>
+      <td>[bismiilah, dpt, restu, mega]</td>
+      <td>None</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>99</th>
+      <td>BadaiPastiJeda</td>
+      <td>[selamat]</td>
+      <td>None</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+<p>100 rows × 388 columns</p>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-f95392e6-b4eb-4a9e-acb2-943b87c7915f')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-f95392e6-b4eb-4a9e-acb2-943b87c7915f button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-f95392e6-b4eb-4a9e-acb2-943b87c7915f');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<section id="melakukan-training" class="cell markdown" id="-xHuw4vFJ6XA">
+<h2>Melakukan Training</h2>
+</section>
+<div class="cell code" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="c6_QfoZAKFIx" data-outputId="6af03914-1740-401e-e67e-7761d1041d71">
+<div class="sourceCode" id="cb19"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>df4 <span class="op">=</span> pd.read_csv(<span class="st">&#39;my_data.csv&#39;</span>)</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>df4[<span class="st">&#39;Label&#39;</span>].unique()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="12">
+<pre><code>array([&#39;None&#39;], dtype=object)</code></pre>
+</div>
+</div>
+<div class="cell code" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="8Me5H6ANKXj2" data-outputId="7f73792e-1b47-43e7-8b96-fd171d4056bc">
+<div class="sourceCode" id="cb21"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>X_train,X_test,y_train,y_test<span class="op">=</span>train_test_split(df4.drop(labels<span class="op">=</span>[<span class="st">&#39;Label&#39;</span>, <span class="st">&#39;User&#39;</span>, <span class="st">&#39;Tweet&#39;</span>], axis<span class="op">=</span><span class="dv">1</span>),</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>    df4[<span class="st">&#39;Label&#39;</span>],</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>    test_size<span class="op">=</span><span class="fl">0.3</span>,</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>    random_state<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>y_train</span></code></pre></div>
+<div class="output execute_result" data-execution_count="13">
+<pre><code>60    None
+80    None
+90    None
+68    None
+51    None
+      ... 
+96    None
+67    None
+64    None
+47    None
+44    None
+Name: Label, Length: 70, dtype: object</code></pre>
+</div>
+</div>
+<section id="bagging-classifier" class="cell markdown" id="T5bsoOiPK0TC">
+<h2><strong>Bagging Classifier</strong></h2>
+</section>
+<div class="cell code" id="YebaPPTXK7C5">
+<div class="sourceCode" id="cb23"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> df4.drop(labels<span class="op">=</span>[<span class="st">&#39;Label&#39;</span>, <span class="st">&#39;User&#39;</span>, <span class="st">&#39;Tweet&#39;</span>], axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> df4[<span class="st">&#39;Label&#39;</span>]</span></code></pre></div>
+</div>
+<div class="cell code" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="SQYbRsFOLAOA" data-outputId="e17b1327-9330-4377-dd57-fd96cace84a9">
+<div class="sourceCode" id="cb24"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn <span class="im">import</span> model_selection</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.svm <span class="im">import</span> SVC</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.ensemble <span class="im">import</span> BaggingClassifier</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.datasets <span class="im">import</span> make_classification</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a><span class="co"># kfold = model_selection.KFold(n_splits = 3,</span></span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a><span class="co">#                        random_state = 5, shuffle=True)</span></span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>X, y <span class="op">=</span> make_classification(n_samples<span class="op">=</span><span class="dv">100</span>, n_features<span class="op">=</span><span class="dv">4</span>,n_informative<span class="op">=</span><span class="dv">2</span>, n_redundant<span class="op">=</span><span class="dv">0</span>,random_state<span class="op">=</span><span class="dv">0</span>, shuffle<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>clf <span class="op">=</span> BaggingClassifier(base_estimator<span class="op">=</span>SVC(),n_estimators<span class="op">=</span><span class="dv">10</span>, random_state<span class="op">=</span><span class="dv">5</span>).fit(X, y)</span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a>clf.predict([[<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>]])</span>
+<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a><span class="co"># results = model_selection.cross_val_score(clf, X, y, cv = kfold)</span></span>
+<span id="cb24-15"><a href="#cb24-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;accuracy :&quot;</span>)</span>
+<span id="cb24-16"><a href="#cb24-16" aria-hidden="true" tabindex="-1"></a><span class="co"># print(results.mean())</span></span>
+<span id="cb24-17"><a href="#cb24-17" aria-hidden="true" tabindex="-1"></a>clf.score(X, y)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>accuracy :
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="15">
+<pre><code>0.91</code></pre>
+</div>
+</div>
+<section id="random-forest" class="cell markdown" id="0VfKeJfpLE7q">
+<h2><strong>Random Forest</strong></h2>
+</section>
+<div class="cell code" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="OZmgi-LSLJ6l" data-outputId="596e68c4-b5c9-48f7-835f-a651784eac46">
+<div class="sourceCode" id="cb27"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.ensemble <span class="im">import</span> RandomForestClassifier</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.datasets <span class="im">import</span> make_classification</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>X, y <span class="op">=</span> make_classification(n_samples<span class="op">=</span><span class="dv">1000</span>, n_features<span class="op">=</span><span class="dv">4</span>,n_informative<span class="op">=</span><span class="dv">2</span>, n_redundant<span class="op">=</span><span class="dv">0</span>,random_state<span class="op">=</span><span class="dv">0</span>, shuffle<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>clf <span class="op">=</span> RandomForestClassifier(max_depth<span class="op">=</span><span class="dv">2</span>, random_state<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>clf.fit(X, y)</span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a><span class="co"># RandomForestClassifier(...)</span></span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a><span class="co"># print(clf.predict([[0, 0, 0, 0]]))</span></span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;accuracy :&quot;</span>)</span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>clf.score(X, y)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>accuracy :
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="16">
+<pre><code>0.948</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="ZjhV7mH1LWhS">
+<p>####Naive Bayes</p>
+</div>
+<div class="cell code" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="1mgNQ0zMLZ8T" data-outputId="de432233-30d1-48e7-e40b-1b39ac17d297">
+<div class="sourceCode" id="cb30"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.naive_bayes <span class="im">import</span> GaussianNB</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>clf <span class="op">=</span> GaussianNB()</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>y_pred <span class="op">=</span> clf.fit(X_train, y_train).predict(X_test)</span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>clf.fit(X_train, y_train).score(X_test, y_test)</span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a></span></code></pre></div>
+<div class="output execute_result" data-execution_count="17">
+<pre><code>1.0</code></pre>
+</div>
+</div>
+<section id="stacking-classifier" class="cell markdown" id="rQy8Kvp4Ld4w">
+<h2><strong>Stacking Classifier</strong></h2>
+</section>
+<div class="cell code" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="bI5kFF5wLmDk" data-outputId="ab8fea5b-2937-4724-9dcd-accb685d9fd9">
+<div class="sourceCode" id="cb32"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn <span class="im">import</span> tree</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>clf <span class="op">=</span> tree.DecisionTreeClassifier()</span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>clf.fit(X_train, y_train).score(X_test, y_test)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="18">
+<pre><code>1.0</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="bKFdS4nRenl9">
+<p>from sklearn.ensemble import RandomForestClassifier from sklearn.svm import LinearSVC from sklearn.linear_model import LogisticRegression from sklearn.preprocessing import StandardScaler from sklearn.pipeline import make_pipeline from sklearn.ensemble import StackingClassifier</p>
+<p>from sklearn.tree import DecisionTreeClassifier</p>
+<p>estimators = [('rf', RandomForestClassifier(max_depth=2, random_state=0)),('rf1', RandomForestClassifier(max_depth=2, random_state=0)),('rf2', RandomForestClassifier(max_depth=2, random_state=0)),('rf3', RandomForestClassifier(max_depth=2, random_state=0))] clf = StackingClassifier(estimators=estimators, final_estimator=GaussianNB()) from sklearn.model_selection import train_test_split print("accuracy :") clf.fit(X_train, y_train).score(X_test, y_test)</p>
+</div>
+</body>
+</html>

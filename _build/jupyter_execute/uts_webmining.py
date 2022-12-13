@@ -85,40 +85,40 @@ bag = vectorizer.fit_transform(dataTextPre['tweet'])
 dataTextPre
 
 
-# In[19]:
+# In[11]:
 
 
 matrik_vsm=bag.toarray()
 matrik_vsm.shape
 
 
-# In[21]:
+# In[12]:
 
 
 matrik_vsm[0]
 
 
-# In[22]:
+# In[13]:
 
 
 a=vectorizer.get_feature_names()
 
 
-# In[17]:
+# In[15]:
 
 
 from sklearn.cluster import KMeans
 from sklearn.decomposition import TruncatedSVD
 
 
-# In[23]:
+# In[16]:
 
 
 dataTF =pd.DataFrame(data=matrik_vsm,index=list(range(1, len(matrik_vsm[:,1])+1, )),columns=[a])
 dataTF
 
 
-# In[28]:
+# In[17]:
 
 
 label = pd.read_csv('dataKanjuruhan.csv')
@@ -126,19 +126,19 @@ dj = pd.concat([dataTF.reset_index(), label["tweet"]], axis=1)
 dj
 
 
-# In[30]:
+# In[18]:
 
 
 dj['tweet'].unique()
 
 
-# In[32]:
+# In[19]:
 
 
 get_ipython().system('pip install -U scikit-learn')
 
 
-# In[33]:
+# In[ ]:
 
 
 from sklearn.model_selection import train_test_split
@@ -149,7 +149,7 @@ X_train,X_test,y_train,y_test=train_test_split(dj.drop(labels=['tweet'], axis=1)
     random_state=0)
 
 
-# In[41]:
+# In[21]:
 
 
 #import plt
@@ -158,7 +158,7 @@ import matplotlib.pyplot as plt
 from sklearn import metrics
 
 
-# In[44]:
+# In[22]:
 
 
 # from sklearn.neighbors import KNeighborsClassifier
@@ -169,14 +169,14 @@ gauss = GaussianNB()
 gauss.fit(X_train, y_train)
 
 
-# In[46]:
+# In[23]:
 
 
 get_ipython().system('pip install nltk')
 get_ipython().system('pip install Sastrawi')
 
 
-# In[47]:
+# In[ ]:
 
 
 import pandas as pd
@@ -189,7 +189,7 @@ import string
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 
 
-# In[48]:
+# In[ ]:
 
 
 def remove_stopwords(text):
@@ -203,7 +203,7 @@ def remove_stopwords(text):
     return text
 
 
-# In[49]:
+# In[ ]:
 
 
 def stemming(text):
@@ -215,7 +215,7 @@ def stemming(text):
     return result
 
 
-# In[50]:
+# In[27]:
 
 
 def preprocessing(text):
@@ -250,23 +250,23 @@ def preprocessing(text):
     return text
 
 
-# In[52]:
+# In[28]:
 
 
 get_ipython().run_line_magic('cd', '/content/drive/MyDrive/webmining/tugas/contents')
 
 
-# In[59]:
+# In[29]:
 
 
 #data['tweet'].apply(preprocessing).to_excel('preprocessing.xlsx')
 
 
-# In[63]:
+# In[30]:
 
 
 from sklearn.feature_extraction.text import TfidfTransformer, TfidfVectorizer, CountVectorizer
-dataTextPre = pd.read_csv('/content/drive/MyDrive/webmining/tugas/contents/preprocessingTK.csv')
+dataTextPre = pd.read_excel('/content/drive/MyDrive/webmining/tugas/contents/preprocessing.xlsx')
 vectorizer = CountVectorizer(min_df=1)
 bag = vectorizer.fit_transform(dataTextPre['tweet'])
 dataTextPre

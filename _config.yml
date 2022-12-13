@@ -38,3 +38,7 @@ html:
 
 launch_buttons:
     colab_url: "https://colab.research.google.com"
+    
+spjinx:
+    config:
+    html_extra_path: ['sumber']
